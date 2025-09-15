@@ -54,25 +54,65 @@ The website is built using **Astro**, a modern web framework that generates fast
 
 ```text
 cs-dept-website/
-├── public/                    # Static assets (images, etc.)
-├── src/
-│   ├── components/           # Reusable UI components
+├── .github/                  # GitHub workflows and templates
+│   └── workflows/           # CI/CD automation
+├── .vscode/                 # VS Code settings
+├── public/                  # Static assets (images, icons, etc.)
+├── src/                     # Source code
+│   ├── components/          # Reusable UI components
 │   │   ├── EventRegistration.astro
 │   │   ├── RegistrationForm.astro
+│   │   ├── Header.astro
+│   │   ├── Footer.astro
 │   │   └── ...
-│   ├── content/              # Content files (THIS IS WHERE YOU'LL WORK!)
-│   │   ├── config.ts        # Defines content structure
-│   │   ├── events/          # Event markdown files
-│   │   └── news/            # News article markdown files
-│   ├── layouts/             # Page templates
-│   ├── pages/               # Website pages
-│   │   ├── timetable.astro  # Interactive searchable timetable (new)
-│   │   ├── events/          # Event detail pages
-│   │   ├── news/            # News article pages
-│   │   └── societies/       # Society pages
-│   └── styles/              # CSS styling
-└── package.json
+│   ├── content/             # Content management (THIS IS WHERE YOU'LL WORK!)
+│   │   ├── config.ts       # Content collection schemas
+│   │   ├── events/         # Event markdown files (.md/.mdx)
+│   │   └── news/           # News article markdown files (.md/.mdx)
+│   ├── layouts/            # Page layout templates
+│   │   ├── BaseLayout.astro
+│   │   ├── EventLayout.astro
+│   │   └── NewsLayout.astro
+│   ├── pages/              # Website pages and routing
+│   │   ├── index.astro     # Homepage
+│   │   ├── about.astro     # About page
+│   │   ├── calendar.astro  # Events calendar
+│   │   ├── timetable.astro # Interactive searchable timetable
+│   │   ├── events/         # Event detail pages
+│   │   │   └── [slug].astro
+│   │   ├── news/           # News article pages
+│   │   │   ├── index.astro
+│   │   │   └── [slug].astro
+│   │   └── societies/      # Society pages
+│   │       ├── cms.astro
+│   │       ├── ps.astro
+│   │       └── ...
+│   ├── styles/             # CSS and styling
+│   │   └── global.css
+│   └── utils/              # Utility functions
+│       └── registrationForm.ts
+├── astro.config.mjs         # Astro configuration
+├── eslint.config.js         # ESLint configuration
+├── netlify.toml            # Netlify deployment settings
+├── package.json            # Dependencies and scripts
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json           # TypeScript configuration
+├── README.md              # This file
+├── CONTRIBUTING.md        # Contribution guidelines
+├── DEPLOYMENT.md          # Deployment instructions
+├── CUSTOM_FORMS.md        # Custom form fields guide
+├── FORM_EXAMPLES.md       # Form implementation examples
+└── FORMS_QUICK_REF.md     # Developer form reference
 ```
+
+**Key Directories Explained:**
+
+- **`src/content/`**: All website content (news, events) in Markdown format
+- **`src/components/`**: Reusable UI components used across pages
+- **`src/pages/`**: Website routes and page templates
+- **`src/layouts/`**: Common page layouts for consistent design
+- **`public/`**: Static files served directly (images, favicons, etc.)
+- **`.github/workflows/`**: Automated testing and deployment
 
 ## 📰 Adding News Articles
 
@@ -259,7 +299,187 @@ Forms submit to either:
 }
 ```
 
-For detailed examples and advanced usage, see [CUSTOM_FORMS.md](./CUSTOM_FORMS.md).
+## 🧩 Component Documentation
+
+The website uses reusable Astro components for consistent design and functionality. Here's an overview of the main components:
+
+### Core Components
+
+#### Header.astro
+
+**Purpose**: Main navigation header with logo and menu
+**Location**: `src/components/Header.astro`
+**Features**:
+
+- Responsive navigation
+- Active route highlighting
+- Mobile-friendly burger menu
+- University logo integration
+
+**Usage**:
+
+```astro
+---
+import Header from '../components/Header.astro';
+---
+
+<Header />
+```
+
+#### Footer.astro
+
+**Purpose**: Site footer with links and information
+**Location**: `src/components/Footer.astro`
+**Features**:
+
+- Contact information
+- Quick links
+- Social media links
+- University branding
+
+#### Hero.astro
+
+**Purpose**: Homepage hero section
+**Location**: `src/components/Hero.astro`
+**Features**:
+
+- Animated text effects
+- Call-to-action buttons
+- Responsive design
+- Gradient backgrounds
+
+### Form Components
+
+#### RegistrationForm.astro
+
+**Purpose**: Configurable event registration forms
+**Location**: `src/components/RegistrationForm.astro`
+**Features**:
+
+- Custom form fields
+- Validation
+- Multiple field types (text, select, textarea)
+- Netlify form integration
+
+**Usage**:
+
+```astro
+---
+import RegistrationForm from '../components/RegistrationForm.astro';
+---
+
+<RegistrationForm
+  eventTitle="Workshop Name"
+  eventId="workshop-2025"
+  customFields={[
+    {
+      name: 'experience',
+      label: 'Experience Level',
+      type: 'select',
+      required: true,
+      options: ['Beginner', 'Intermediate', 'Advanced'],
+    },
+  ]}
+/>
+```
+
+#### EventRegistration.astro
+
+**Purpose**: Wrapper component for event registration
+**Location**: `src/components/EventRegistration.astro`
+**Props**:
+
+- `eventTitle` (string): Event name
+- `eventType` (string): workshop, hackathon, conference, etc.
+- `eventId` (string): Unique identifier
+
+**Usage**:
+
+```astro
+---
+import EventRegistration from '../components/EventRegistration.astro';
+---
+
+<EventRegistration
+  eventTitle="Python Workshop"
+  eventType="workshop"
+  eventId="python-workshop-2025"
+/>
+```
+
+### Content Components
+
+#### SocietyEvents.astro
+
+**Purpose**: Display society-specific events
+**Location**: `src/components/SocietyEvents.astro`
+**Features**:
+
+- Filter events by society
+- Event cards with registration
+- Responsive grid layout
+
+### Utility Components
+
+#### ScrollAnimator.astro
+
+**Purpose**: Scroll-based animations
+**Location**: `src/components/ScrollAnimator.astro`
+**Features**:
+
+- Intersection Observer API
+- CSS animation triggers
+- Performance optimized
+
+#### HeaderController.astro
+
+**Purpose**: Controls header behavior
+**Location**: `src/components/HeaderController.astro`
+**Features**:
+
+- Scroll-based header visibility
+- Mobile menu state management
+
+### Creating New Components
+
+When creating new components, follow these guidelines:
+
+1. **File Location**: Place in `src/components/`
+2. **Naming Convention**: Use PascalCase (e.g., `MyComponent.astro`)
+3. **TypeScript Props**: Define interfaces for props
+4. **Responsive Design**: Use Tailwind CSS classes
+5. **Accessibility**: Include proper ARIA labels
+
+**Component Template**:
+
+```astro
+---
+export interface Props {
+  title: string;
+  description?: string;
+  variant?: 'primary' | 'secondary';
+}
+
+const { title, description, variant = 'primary' } = Astro.props;
+
+const variantClasses = {
+  primary: 'bg-blue-600 text-white',
+  secondary: 'bg-gray-200 text-gray-900',
+};
+---
+
+<div class={`p-4 rounded-lg ${variantClasses[variant]}`}>
+  <h3 class="text-lg font-semibold">{title}</h3>
+  {description && <p class="mt-2 text-sm opacity-90">{description}</p>}
+  <slot />
+</div>
+```
+
+For detailed component examples and form integration, see:
+
+- [CUSTOM_FORMS.md](./CUSTOM_FORMS.md) - Custom form field implementation
+- [FORM_EXAMPLES.md](./FORM_EXAMPLES.md) - Complete form examples
+- [FORMS_QUICK_REF.md](./FORMS_QUICK_REF.md) - Developer reference
 
 ## 🔧 Using MDX for Enhanced Content
 
@@ -455,7 +675,54 @@ Partnership details:
 - Include application process for interested students
 ```
 
-## 🚀 Development Commands
+## 🚀 Installation & Setup
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js** (version 18.0 or higher) - [Download here](https://nodejs.org/)
+- **Bun** (recommended) or **npm/yarn** - [Install Bun](https://bun.sh/docs/installation)
+
+### Installation Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Ta1al/cs-dept-website.git
+   cd cs-dept-website
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   # Using Bun (recommended)
+   bun install
+
+   # Or using npm
+   npm install
+
+   # Or using yarn
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   # Using Bun
+   bun dev
+
+   # Or using npm
+   npm run dev
+
+   # Or using yarn
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:4321` to see the website
+
+### Development Commands
 
 All commands are run from the project root:
 
@@ -476,16 +743,34 @@ All commands are run from the project root:
 | `bun run lint:fix`     | Fix ESLint issues automatically (where possible) |
 | `bun run check-format` | Run both formatting and linting checks           |
 
-**Note**: Pull requests automatically check code formatting and linting. Make sure to run `bun run format` and `bun run lint:fix` before submitting your changes.
+**Important**: Pull requests automatically check code formatting and linting. Always run `bun run format` and `bun run lint:fix` before submitting your changes.
+
+### Troubleshooting
+
+**Common Issues:**
+
+1. **Port 4321 already in use**
+   - Stop any existing development servers
+   - Or change the port: `bun dev --port 3000`
+
+2. **Dependencies not installing**
+   - Clear cache: `bun install --force` or `rm -rf node_modules && bun install`
+   - Ensure you have the latest version of Bun
+
+3. **Build failures**
+   - Check that all content files have proper frontmatter
+   - Run `bun run lint:fix` to fix common issues
+   - Verify TypeScript types with `bun run astro check`
 
 ## 🔧 Quick Start Guide
 
-1. **Clone the repository** (if you haven't already)
-2. **Install dependencies**: `bun install`
-3. **Start development server**: `bun dev`
-4. **Open your browser**: Go to `http://localhost:4321`
-5. **Make changes**: Edit files and see changes instantly
-6. **Add content**: Create new `.md` files in `src/content/news/` or `src/content/events/`
+1. **Clone and setup** (see Installation Steps above)
+2. **Make your first content change**:
+   - Edit an existing news article in `src/content/news/`
+   - Or create a new event in `src/content/events/`
+3. **See changes instantly** in your browser (hot reload enabled)
+4. **Follow code quality checks** before committing
+5. **Read the contribution guidelines** in [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## 📝 Content Guidelines
 
@@ -501,12 +786,16 @@ All commands are run from the project root:
 
 ## 🆘 Need Help?
 
+- **Getting Started**: [Installation & Setup](#-installation--setup)
+- **Contributing**: [CONTRIBUTING.md](./CONTRIBUTING.md) - Complete contributor guide
+- **Deployment**: [DEPLOYMENT.md](./DEPLOYMENT.md) - Deployment instructions for all platforms
 - **Markdown Guide**: [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
 - **MDX Documentation**: [MDX Guide](https://mdxjs.com/docs/)
 - **Astro Documentation**: [docs.astro.build](https://docs.astro.build)
 - **Custom Form Fields**: [CUSTOM_FORMS.md](./CUSTOM_FORMS.md) - Comprehensive guide with examples
 - **Form Examples**: [FORM_EXAMPLES.md](./FORM_EXAMPLES.md) - Complete real-world examples
 - **Form Quick Reference**: [FORMS_QUICK_REF.md](./FORMS_QUICK_REF.md) - Developer reference
+- **Component Documentation**: [Component Documentation](#-component-documentation)
 - **AI Content Tools**: ChatGPT, Claude, GitHub Copilot, or other LLMs
 - **Ask Questions**: Reach out to the web development team
 
