@@ -1,0 +1,462 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '@components/layout/Header.astro';
+import Footer from '@components/layout/Footer.astro';
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+// Fetch all events
+const allEvents = await getCollection('events');
+
+// Sort events by date (newest first)
+const sortedEvents = allEvents.sort((a, b) =>
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+// Get upcoming and past events
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const upcomingEvents = sortedEvents.filter(event =>
+  new Date(event.data.date) >= today
+);
+
+const pastEvents = sortedEvents.filter(event =>
+  new Date(event.data.date) < today
+);
+
+// Mock registration data
+const registrationData = sortedEvents.reduce((acc, event) => {
+  acc[event.slug] = {
+    registered: Math.floor(Math.random() * (event.data.capacity || 100)),
+    capacity: event.data.capacity || 100,
+    waitlist: Math.floor(Math.random() * 10),
+    attendees: []
+  };
+  return acc;
+}, {} as Record<string, any>);
+---
+
+<Layout>
+  <Header />
+  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-900">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Page Header -->
+      <div class="flex justify-between items-center mb-8">
+        <div>
+          <h1 class="text-3xl font-bold text-white mb-2">Event Management</h1>
+          <p class="text-gray-400">Manage and track all department events</p>
+        </div>
+        <div class="flex gap-4">
+          <a href="/admin/dashboard" class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition-colors">
+            ← Back to Dashboard
+          </a>
+          <button
+            onclick="showCreateEventModal()"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors flex items-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+            </svg>
+            New Event
+          </button>
+        </div>
+      </div>
+
+      <!-- Filters and Search -->
+      <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700 mb-6">
+        <div class="flex flex-wrap gap-4">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search events..."
+            class="flex-1 min-w-[200px] bg-gray-900/50 border border-gray-600 rounded-lg px-4 py-2 text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none"
+          />
+          <select
+            id="statusFilter"
+            class="bg-gray-900/50 border border-gray-600 rounded-lg px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+          >
+            <option value="all">All Events</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="past">Past</option>
+          </select>
+          <select
+            id="societyFilter"
+            class="bg-gray-900/50 border border-gray-600 rounded-lg px-4 py-2 text-white focus:border-blue-500 focus:outline-none"
+          >
+            <option value="all">All Societies</option>
+            <option value="ps">Programming Society</option>
+            <option value="cms">Computing Media Society</option>
+            <option value="egaming">E-Gaming Society</option>
+            <option value="ems">Event Management Society</option>
+            <option value="pas">Performing Arts Society</option>
+            <option value="sports">Sports Society</option>
+            <option value="blood-donation">Blood Donation Society</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Events Table -->
+      <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl border border-gray-700 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead class="bg-gray-900/50 border-b border-gray-700">
+              <tr>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Event</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Date & Time</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Society</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Location</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Registration</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Status</th>
+                <th class="text-left px-6 py-4 text-gray-300 font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="eventsTableBody">
+              {sortedEvents.map(event => {
+                const eventDate = new Date(event.data.date);
+                const isPast = eventDate < today;
+                const regData = registrationData[event.slug];
+                const regPercentage = (regData.registered / regData.capacity) * 100;
+
+                return (
+                  <tr class="border-b border-gray-700 hover:bg-gray-900/30 transition-colors event-row"
+                      data-status={isPast ? 'past' : 'upcoming'}
+                      data-society={event.data.society || 'other'}
+                      data-title={event.data.title.toLowerCase()}>
+                    <td class="px-6 py-4">
+                      <div>
+                        <p class="text-white font-medium">{event.data.title}</p>
+                        <p class="text-gray-400 text-sm">{event.data.type || 'General Event'}</p>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <div>
+                        <p class="text-gray-300">
+                          {eventDate.toLocaleDateString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric'
+                          })}
+                        </p>
+                        <p class="text-gray-500 text-sm">{event.data.time || 'TBD'}</p>
+                      </div>
+                    </td>
+                    <td class="px-6 py-4">
+                      <span class="text-gray-300">{event.data.society || 'N/A'}</span>
+                    </td>
+                    <td class="px-6 py-4">
+                      <span class="text-gray-300">{event.data.location || 'TBD'}</span>
+                    </td>
+                    <td class="px-6 py-4">
+                      {event.data.registrationRequired ? (
+                        <div>
+                          <div class="flex items-center gap-2 mb-1">
+                            <span class="text-sm text-gray-300">
+                              {regData.registered}/{regData.capacity}
+                            </span>
+                            {regData.waitlist > 0 && (
+                              <span class="text-xs text-yellow-400">
+                                +{regData.waitlist} waitlist
+                              </span>
+                            )}
+                          </div>
+                          <div class="w-32 bg-gray-700 rounded-full h-1.5">
+                            <div
+                              class={`h-1.5 rounded-full transition-all duration-300 ${
+                                regPercentage >= 90 ? 'bg-red-500' :
+                                regPercentage >= 70 ? 'bg-yellow-500' :
+                                'bg-green-500'
+                              }`}
+                              style={`width: ${Math.min(regPercentage, 100)}%`}
+                            ></div>
+                          </div>
+                        </div>
+                      ) : (
+                        <span class="text-gray-500 text-sm">No registration</span>
+                      )}
+                    </td>
+                    <td class="px-6 py-4">
+                      <span class={`px-2 py-1 rounded text-xs font-medium ${
+                        isPast
+                          ? 'bg-gray-600/30 text-gray-400'
+                          : 'bg-green-500/20 text-green-400'
+                      }`}>
+                        {isPast ? 'Completed' : 'Upcoming'}
+                      </span>
+                    </td>
+                    <td class="px-6 py-4">
+                      <div class="flex items-center gap-2">
+                        <button
+                          onclick={`viewRegistrations('${event.slug}')`}
+                          class="text-blue-400 hover:text-blue-300 transition-colors"
+                          title="View Registrations"
+                        >
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                          </svg>
+                        </button>
+                        <button
+                          onclick={`editEvent('${event.slug}')`}
+                          class="text-yellow-400 hover:text-yellow-300 transition-colors"
+                          title="Edit Event"
+                        >
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path>
+                          </svg>
+                        </button>
+                        <button
+                          onclick={`confirmDelete('${event.slug}')`}
+                          class="text-red-400 hover:text-red-300 transition-colors"
+                          title="Delete Event"
+                        >
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                          </svg>
+                        </button>
+                        <button
+                          onclick={`exportEventData('${event.slug}')`}
+                          class="text-gray-400 hover:text-gray-300 transition-colors"
+                          title="Export Data"
+                        >
+                          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Event Stats Summary -->
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
+          <p class="text-gray-400 text-sm mb-1">Total Registrations</p>
+          <p class="text-2xl font-bold text-white">
+            {Object.values(registrationData).reduce((sum: number, data: any) => sum + data.registered, 0)}
+          </p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
+          <p class="text-gray-400 text-sm mb-1">Total Capacity</p>
+          <p class="text-2xl font-bold text-white">
+            {Object.values(registrationData).reduce((sum: number, data: any) => sum + data.capacity, 0)}
+          </p>
+        </div>
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-4 border border-gray-700">
+          <p class="text-gray-400 text-sm mb-1">Average Fill Rate</p>
+          <p class="text-2xl font-bold text-white">
+            {Math.round(
+              Object.values(registrationData).reduce((sum: number, data: any) =>
+                sum + (data.registered / data.capacity), 0
+              ) / Object.keys(registrationData).length * 100
+            )}%
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Registration Modal -->
+  <div id="registrationModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50">
+    <div class="flex items-center justify-center min-h-screen p-4">
+      <div class="bg-gray-800 rounded-xl p-6 max-w-4xl w-full max-h-[80vh] overflow-y-auto">
+        <div class="flex justify-between items-center mb-4">
+          <h2 class="text-2xl font-bold text-white">Event Registrations</h2>
+          <button onclick="closeRegistrationModal()" class="text-gray-400 hover:text-white">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="registrationContent">
+          <!-- Registration details will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Admin Footer -->
+  <footer class="bg-gradient-to-b from-gray-900 to-gray-950 border-t border-gray-800 py-4">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col-reverse md:flex-row md:justify-between md:items-center">
+        <!-- Original Credits (Left on desktop, bottom on mobile) -->
+        <div class="text-gray-400 text-sm text-center md:text-left mt-2 md:mt-0">
+          © 2025 Computer Science Department. Made by
+          <a href="https://ta1al.com"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-blue-400 hover:text-blue-300 transition-colors">Ta1al</a>.
+        </div>
+
+        <!-- Admin Dashboard Credits (Right on desktop, top on mobile) -->
+        <div class="text-gray-400 text-sm text-center md:text-right">
+          Admin Dashboard by
+          <a href="https://www.linkedin.com/in/muhammad-faizan-me/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-blue-400 hover:text-blue-300 transition-colors">Muhammad Faizan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  // Search and filter functionality
+  const searchInput = document.getElementById('searchInput') as HTMLInputElement;
+  const statusFilter = document.getElementById('statusFilter') as HTMLSelectElement;
+  const societyFilter = document.getElementById('societyFilter') as HTMLSelectElement;
+  const eventsTableBody = document.getElementById('eventsTableBody');
+
+  function filterEvents() {
+    const searchTerm = searchInput?.value.toLowerCase() || '';
+    const status = statusFilter?.value || 'all';
+    const society = societyFilter?.value || 'all';
+
+    const rows = eventsTableBody?.querySelectorAll('.event-row') as NodeListOf<HTMLTableRowElement>;
+
+    rows?.forEach(row => {
+      const matchesSearch = !searchTerm || row.dataset.title?.includes(searchTerm);
+      const matchesStatus = status === 'all' || row.dataset.status === status;
+      const matchesSociety = society === 'all' || row.dataset.society === society;
+
+      row.style.display = matchesSearch && matchesStatus && matchesSociety ? '' : 'none';
+    });
+  }
+
+  searchInput?.addEventListener('input', filterEvents);
+  statusFilter?.addEventListener('change', filterEvents);
+  societyFilter?.addEventListener('change', filterEvents);
+
+  // Modal functions
+  function viewRegistrations(eventId: string) {
+    const modal = document.getElementById('registrationModal');
+    const content = document.getElementById('registrationContent');
+
+    if (modal && content) {
+      modal.classList.remove('hidden');
+
+      // Mock registration data
+      content.innerHTML = `
+        <div class="space-y-4">
+          <div class="bg-gray-900/50 rounded-lg p-4">
+            <h3 class="text-lg font-semibold text-white mb-2">Registration Summary</h3>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="text-gray-400 text-sm">Total Registered</p>
+                <p class="text-2xl font-bold text-white">45</p>
+              </div>
+              <div>
+                <p class="text-gray-400 text-sm">Waitlist</p>
+                <p class="text-2xl font-bold text-yellow-400">5</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold text-white mb-2">Registered Attendees</h3>
+            <div class="bg-gray-900/50 rounded-lg overflow-hidden">
+              <table class="w-full">
+                <thead class="bg-gray-800/50">
+                  <tr>
+                    <th class="text-left px-4 py-2 text-gray-300">#</th>
+                    <th class="text-left px-4 py-2 text-gray-300">Name</th>
+                    <th class="text-left px-4 py-2 text-gray-300">Email</th>
+                    <th class="text-left px-4 py-2 text-gray-300">Registration Date</th>
+                    <th class="text-left px-4 py-2 text-gray-300">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${Array.from({length: 5}, (_, i) => `
+                    <tr class="border-t border-gray-700">
+                      <td class="px-4 py-2 text-gray-400">${i + 1}</td>
+                      <td class="px-4 py-2 text-white">Student ${i + 1}</td>
+                      <td class="px-4 py-2 text-gray-300">student${i + 1}@uos.edu.pk</td>
+                      <td class="px-4 py-2 text-gray-400">${new Date(Date.now() - Math.random() * 7 * 24 * 60 * 60 * 1000).toLocaleDateString()}</td>
+                      <td class="px-4 py-2">
+                        <span class="px-2 py-1 bg-green-500/20 text-green-400 rounded text-xs">Confirmed</span>
+                      </td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="flex justify-end gap-4 mt-6">
+            <button onclick="exportRegistrations('${eventId}')" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors">
+              Export to CSV
+            </button>
+            <button onclick="closeRegistrationModal()" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition-colors">
+              Close
+            </button>
+          </div>
+        </div>
+      `;
+    }
+  }
+
+  function closeRegistrationModal() {
+    const modal = document.getElementById('registrationModal');
+    modal?.classList.add('hidden');
+  }
+
+  function editEvent(eventId: string) {
+    alert(`Edit functionality would open CMS for event: ${eventId}`);
+    // In production, this would redirect to the CMS or open an edit modal
+  }
+
+  function confirmDelete(eventId: string) {
+    if (confirm('Are you sure you want to delete this event? This action cannot be undone.')) {
+      alert(`Event ${eventId} would be deleted`);
+      // In production, this would make an API call to delete the event
+    }
+  }
+
+  function exportEventData(eventId: string) {
+    // Create CSV data for the specific event
+    const csvContent = `Event ID,Title,Date,Location,Registrations,Capacity
+${eventId},Sample Event,2024-02-15,Lab 301,45,50`;
+
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.setAttribute('href', url);
+    a.setAttribute('download', `event_${eventId}_data.csv`);
+    a.click();
+  }
+
+  function exportRegistrations(eventId: string) {
+    // Create CSV data for registrations
+    const csvContent = `Name,Email,Registration Date,Status
+Student 1,student1@uos.edu.pk,2024-02-10,Confirmed
+Student 2,student2@uos.edu.pk,2024-02-11,Confirmed
+Student 3,student3@uos.edu.pk,2024-02-12,Waitlist`;
+
+    const blob = new Blob([csvContent], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.setAttribute('href', url);
+    a.setAttribute('download', `registrations_${eventId}.csv`);
+    a.click();
+  }
+
+  function showCreateEventModal() {
+    alert('Create event functionality would open the CMS or a creation form');
+    // In production, this would redirect to /admin/cms or open a creation modal
+  }
+
+  // Make functions globally available
+  (window as any).viewRegistrations = viewRegistrations;
+  (window as any).closeRegistrationModal = closeRegistrationModal;
+  (window as any).editEvent = editEvent;
+  (window as any).confirmDelete = confirmDelete;
+  (window as any).exportEventData = exportEventData;
+  (window as any).exportRegistrations = exportRegistrations;
+  (window as any).showCreateEventModal = showCreateEventModal;
+</script>

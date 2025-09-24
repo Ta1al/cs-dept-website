@@ -1,0 +1,364 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '@components/layout/Header.astro';
+import Footer from '@components/layout/Footer.astro';
+import { getCollection } from 'astro:content';
+import '../../styles/global.css';
+
+// Fetch all events and news
+const allEvents = await getCollection('events');
+const allNews = await getCollection('news');
+
+// Sort events by date
+const sortedEvents = allEvents.sort((a, b) =>
+  new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+// Get upcoming and past events
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+const upcomingEvents = sortedEvents.filter(event =>
+  new Date(event.data.date) >= today
+);
+
+const pastEvents = sortedEvents.filter(event =>
+  new Date(event.data.date) < today
+);
+
+// Get events by society
+const eventsBySociety = sortedEvents.reduce((acc, event) => {
+  const society = event.data.society || 'Other';
+  if (!acc[society]) acc[society] = 0;
+  acc[society]++;
+  return acc;
+}, {} as Record<string, number>);
+
+// Get this month's events
+const currentMonth = new Date();
+const firstDayOfMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth(), 1);
+const lastDayOfMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0);
+
+const thisMonthEvents = sortedEvents.filter(event => {
+  const eventDate = new Date(event.data.date);
+  return eventDate >= firstDayOfMonth && eventDate <= lastDayOfMonth;
+});
+
+// Mock registration data (in production, this would come from a database)
+const mockRegistrations = upcomingEvents.map(event => ({
+  eventId: event.slug,
+  eventTitle: event.data.title,
+  registrations: Math.floor(Math.random() * (event.data.capacity || 100)),
+  capacity: event.data.capacity || 100
+}));
+
+const totalRegistrations = mockRegistrations.reduce((sum, event) => sum + event.registrations, 0);
+
+// Calculate events this week
+const weekFromNow = new Date();
+weekFromNow.setDate(weekFromNow.getDate() + 7);
+const eventsThisWeek = sortedEvents.filter(e => {
+  const eventDate = new Date(e.data.date);
+  return eventDate >= today && eventDate <= weekFromNow;
+}).length;
+---
+
+<Layout>
+  <Header />
+  <main class="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900/20 to-gray-900">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Page Header -->
+      <div class="mb-8">
+        <h1 class="text-3xl font-bold text-white mb-2">Admin Dashboard</h1>
+        <p class="text-gray-400">Manage events, track registrations, and view analytics</p>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-400 text-sm">Total Events</p>
+              <p class="text-3xl font-bold text-white mt-1">{allEvents.length}</p>
+            </div>
+            <div class="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">{upcomingEvents.length} upcoming</p>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-400 text-sm">Total Registrations</p>
+              <p class="text-3xl font-bold text-white mt-1">{totalRegistrations}</p>
+            </div>
+            <div class="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Across all events</p>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-400 text-sm">This Month</p>
+              <p class="text-3xl font-bold text-white mt-1">{thisMonthEvents.length}</p>
+            </div>
+            <div class="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Events scheduled</p>
+        </div>
+
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-gray-400 text-sm">News Articles</p>
+              <p class="text-3xl font-bold text-white mt-1">{allNews.length}</p>
+            </div>
+            <div class="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-xs text-gray-500 mt-2">Published articles</p>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+        <a href="/admin/events" class="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 rounded-xl p-6 text-white transition-all duration-200 transform hover:scale-105">
+          <h3 class="text-lg font-semibold mb-2">Manage Events</h3>
+          <p class="text-blue-100 text-sm">View, edit, and manage all events</p>
+        </a>
+
+        <button onclick="exportData('csv')" class="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 rounded-xl p-6 text-white transition-all duration-200 transform hover:scale-105 text-left">
+          <h3 class="text-lg font-semibold mb-2">Export Data</h3>
+          <p class="text-green-100 text-sm">Download events and registrations as CSV</p>
+        </button>
+
+        <a href="/admin/cms" class="bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 rounded-xl p-6 text-white transition-all duration-200 transform hover:scale-105">
+          <h3 class="text-lg font-semibold mb-2">Content Management</h3>
+          <p class="text-purple-100 text-sm">Access Decap CMS for content editing</p>
+        </a>
+      </div>
+
+      <!-- Main Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Upcoming Events with Registration -->
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <h2 class="text-xl font-semibold text-white mb-4">Upcoming Events & Registrations</h2>
+          <div class="space-y-3 max-h-96 overflow-y-auto">
+            {upcomingEvents.length > 0 ? (
+              mockRegistrations.map(event => (
+                <div class="bg-gray-900/50 rounded-lg p-4 border border-gray-700">
+                  <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-white font-medium">{event.eventTitle}</h3>
+                    <span class="text-xs bg-blue-500/20 text-blue-300 px-2 py-1 rounded">
+                      {event.registrations}/{event.capacity}
+                    </span>
+                  </div>
+                  <div class="w-full bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-blue-400 to-blue-600 h-2 rounded-full transition-all duration-300"
+                      style={`width: ${(event.registrations / event.capacity) * 100}%`}
+                    ></div>
+                  </div>
+                  <p class="text-xs text-gray-400 mt-2">
+                    {((event.registrations / event.capacity) * 100).toFixed(0)}% registered
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p class="text-gray-400">No upcoming events</p>
+            )}
+          </div>
+        </div>
+
+        <!-- Events by Society -->
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <h2 class="text-xl font-semibold text-white mb-4">Events by Society</h2>
+          <div class="space-y-3">
+            {Object.entries(eventsBySociety).map(([society, count]) => (
+              <div class="flex justify-between items-center">
+                <span class="text-gray-300">{society}</span>
+                <div class="flex items-center gap-2">
+                  <div class="w-32 bg-gray-700 rounded-full h-2">
+                    <div
+                      class="bg-gradient-to-r from-purple-400 to-purple-600 h-2 rounded-full"
+                      style={`width: ${(count / allEvents.length) * 100}%`}
+                    ></div>
+                  </div>
+                  <span class="text-sm text-gray-400 w-8 text-right">{count}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Recent Activity -->
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <h2 class="text-xl font-semibold text-white mb-4">Recent Events</h2>
+          <div class="space-y-3 max-h-96 overflow-y-auto">
+            {sortedEvents.slice(0, 5).map(event => (
+              <div class="flex items-center justify-between py-2 border-b border-gray-700 last:border-0">
+                <div>
+                  <p class="text-white text-sm font-medium">{event.data.title}</p>
+                  <p class="text-xs text-gray-400">
+                    {new Date(event.data.date).toLocaleDateString('en-US', {
+                      month: 'short',
+                      day: 'numeric',
+                      year: 'numeric'
+                    })}
+                  </p>
+                </div>
+                <span class={`text-xs px-2 py-1 rounded ${
+                  new Date(event.data.date) >= today
+                    ? 'bg-green-500/20 text-green-300'
+                    : 'bg-gray-600/20 text-gray-400'
+                }`}>
+                  {new Date(event.data.date) >= today ? 'Upcoming' : 'Past'}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <!-- Quick Analytics -->
+        <div class="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700">
+          <h2 class="text-xl font-semibold text-white mb-4">Analytics Overview</h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span class="text-gray-400">Event Completion Rate</span>
+                <span class="text-white">{((pastEvents.length / allEvents.length) * 100).toFixed(0)}%</span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-gradient-to-r from-green-400 to-green-600 h-2 rounded-full"
+                  style={`width: ${(pastEvents.length / allEvents.length) * 100}%`}
+                ></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-sm mb-1">
+                <span class="text-gray-400">Average Registration Rate</span>
+                <span class="text-white">
+                  {mockRegistrations.length > 0
+                    ? Math.round(mockRegistrations.reduce((sum, e) => sum + (e.registrations / e.capacity) * 100, 0) / mockRegistrations.length)
+                    : 0}%
+                </span>
+              </div>
+              <div class="w-full bg-gray-700 rounded-full h-2">
+                <div
+                  class="bg-gradient-to-r from-blue-400 to-blue-600 h-2 rounded-full"
+                  style={`width: ${mockRegistrations.length > 0
+                    ? mockRegistrations.reduce((sum, e) => sum + (e.registrations / e.capacity) * 100, 0) / mockRegistrations.length
+                    : 0}%`}
+                ></div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-gray-700">
+              <div class="grid grid-cols-2 gap-4 text-sm">
+                <div>
+                  <p class="text-gray-400">Most Active Society</p>
+                  <p class="text-white font-medium">
+                    {Object.entries(eventsBySociety).sort((a, b) => b[1] - a[1])[0]?.[0] || 'N/A'}
+                  </p>
+                </div>
+                <div>
+                  <p class="text-gray-400">Events This Week</p>
+                  <p class="text-white font-medium">{eventsThisWeek}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Custom Admin Footer -->
+  <footer class="bg-gradient-to-b from-gray-900 to-gray-950 border-t border-gray-800 py-4">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col-reverse md:flex-row md:justify-between md:items-center">
+        <!-- Original Credits (Left on desktop, bottom on mobile) -->
+        <div class="text-gray-400 text-sm text-center md:text-left mt-2 md:mt-0">
+          © 2025 Computer Science Department. Made by
+          <a href="https://ta1al.com"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-blue-400 hover:text-blue-300 transition-colors">Ta1al</a>.
+        </div>
+
+        <!-- Admin Dashboard Credits (Right on desktop, top on mobile) -->
+        <div class="text-gray-400 text-sm text-center md:text-right">
+          Admin Dashboard by
+          <a href="https://www.linkedin.com/in/muhammad-faizan-me/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-blue-400 hover:text-blue-300 transition-colors">Muhammad Faizan</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  function exportData(format: 'csv' | 'json') {
+    // Get all events data from the page
+    const events = document.querySelectorAll('[data-event]');
+    const data: any[] = [];
+
+    // Mock data for export (in production, this would fetch from API)
+    const mockData = [
+      ['Event Title', 'Date', 'Society', 'Registrations', 'Capacity', 'Location'],
+      ['Tech Talk: AI Basics', '2024-02-15', 'Programming Society', '45', '50', 'Lab 301'],
+      ['Gaming Tournament', '2024-02-20', 'E-Gaming Society', '120', '150', 'Auditorium'],
+      ['Blood Donation Camp', '2024-02-25', 'Blood Donation Society', '200', '300', 'Main Hall'],
+    ];
+
+    if (format === 'csv') {
+      const csvContent = mockData.map(row => row.join(',')).join('\n');
+      const blob = new Blob([csvContent], { type: 'text/csv' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.setAttribute('href', url);
+      a.setAttribute('download', `events_export_${new Date().toISOString().split('T')[0]}.csv`);
+      a.click();
+    } else if (format === 'json') {
+      const headers = mockData[0];
+      const jsonData = mockData.slice(1).map(row => {
+        const obj: any = {};
+        headers.forEach((header, index) => {
+          obj[header] = row[index];
+        });
+        return obj;
+      });
+
+      const jsonContent = JSON.stringify(jsonData, null, 2);
+      const blob = new Blob([jsonContent], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.setAttribute('href', url);
+      a.setAttribute('download', `events_export_${new Date().toISOString().split('T')[0]}.json`);
+      a.click();
+    }
+  }
+
+  // Make exportData available globally
+  (window as any).exportData = exportData;
+</script>
