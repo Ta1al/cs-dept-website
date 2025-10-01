@@ -786,17 +786,20 @@ try {
 
     // Get current timestamp for DTSTAMP
     const now = new Date();
-    const dtstamp = formatDateForICS(now, `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`);
+    const dtstamp = formatDateForICS(
+      now,
+      `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
+    );
 
     // Get day of week for BYDAY rule
     const dayAbbreviations: Record<string, string> = {
-      'Sunday': 'SU',
-      'Monday': 'MO',
-      'Tuesday': 'TU',
-      'Wednesday': 'WE',
-      'Thursday': 'TH',
-      'Friday': 'FR',
-      'Saturday': 'SA'
+      Sunday: 'SU',
+      Monday: 'MO',
+      Tuesday: 'TU',
+      Wednesday: 'WE',
+      Thursday: 'TH',
+      Friday: 'FR',
+      Saturday: 'SA',
     };
     const byday = dayAbbreviations[record.day];
 
