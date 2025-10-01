@@ -705,7 +705,7 @@ try {
     render();
   });
 
-  // Google Calendar Export functionality
+  // .ics Calendar Export functionality
   const exportButton = document.getElementById('export-google-calendar');
 
   function getDayOffset(dayName: string): number {
@@ -736,41 +736,35 @@ try {
     return nextDate;
   }
 
-  function formatDateForGoogle(date: Date, time: string): string {
+  function formatDateForICS(date: Date, time: string): string {
     const [hours, minutes] = time.split(':').map(Number);
-    date.setHours(hours, minutes, 0, 0);
+    const newDate = new Date(date);
+    newDate.setHours(hours, minutes, 0, 0);
 
     // Format: YYYYMMDDTHHmmSS
-    const year = date.getFullYear();
-    const month = String(date.getMonth() + 1).padStart(2, '0');
-    const day = String(date.getDate()).padStart(2, '0');
-    const hour = String(date.getHours()).padStart(2, '0');
-    const minute = String(date.getMinutes()).padStart(2, '0');
+    const year = newDate.getFullYear();
+    const month = String(newDate.getMonth() + 1).padStart(2, '0');
+    const day = String(newDate.getDate()).padStart(2, '0');
+    const hour = String(newDate.getHours()).padStart(2, '0');
+    const minute = String(newDate.getMinutes()).padStart(2, '0');
 
     return `${year}${month}${day}T${hour}${minute}00`;
   }
 
-  function createGoogleCalendarUrl(record: FlatRecord): string {
-    const baseUrl =
-      'https://calendar.google.com/calendar/render?action=TEMPLATE';
-
+  function createICSEvent(record: FlatRecord): string {
     // Get the next occurrence of this class day
     const classDate = getNextOccurrence(record.day);
 
     // Format start and end times
-    const startTime = formatDateForGoogle(
-      new Date(classDate),
-      record.start_time
-    );
-    const endDate = new Date(classDate);
-    const endTime = formatDateForGoogle(
-      endDate,
+    const startTime = formatDateForICS(classDate, record.start_time);
+    const endTime = formatDateForICS(
+      classDate,
       record.end_time || record.start_time
     );
 
     // Build title and description
     const title = record.course_title || 'Class';
-    const details = [
+    const description = [
       record.course_code ? `Course Code: ${record.course_code}` : '',
       record.teacher_name ? `Teacher: ${record.teacher_name}` : '',
       record.program_line ? `Program: ${record.program_line}` : '',
@@ -780,22 +774,69 @@ try {
       record.combined_class ? 'Type: Combined Class' : '',
     ]
       .filter(Boolean)
-      .join('\n');
+      .join('\\n');
 
     const location = `Room ${record.room}`;
 
+    // Generate unique ID for this event
+    const uid = `${record.course_code}-${record.day}-${record.start_time}-${Date.now()}@cs-dept.edu`;
+
     // Create recurring event (weekly for a semester, approximately 16 weeks)
-    const recurrence = `RRULE:FREQ=WEEKLY;COUNT=16`;
+    const rrule = 'FREQ=WEEKLY;COUNT=16';
 
-    const params = new URLSearchParams({
-      text: title,
-      dates: `${startTime}/${endTime}`,
-      details: details,
-      location: location,
-      recur: recurrence,
-    });
+    // Get current timestamp for DTSTAMP
+    const now = new Date();
+    const dtstamp = formatDateForICS(now, `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`);
 
-    return `${baseUrl}&${params.toString()}`;
+    // Get day of week for BYDAY rule
+    const dayAbbreviations: Record<string, string> = {
+      'Sunday': 'SU',
+      'Monday': 'MO',
+      'Tuesday': 'TU',
+      'Wednesday': 'WE',
+      'Thursday': 'TH',
+      'Friday': 'FR',
+      'Saturday': 'SA'
+    };
+    const byday = dayAbbreviations[record.day];
+
+    return `BEGIN:VEVENT
+UID:${uid}
+DTSTAMP:${dtstamp}
+DTSTART:${startTime}
+DTEND:${endTime}
+SUMMARY:${title}
+DESCRIPTION:${description}
+LOCATION:${location}
+RRULE:${rrule};BYDAY=${byday}
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT`;
+  }
+
+  function generateICSFile(records: FlatRecord[]): string {
+    const events = records.map(createICSEvent).join('\n');
+
+    return `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CS Department//Timetable//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:CS Department Timetable
+X-WR-TIMEZONE:Asia/Karachi
+${events}
+END:VCALENDAR`;
+  }
+
+  function downloadICS(content: string, filename: string): void {
+    const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(link.href);
   }
 
   exportButton?.addEventListener('click', () => {
@@ -810,13 +851,6 @@ try {
       return;
     }
 
-    if (filteredList.length > 20) {
-      const proceed = confirm(
-        `You are about to export ${filteredList.length} calendar entries. This will open multiple browser tabs. Do you want to continue?`
-      );
-      if (!proceed) return;
-    }
-
     // Group by similar classes to avoid duplicates
     const uniqueClasses = new Map<string, FlatRecord>();
 
@@ -828,22 +862,15 @@ try {
       }
     });
 
-    // Open Google Calendar for each unique class
-    let count = 0;
-    uniqueClasses.forEach((record) => {
-      setTimeout(() => {
-        const url = createGoogleCalendarUrl(record);
-        window.open(url, '_blank');
-      }, count * 500); // Delay to prevent browser blocking
-      count++;
-    });
+    // Generate and download .ics file
+    const uniqueRecords = Array.from(uniqueClasses.values());
+    const icsContent = generateICSFile(uniqueRecords);
+    const filename = `timetable-${new Date().toISOString().split('T')[0]}.ics`;
 
-    if (uniqueClasses.size === 1) {
-      // Single event
-    } else {
-      alert(
-        `Opening ${uniqueClasses.size} calendar entries. Please allow pop-ups if blocked.`
-      );
-    }
+    downloadICS(icsContent, filename);
+
+    alert(
+      `Exported ${uniqueClasses.size} class${uniqueClasses.size === 1 ? '' : 'es'} to ${filename}. You can import this file into Google Calendar, Apple Calendar, Outlook, or any other calendar application.`
+    );
   });
 </script>
