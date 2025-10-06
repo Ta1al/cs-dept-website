@@ -36,7 +36,7 @@ const isActive = (path: string): boolean => {
       </div>
 
       <!-- Navigation -->
-      <nav class="hidden lg:flex items-center space-x-6">
+      <nav class="hidden lg:flex items-center align-middle space-x-6">
         <a
           href="/"
           class={`transition-colors duration-200 relative group ${
@@ -80,7 +80,7 @@ const isActive = (path: string): boolean => {
             }`}></span>
         </a>
         <!-- Tools Dropdown -->
-        <div class="relative group">
+        <div class="relative group mr-1">
           <button
             class={`px-2 py-2 rounded-lg transition-all duration-200 flex items-center ${
               isActive('/tools')
@@ -148,7 +148,7 @@ const isActive = (path: string): boolean => {
         </div>
 
         <!-- Academics Dropdown -->
-        <div class="relative group">
+        <div class="relative group mr-1">
           <button
             class={`px-2 py-2 rounded-lg transition-all duration-200 flex items-center ${
               isActive('/academics')
