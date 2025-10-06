@@ -40,7 +40,7 @@ import '../../styles/global.css';
       <div class="container mx-auto px-6">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {
-            societies.map((society) => (
+            societies.filter((society) => !society.disabled).map((society) => (
               <a
                 href={society.link}
                 class={`group bg-gradient-to-br from-gray-800/50 to-gray-900/80 backdrop-blur-sm border border-gray-700 rounded-2xl p-8 transform hover:scale-105 transition-all duration-500 ${society.borderColor} cursor-pointer block`}

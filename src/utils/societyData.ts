@@ -9,6 +9,7 @@ export interface Society {
   accentColor: string;
   gradientFrom: string;
   gradientTo: string;
+  disabled?: boolean;
 }
 
 export const societies: Society[] = [
@@ -37,6 +38,7 @@ export const societies: Society[] = [
     accentColor: 'cyan',
     gradientFrom: 'from-cyan-400',
     gradientTo: 'to-teal-600',
+    disabled: true,
   },
   {
     id: 'ems',
@@ -49,6 +51,7 @@ export const societies: Society[] = [
     accentColor: 'red',
     gradientFrom: 'from-red-400',
     gradientTo: 'to-orange-600',
+    disabled: true,
   },
   {
     id: 'egaming',
@@ -61,6 +64,7 @@ export const societies: Society[] = [
     accentColor: 'blue',
     gradientFrom: 'from-blue-400',
     gradientTo: 'to-purple-600',
+    disabled: true,
   },
   {
     id: 'sports',
@@ -73,6 +77,7 @@ export const societies: Society[] = [
     accentColor: 'orange',
     gradientFrom: 'from-orange-400',
     gradientTo: 'to-yellow-600',
+    disabled: true,
   },
   {
     id: 'pas',
@@ -85,6 +90,7 @@ export const societies: Society[] = [
     accentColor: 'purple',
     gradientFrom: 'from-purple-400',
     gradientTo: 'to-pink-600',
+    disabled: true,
   },
   {
     id: 'blood-donation',
@@ -97,6 +103,7 @@ export const societies: Society[] = [
     accentColor: 'red',
     gradientFrom: 'from-red-400',
     gradientTo: 'to-pink-600',
+    disabled: true,
   },
 ];
 
