@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../../layouts/Layout.astro';
 import Header from '@components/layout/Header.astro';
 import Footer from '@components/layout/Footer.astro';
-import '../styles/global.css';
-import '../styles/timetable.css';
+import '../../styles/global.css';
+import '../../styles/timetable.css';
 import fs from 'node:fs';
 
 // Discover all JSON datasets in public/parsed at build time
-const parsedDir = new URL('../../public/parsed/', import.meta.url);
+const parsedDir = new URL('../../../public/parsed/', import.meta.url);
 let datasetFiles: string[] = [];
 let defaultDataset: string | null = null;
 try {
@@ -175,7 +175,7 @@ try {
 
 <script>
   // Re-bind imported utilities (Astro frontmatter imports are server-side; re-import for client script)
-  import { DAY_ORDER, to12, buildClassShort } from '../utils/timetableUtils';
+  import { DAY_ORDER, to12, buildClassShort } from '../../utils/timetableUtils';
   // --- Type Definitions ---
   interface RawEntry {
     combined_class: boolean | null;
