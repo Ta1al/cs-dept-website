@@ -390,105 +390,15 @@ const isActive = (path: string): boolean => {
           </div>
         </div>
 
-        <!-- Societies Dropdown -->
-        <div class="space-y-2">
-          <button
-            id="mobile-societies-toggle"
-            class="block w-full text-left bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-4 py-2 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-between"
-          >
-            Societies
-            <svg
-              id="mobile-dropdown-arrow"
-              class="w-4 h-4 ml-2 transform transition-transform duration-200"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div
-            id="mobile-societies-dropdown"
-            class="ml-4 space-y-2 hidden bg-gray-800/50 rounded-lg p-3 backdrop-blur-sm mt-2"
-          >
-            <a
-              href="/societies/ps"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/ps'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">Programming Society</div>
-            </a>
-            <a
-              href="/societies/cms"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/cms'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">Computing Media Society</div>
-            </a>
-            <a
-              href="/societies/egaming"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/egaming'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">E-Gaming Society</div>
-            </a>
-            <a
-              href="/societies/ems"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/ems'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">Event Management Society</div>
-            </a>
-            <a
-              href="/societies/pas"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/pas'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">Performing Arts Society</div>
-            </a>
-            <a
-              href="/societies/sports"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/sports'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">Sports Society</div>
-            </a>
-            <a
-              href="/societies/blood-donation"
-              class={`block px-3 py-2 rounded-lg transition-all duration-200 text-gray-400 hover:text-blue-400 hover:bg-blue-500/10 border-l-2 border-transparent hover:border-blue-400 ${
-                currentPath === '/societies/blood-donation'
-                  ? 'text-blue-400 bg-blue-500/10 border-l-2 border-blue-400'
-                  : ''
-              }`}
-            >
-              <div class="font-medium text-sm">
-                Blood Donation & Welfare Society
-              </div>
-            </a>
-          </div>
-        </div>
+        <!-- Societies Link -->
+        <a
+          href="/societies"
+          class={`block bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 px-4 py-2 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg text-center ${
+            isActive('/societies') ? 'from-blue-600 to-purple-700' : ''
+          }`}
+        >
+          Societies
+        </a>
       </div>
     </div>
   </nav>
@@ -503,16 +413,6 @@ const isActive = (path: string): boolean => {
       mobileMenu?.classList.toggle('hidden');
     });
 
-    // Handle mobile societies dropdown
-    const mobileSocietiesToggle = document.getElementById(
-      'mobile-societies-toggle'
-    );
-    const mobileSocietiesDropdown = document.getElementById(
-      'mobile-societies-dropdown'
-    );
-    const mobileDropdownArrow = document.getElementById(
-      'mobile-dropdown-arrow'
-    );
     // Tools mobile dropdown elements
     const mobileToolsToggle = document.getElementById('mobile-tools-toggle');
     const mobileToolsDropdown = document.getElementById(
@@ -531,11 +431,6 @@ const isActive = (path: string): boolean => {
     const mobileAcademicsDropdownArrow = document.getElementById(
       'mobile-academics-dropdown-arrow'
     );
-
-    mobileSocietiesToggle?.addEventListener('click', () => {
-      mobileSocietiesDropdown?.classList.toggle('hidden');
-      mobileDropdownArrow?.classList.toggle('rotate-180');
-    });
 
     mobileToolsToggle?.addEventListener('click', () => {
       mobileToolsDropdown?.classList.toggle('hidden');
