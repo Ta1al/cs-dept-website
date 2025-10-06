@@ -1,8 +1,8 @@
 ---
-title: Website under development!
-description: And it needs your help!
-publishDate: 2025-09-23T20:57:00.000+05:00
+title: Article Writers Needed!
+description: ""
+publishDate: 2025-10-06T12:46:00.000+05:00
 featured: true
 author: Ta1al
 ---
-[Got coding skills?](https://github.com/Ta1al/cs-dept-website/issues)
+We need writers to write articles about our department events. Contact Talal if you want to apply!
