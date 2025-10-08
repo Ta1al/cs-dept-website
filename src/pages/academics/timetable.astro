@@ -781,27 +781,12 @@ try {
     // Generate unique ID for this event
     const uid = `${record.course_code}-${record.day}-${record.start_time}-${Date.now()}@cs-dept.edu`;
 
-    // Create recurring event (weekly for a semester, approximately 16 weeks)
-    const rrule = 'FREQ=WEEKLY;COUNT=16';
-
     // Get current timestamp for DTSTAMP
     const now = new Date();
     const dtstamp = formatDateForICS(
       now,
       `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}`
     );
-
-    // Get day of week for BYDAY rule
-    const dayAbbreviations: Record<string, string> = {
-      Sunday: 'SU',
-      Monday: 'MO',
-      Tuesday: 'TU',
-      Wednesday: 'WE',
-      Thursday: 'TH',
-      Friday: 'FR',
-      Saturday: 'SA',
-    };
-    const byday = dayAbbreviations[record.day];
 
     return `BEGIN:VEVENT
 UID:${uid}
@@ -811,7 +796,6 @@ DTEND:${endTime}
 SUMMARY:${title}
 DESCRIPTION:${description}
 LOCATION:${location}
-RRULE:${rrule};BYDAY=${byday}
 STATUS:CONFIRMED
 SEQUENCE:0
 END:VEVENT`;
