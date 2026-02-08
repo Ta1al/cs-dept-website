@@ -3,8 +3,8 @@
     "Department of International Relations IKM CR-54": [
       {
         "combined_class": null,
-        "course_title": "Introduction to Marketing",
-        "course_code": "BUSB-6101",
+        "course_title": "Discrete Structures",
+        "course_code": "URCQ-5101",
         "course_truncated": false,
         "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
@@ -13,15 +13,15 @@
         "section": "Self Support 1",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Rao Naveed Iqbal",
+        "teacher_name": "Hijab Aqsa Akhtar",
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
         "practical": false,
         "raw_lines": [
-          "Introduction to Marketing #BUSB-6101",
+          "Discrete Structures #URCQ-5101",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Rao Naveed Iqbal (11:00 - 12:30)"
+          "Hijab Aqsa Akhtar (11:00 - 12:30)"
         ]
       },
       {
@@ -1873,25 +1873,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Discrete Structures",
-        "course_code": "URCQ-5101",
+        "course_title": "Application of Information & Communication Technologies",
+        "course_code": "URCG-…",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-        "program_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1…",
+        "program_truncated": true,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "section": "Self Support 1",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Hijab Aqsa Akhtar",
+        "teacher_name": "Nadeem Arif",
         "teacher_truncated": false,
         "start_time": "16:30",
         "end_time": "18:00",
         "practical": false,
         "raw_lines": [
-          "Discrete Structures #URCQ-5101",
-          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Hijab Aqsa Akhtar (16:30 - 18:00)"
+          "Application of Information & Communication Technologies #URCG-…",
+          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1…",
+          "Nadeem Arif (16:30 - 18:00)"
         ]
       },
       {
@@ -2555,25 +2555,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Application of Information & Communication Technologies",
-        "course_code": "URCG-…",
+        "course_title": "Introduction to Marketing",
+        "course_code": "BUSB-6101",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1…",
-        "program_truncated": true,
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
+        "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "section": "Self Support 1",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Nadeem Arif",
+        "teacher_name": "Rao Naveed Iqbal",
         "teacher_truncated": false,
         "start_time": "15:00",
         "end_time": "16:30",
         "practical": false,
         "raw_lines": [
-          "Application of Information & Communication Technologies #URCG-…",
-          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1…",
-          "Nadeem Arif (15:00 - 16:30)"
+          "Introduction to Marketing #BUSB-6101",
+          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
+          "Rao Naveed Iqbal (15:00 - 16:30)"
         ]
       },
       {
@@ -10432,25 +10432,25 @@
     "Department of Computer Science MAB CR- 161": [
       {
         "combined_class": null,
-        "course_title": "Programming Fundamentals",
-        "course_code": "CMPC-5201",
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1 …",
-        "program_truncated": true,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
+        "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "section": "Regular 1",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Aamir Zia",
+        "teacher_name": "Um-E-Rubab",
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:30",
         "practical": false,
         "raw_lines": [
-          "Programming Fundamentals #CMPC-5201",
-          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1 …",
-          "Aamir Zia (08:00 - 09:30)"
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
+          "Um-E-Rubab (08:00 - 09:30)"
         ]
       },
       {
@@ -10474,25 +10474,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Entrepreneurship",
-        "course_code": "BUSB-401",
+        "course_title": "Data Structures",
+        "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+        "program_truncated": true,
         "degree": "BS",
-        "program": "Computer Science",
+        "program": "Artificial Intelligence",
         "section": "Regular 1",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Ayesha Naz",
+        "session": "2025-2029",
+        "semester": 3,
+        "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          "Entrepreneurship #BUSB-401",
-          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-          "Ayesha Naz (09:30 - 11:00)"
+          "Data Structures #CMPC-5205",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+          "Aamir Zia (09:30 - 11:00)"
         ]
       },
       {
@@ -10770,25 +10770,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
+        "course_title": "Programming Fundamentals",
+        "course_code": "CMPC-5201",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
-        "program_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1 …",
+        "program_truncated": true,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "section": "Regular 1",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Um-E-Rubab",
+        "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
         "practical": false,
         "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
-          "Um-E-Rubab (11:00 - 12:30)"
+          "Programming Fundamentals #CMPC-5201",
+          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1 …",
+          "Aamir Zia (11:00 - 12:30)"
         ]
       },
       {
@@ -13074,25 +13074,25 @@
     "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
-        "course_title": "Data Structures",
-        "course_code": "CMPC-5205",
+        "course_title": "Entrepreneurship",
+        "course_code": "BUSB-401",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-        "program_truncated": true,
+        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+        "program_truncated": false,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 3,
-        "teacher_name": "Aamir Zia",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Ayesha Naz",
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          "Data Structures #CMPC-5205",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Aamir Zia (09:30 - 11:00)"
+          "Entrepreneurship #BUSB-401",
+          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+          "Ayesha Naz (09:30 - 11:00)"
         ]
       },
       {
