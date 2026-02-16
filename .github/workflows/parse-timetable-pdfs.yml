@@ -1,0 +1,98 @@
+name: Parse timetable PDFs
+
+on:
+  push:
+    paths:
+      - "public/pdfs/**"
+  pull_request:
+    paths:
+      - "public/pdfs/**"
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ghostscript
+
+      - name: Install Python dependencies
+        run: python -m pip install -r timetable-parser/requirements.txt
+
+      - name: Detect added PDFs
+        id: added
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BASE="${{ github.event.pull_request.base.sha }}"
+            HEAD="${{ github.event.pull_request.head.sha }}"
+          else
+            BASE="${{ github.event.before }}"
+            HEAD="${{ github.sha }}"
+          fi
+
+          if [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+            BASE=$(git rev-list --max-parents=0 "$HEAD")
+          fi
+
+          ADDED=$(git diff --name-status "$BASE" "$HEAD" -- "public/pdfs" | awk '$1=="A"{print $2}')
+
+          echo "added<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$ADDED" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Parse new PDFs
+        if: steps.added.outputs.added != ''
+        run: |
+          for pdf in ${{ steps.added.outputs.added }}; do
+            base=$(basename "$pdf" .pdf)
+            python timetable-parser/parse_timetable.py "$pdf" -o "public/parsed/$base.json" --keep-truncated
+          done
+
+      - name: Set up Bun
+        if: steps.added.outputs.added != ''
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.2.22"
+
+      - name: Cache Bun dependencies
+        if: steps.added.outputs.added != ''
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.bun/install/cache
+            node_modules
+          key: bun-${{ runner.os }}-${{ hashFiles('bun.lockb') }}
+          restore-keys: |
+            bun-${{ runner.os }}-
+
+      - name: Install dependencies
+        if: steps.added.outputs.added != ''
+        run: bun install
+
+      - name: Format repository
+        if: steps.added.outputs.added != ''
+        run: bun run format
+
+      - name: Commit parsed JSON
+        if: steps.added.outputs.added != '' && github.event_name == 'push'
+        run: |
+          if git status --porcelain public/parsed | grep -q .; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/parsed
+            git commit -m "chore: parse timetable PDFs"
+            git push
+          fi
