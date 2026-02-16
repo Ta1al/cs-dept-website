@@ -3,10 +3,10 @@ name: Parse timetable PDFs
 on:
   push:
     paths:
-      - "public/pdfs/**"
+      - 'public/pdfs/**'
   pull_request:
     paths:
-      - "public/pdfs/**"
+      - 'public/pdfs/**'
 
 jobs:
   parse:
@@ -22,7 +22,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.11'
 
       - name: Install system dependencies
         run: |
@@ -65,7 +65,7 @@ jobs:
         if: steps.added.outputs.added != ''
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: "1.2.22"
+          bun-version: '1.2.22'
 
       - name: Cache Bun dependencies
         if: steps.added.outputs.added != ''
