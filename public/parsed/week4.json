@@ -15,13 +15,13 @@
         "semester": 1,
         "teacher_name": "Hijab Aqsa Akhtar",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Hijab Aqsa Akhtar (09:00 - 10:00)"
+          "Hijab Aqsa Akhtar (08:00 - 09:00)"
         ]
       },
       {
@@ -38,13 +38,13 @@
         "semester": 2,
         "teacher_name": "Hooria Riaz",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Hooria Riaz (10:00 - 11:00)"
+          "Hooria Riaz (09:00 - 10:00)"
         ]
       },
       {
@@ -61,13 +61,13 @@
         "semester": 2,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Alishah Khan (11:00 - 12:00)"
+          "Alishah Khan (10:00 - 11:00)"
         ]
       },
       {
@@ -84,13 +84,13 @@
         "semester": 2,
         "teacher_name": "Farzeen Zainab",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Farzeen Zainab (12:00 - 13:00)"
+          "Farzeen Zainab (11:00 - 12:00)"
         ]
       }
     ],
@@ -109,13 +109,13 @@
         "semester": 1,
         "teacher_name": "Taimoor Ali Mehndi",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Functional English #URCG-5118",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Taimoor Ali Mehndi (08:00 - 09:00)"
+          "Taimoor Ali Mehndi (09:00 - 10:00)"
         ]
       },
       {
@@ -203,13 +203,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2 …",
-          "Muhammad Fahad (10:00 - 11:00)"
+          "Muhammad Fahad (11:20 - 12:20)"
         ]
       },
       {
@@ -226,13 +226,13 @@
         "semester": 2,
         "teacher_name": "MUHAMMAD RIZWAN ARIF",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "MUHAMMAD RIZWAN ARIF (11:00 - 12:00)"
+          "MUHAMMAD RIZWAN ARIF (12:20 - 13:20)"
         ]
       },
       {
@@ -249,13 +249,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "13:40",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
-          "Muhammad Fahad (12:00 - 13:00)"
+          "Muhammad Fahad (13:40 - 14:40)"
         ]
       },
       {
@@ -272,13 +272,13 @@
         "semester": 1,
         "teacher_name": "Anum Saleem",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "14:40",
+        "end_time": "15:40",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Anum Saleem (13:00 - 14:00)"
+          "Anum Saleem (14:40 - 15:40)"
         ]
       }
     ],
@@ -413,13 +413,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "13:20",
+        "end_time": "14:20",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Khadija Ilyas (13:00 - 14:00)"
+          "Khadija Ilyas (13:20 - 14:20)"
         ]
       }
     ],
@@ -507,13 +507,13 @@
         "semester": 1,
         "teacher_name": "Um-E-Rubab",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Mathematics I #URCM-5107",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
-          "Um-E-Rubab (11:20 - 12:20)"
+          "Um-E-Rubab (12:00 - 13:00)"
         ]
       },
       {
@@ -530,13 +530,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:20",
+        "start_time": "13:00",
+        "end_time": "14:00",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4 …",
-          "Muhammad Najeeb (12:20 - 13:20)"
+          "Muhammad Najeeb (13:00 - 14:00)"
         ]
       },
       {
@@ -553,13 +553,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
+        "start_time": "14:00",
+        "end_time": "15:00",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4 …",
-          "Muhammad Najeeb (13:20 - 14:20)"
+          "Muhammad Najeeb (14:00 - 15:00)"
         ]
       }
     ],
@@ -589,6 +589,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Object Oriented Programming",
+        "course_code": "CMPC-5202",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Umair Majeed",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Object Oriented Programming #CMPC-5202",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
+          "Umair Majeed (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Theory of Automata",
         "course_code": "CSDC-5101",
         "course_truncated": false,
@@ -601,13 +624,13 @@
         "semester": 4,
         "teacher_name": "Samreen Razzaq",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Theory of Automata #CSDC-5101",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
-          "Samreen Razzaq (09:00 - 10:00)"
+          "Samreen Razzaq (10:00 - 11:00)"
         ]
       },
       {
@@ -624,13 +647,13 @@
         "semester": 1,
         "teacher_name": "Um-E-Rubab",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
-          "Um-E-Rubab (10:00 - 11:00)"
+          "Um-E-Rubab (11:00 - 12:00)"
         ]
       },
       {
@@ -647,13 +670,13 @@
         "semester": 6,
         "teacher_name": "Samreen Razzaq",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Theory of Automata #CSCC-301",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Samreen Razzaq (11:00 - 12:00)"
+          "Samreen Razzaq (12:00 - 13:00)"
         ]
       },
       {
@@ -670,40 +693,40 @@
         "semester": 1,
         "teacher_name": "Umair Majeed",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Programming Fundamentals #CMPC-5201",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Umair Majeed (12:00 - 13:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Object Oriented Programming",
-        "course_code": "CMPC-5202",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Umair Majeed",
-        "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:00",
         "practical": false,
         "raw_lines": [
-          "Object Oriented Programming #CMPC-5202",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
+          "Programming Fundamentals #CMPC-5201",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
           "Umair Majeed (13:00 - 14:00)"
         ]
       }
     ],
     "Department of Computer Science MAB CR- 164": [
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSCC-301",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Samreen Razzaq",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Theory of Automata #CSCC-301",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
+          "Samreen Razzaq (08:00 - 09:00)"
+        ]
+      },
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -718,13 +741,13 @@
         "semester": 3,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Aamir Zia (08:00 - 09:00)"
+          "Aamir Zia (09:00 - 10:00)"
         ]
       },
       {
@@ -741,36 +764,13 @@
         "semester": 3,
         "teacher_name": "Mahnoor Safdar",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:20",
+        "end_time": "11:20",
         "practical": false,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Mahnoor Safdar (09:00 - 10:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Theory of Automata",
-        "course_code": "CSCC-301",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 1",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Samreen Razzaq",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Theory of Automata #CSCC-301",
-          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-          "Samreen Razzaq (10:00 - 11:00)"
+          "Mahnoor Safdar (10:20 - 11:20)"
         ]
       },
       {
@@ -787,13 +787,13 @@
         "semester": 6,
         "teacher_name": "Aqsa Fahim",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Computer Architecture #CSSC-305",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Aqsa Fahim (11:00 - 12:00)"
+          "Aqsa Fahim (11:20 - 12:20)"
         ]
       },
       {
@@ -810,13 +810,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Khadija Ilyas (12:00 - 13:00)"
+          "Khadija Ilyas (12:20 - 13:20)"
         ]
       },
       {
@@ -833,13 +833,13 @@
         "semester": 2,
         "teacher_name": "Rameen Iqbal",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "13:20",
+        "end_time": "14:20",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Rameen Iqbal (13:00 - 14:00)"
+          "Rameen Iqbal (13:20 - 14:20)"
         ]
       }
     ],
@@ -927,13 +927,13 @@
         "semester": 5,
         "teacher_name": "Mahnoor Safdar",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Object-Oriented Analysis and Design #CSSC-307",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
-          "Mahnoor Safdar (11:00 - 12:00)"
+          "Mahnoor Safdar (11:20 - 12:20)"
         ]
       },
       {
@@ -950,13 +950,13 @@
         "semester": 1,
         "teacher_name": "Khansa Saleem",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:20",
+        "start_time": "12:20",
+        "end_time": "13:40",
         "practical": false,
         "raw_lines": [
           "Application of Information & Communication Technologies #URCG-…",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Khansa Saleem (12:00 - 13:20)"
+          "Khansa Saleem (12:20 - 13:40)"
         ]
       },
       {
@@ -973,13 +973,13 @@
         "semester": 1,
         "teacher_name": "Ali haider",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
+        "start_time": "13:40",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1 …",
-          "Ali haider (13:20 - 14:20)"
+          "Ali haider (13:40 - 14:40)"
         ]
       }
     ],
@@ -1046,14 +1046,14 @@
         "semester": 2,
         "teacher_name": "Naeem Ullah Farooq",
         "teacher_truncated": false,
-        "start_time": "12:30",
-        "end_time": "14:00",
+        "start_time": "10:40",
+        "end_time": "12:10",
         "practical": false,
         "raw_lines": [
           "Combined (505)",
           "Understanding of Quran -II #URCG-5130",
           "PhD Computer Science Self Support 1 ( 2025-2028 ) Semester#2",
-          "Naeem Ullah Farooq (12:30 - 14:00)"
+          "Naeem Ullah Farooq (10:40 - 12:10)"
         ]
       }
     ],
@@ -1120,13 +1120,13 @@
         "semester": 8,
         "teacher_name": "Rafiullah Bilal",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Entrepreneurship #BUSB-401",
           "BS in Computer Science Self Support 1 ( 2022-2026 ) Semester#8",
-          "Rafiullah Bilal (10:00 - 11:00)"
+          "Rafiullah Bilal (09:00 - 10:00)"
         ]
       }
     ],
@@ -1145,13 +1145,13 @@
         "semester": 3,
         "teacher_name": "Rabia Parveen",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:20",
+        "start_time": "09:00",
+        "end_time": "10:20",
         "practical": false,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
-          "Rabia Parveen (10:00 - 11:20)"
+          "Rabia Parveen (09:00 - 10:20)"
         ]
       },
       {
@@ -1168,36 +1168,13 @@
         "semester": 2,
         "teacher_name": "Tahira Nawaz",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "10:20",
+        "end_time": "11:20",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2",
-          "Tahira Nawaz (13:00 - 14:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Entrepreneurship",
-        "course_code": "BUSB-401",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Ayesha Bhakhtawar",
-        "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
-        "practical": false,
-        "raw_lines": [
-          "Entrepreneurship #BUSB-401",
-          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-          "Ayesha Bhakhtawar (14:00 - 15:00)"
+          "Tahira Nawaz (10:20 - 11:20)"
         ]
       }
     ],
@@ -1216,13 +1193,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Zain Yousaf",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Multivariable Calculus #MATH-5101",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
-          "Muhammad Zain Yousaf (10:00 - 11:00)"
+          "Muhammad Zain Yousaf (09:00 - 10:00)"
         ]
       },
       {
@@ -1239,13 +1216,13 @@
         "semester": 2,
         "teacher_name": "Aqsa Saleem",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Aqsa Saleem (12:00 - 13:00)"
+          "Aqsa Saleem (10:00 - 11:00)"
         ]
       }
     ],
@@ -1264,13 +1241,59 @@
         "semester": 3,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
-          "Aamir Zia (09:00 - 10:00)"
+          "Aamir Zia (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Computer Architecture",
+        "course_code": "CSSC-305",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Aqsa Fahim",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Computer Architecture #CSSC-305",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+          "Aqsa Fahim (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Computer Architecture",
+        "course_code": "CSSC-305",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Aqsa Fahim",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Computer Architecture #CSSC-305",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
+          "Aqsa Fahim (10:00 - 11:00)"
         ]
       },
       {
@@ -1294,52 +1317,6 @@
           "Probability & Statistics #MATH-5103",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
           "Sidra Mustafa (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Computer Architecture",
-        "course_code": "CSSC-305",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Aqsa Fahim",
-        "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
-        "practical": false,
-        "raw_lines": [
-          "Computer Architecture #CSSC-305",
-          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Aqsa Fahim (13:00 - 14:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Computer Architecture",
-        "course_code": "CSSC-305",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 1",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Aqsa Fahim",
-        "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
-        "practical": false,
-        "raw_lines": [
-          "Computer Architecture #CSSC-305",
-          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-          "Aqsa Fahim (14:00 - 15:00)"
         ]
       }
     ],
@@ -1415,6 +1392,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Citizenship Education and Community Engagement",
+        "course_code": "URCC-5110",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Intizar Raza",
+        "teacher_truncated": false,
+        "start_time": "11:20",
+        "end_time": "12:20",
+        "practical": false,
+        "raw_lines": [
+          "Citizenship Education and Community Engagement #URCC-5110",
+          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+          "Intizar Raza (11:20 - 12:20)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Multivariable Calculus",
         "course_code": "MATH-5101",
         "course_truncated": false,
@@ -1427,13 +1427,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Zain Yousaf",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
+        "start_time": "14:00",
+        "end_time": "15:00",
         "practical": false,
         "raw_lines": [
           "Multivariable Calculus #MATH-5101",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Zain Yousaf (11:20 - 12:20)"
+          "Muhammad Zain Yousaf (14:00 - 15:00)"
         ]
       }
     ],
@@ -1475,13 +1475,13 @@
         "semester": 8,
         "teacher_name": "Bushra Syed Rasool",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Citizenship Education and Community Engagement #URCC-5110",
           "BS in Computer Science Self Support 1 ( 2022-2026 ) Semester#8",
-          "Bushra Syed Rasool (09:00 - 10:00)"
+          "Bushra Syed Rasool (10:00 - 11:00)"
         ]
       },
       {
@@ -1498,13 +1498,13 @@
         "semester": 4,
         "teacher_name": "Tehreem Mumtaz",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:20",
+        "start_time": "11:00",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Computer Architecture #CSDC-6202",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Tehreem Mumtaz (10:00 - 11:20)"
+          "Tehreem Mumtaz (11:00 - 12:20)"
         ]
       },
       {
@@ -1521,13 +1521,63 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:20",
+        "start_time": "12:20",
+        "end_time": "13:40",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
-          "Hadiqa Afzal (13:00 - 14:20)"
+          "Hadiqa Afzal (12:20 - 13:40)"
+        ]
+      }
+    ],
+    "Institute of Arts and Design JBN CR-199": [
+      {
+        "combined_class": null,
+        "course_title": "Entrepreneurship",
+        "course_code": "BUSB-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Ayesha Bhakhtawar",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Entrepreneurship #BUSB-401",
+          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+          "Ayesha Bhakhtawar (08:00 - 09:00)"
+        ]
+      }
+    ],
+    "Institute of Arts and Design JBN CR-209": [
+      {
+        "combined_class": null,
+        "course_title": "Probability & Statistics",
+        "course_code": "MATH-5103",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 4,
+        "teacher_name": "Sidra Mustafa",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Probability & Statistics #MATH-5103",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
+          "Sidra Mustafa (08:00 - 09:00)"
         ]
       }
     ],
@@ -1608,6 +1658,29 @@
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Ali haider",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Digital Logic Design #CMPC-5204",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
+          "Ali haider (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Logic Design",
+        "course_code": "CMPC-5204",
+        "course_truncated": false,
         "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2 …",
         "program_truncated": true,
         "degree": "BS",
@@ -1617,13 +1690,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (10:00 - 11:00)"
+          "Hadiqa Afzal (11:00 - 12:00)"
         ]
       },
       {
@@ -1640,13 +1713,13 @@
         "semester": 2,
         "teacher_name": "safia Batool",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2",
-          "safia Batool (11:00 - 12:00)"
+          "safia Batool (12:20 - 13:20)"
         ]
       },
       {
@@ -1663,36 +1736,13 @@
         "semester": 2,
         "teacher_name": "safia Batool",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "safia Batool (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Digital Logic Design",
-        "course_code": "CMPC-5204",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Ali haider",
-        "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Digital Logic Design #CMPC-5204",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-          "Ali haider (12:00 - 13:00)"
+          "safia Batool (12:20 - 13:20)"
         ]
       },
       {
@@ -1709,13 +1759,13 @@
         "semester": 6,
         "teacher_name": "Sabahat Sabir",
         "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
+        "start_time": "13:20",
+        "end_time": "14:20",
         "practical": false,
         "raw_lines": [
           "Semantic Web Techniques #CSEC-403",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Sabahat Sabir (14:00 - 15:00)"
+          "Sabahat Sabir (13:20 - 14:20)"
         ]
       }
     ],
@@ -1805,13 +1855,13 @@
         "semester": 3,
         "teacher_name": "Iqra Waheed",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Iqra Waheed (12:00 - 13:00)"
+          "Iqra Waheed (11:20 - 12:20)"
         ]
       }
     ],
@@ -1874,7 +1924,7 @@
         "section": "Self Support 2",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Arooge javed",
+        "teacher_name": "Tarim Masood",
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:00",
@@ -1882,7 +1932,7 @@
         "raw_lines": [
           "Functional English #URCG-5118",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Arooge javed (11:00 - 12:00)"
+          "Tarim Masood (11:00 - 12:00)"
         ]
       },
       {
@@ -1970,13 +2020,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (11:00 - 12:00)"
+          "Hadiqa Afzal (10:00 - 11:00)"
         ]
       }
     ],
@@ -2141,13 +2191,13 @@
         "semester": 1,
         "teacher_name": "Mahmood Ashraf",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "10:00",
+        "start_time": "09:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Understading of Holy Quran (1) URCG-5129 #URCG-5129",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Mahmood Ashraf (08:00 - 10:00)"
+          "Mahmood Ashraf (09:00 - 11:00)"
         ]
       }
     ],
@@ -2177,29 +2227,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Object Oriented Programming",
-        "course_code": "CMPC-5202",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Ms. Muzzamil Rani",
-        "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
-        "practical": false,
-        "raw_lines": [
-          "Object Oriented Programming #CMPC-5202",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Ms. Muzzamil Rani (09:00 - 10:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Expository Writing",
         "course_code": "URCG-5119",
         "course_truncated": false,
@@ -2212,13 +2239,36 @@
         "semester": 2,
         "teacher_name": "Faizan Ahmad",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Faizan Ahmad (10:00 - 11:00)"
+          "Faizan Ahmad (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Object Oriented Programming",
+        "course_code": "CMPC-5202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Ms. Muzzamil Rani",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Object Oriented Programming #CMPC-5202",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
+          "Ms. Muzzamil Rani (10:00 - 11:00)"
         ]
       },
       {
@@ -2386,25 +2436,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
+        "course_title": "Professional Practice",
+        "course_code": "CSSC-402",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
         "program_truncated": false,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Maryam Bashir",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Muddassar Ali Zaidi",
         "teacher_truncated": false,
         "start_time": "12:00",
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Maryam Bashir (12:00 - 13:00)"
+          "Professional Practice #CSSC-402",
+          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+          "Muddassar Ali Zaidi (12:00 - 13:00)"
         ]
       },
       {
@@ -2470,13 +2520,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2 …",
-          "Muhammad Fahad (09:00 - 10:00)"
+          "Muhammad Fahad (10:00 - 11:00)"
         ]
       },
       {
@@ -2493,13 +2543,13 @@
         "semester": 3,
         "teacher_name": "Muddassar Ali Zaidi",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
-          "Muddassar Ali Zaidi (10:00 - 11:00)"
+          "Muddassar Ali Zaidi (11:00 - 12:00)"
         ]
       },
       {
@@ -2516,13 +2566,13 @@
         "semester": 4,
         "teacher_name": "Samreen Razzaq",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Theory of Automata #CSDC-5101",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Samreen Razzaq (11:00 - 12:00)"
+          "Samreen Razzaq (12:20 - 13:20)"
         ]
       },
       {
@@ -2539,13 +2589,13 @@
         "semester": 2,
         "teacher_name": "Dr Hussam Ali",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "14:00",
+        "start_time": "13:20",
+        "end_time": "15:20",
         "practical": false,
         "raw_lines": [
           "Computer Vision #AIEC-7409",
           "MS Artificial Intelligence Self Support 1 ( 2025-2027 ) Semester#2",
-          "Dr Hussam Ali (12:00 - 14:00)"
+          "Dr Hussam Ali (13:20 - 15:20)"
         ]
       }
     ],
@@ -2622,29 +2672,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Web systems Technologies",
-        "course_code": "CSEC-301",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2024-2028",
-        "semester": 5,
-        "teacher_name": "Ali haider",
-        "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
-        "practical": false,
-        "raw_lines": [
-          "Web systems Technologies #CSEC-301",
-          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
-          "Ali haider (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Expository Writing",
         "course_code": "URCG-5119",
         "course_truncated": false,
@@ -2657,13 +2684,36 @@
         "semester": 2,
         "teacher_name": "Sana Mumtaz",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Sana Mumtaz (12:00 - 13:00)"
+          "Sana Mumtaz (11:00 - 12:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Web systems Technologies",
+        "course_code": "CSEC-301",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Ali haider",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "Web systems Technologies #CSEC-301",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Ali haider (12:00 - 13:00)"
         ]
       },
       {
@@ -2762,6 +2812,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CSCC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Rabia Parveen",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          "Artificial Intelligence #CSCC-302",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+          "Rabia Parveen (11:00 - 12:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Information Security",
         "course_code": "CMPC-302",
         "course_truncated": false,
@@ -2774,13 +2847,13 @@
         "semester": 6,
         "teacher_name": "Farooq Javed",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Information Security #CMPC-302",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Farooq Javed (11:00 - 12:00)"
+          "Farooq Javed (12:20 - 13:20)"
         ]
       },
       {
@@ -2797,63 +2870,17 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:20",
+        "start_time": "13:20",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Muhammad Najeeb (12:00 - 13:20)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Artificial Intelligence",
-        "course_code": "CSCC-302",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Rabia Parveen",
-        "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
-        "practical": false,
-        "raw_lines": [
-          "Artificial Intelligence #CSCC-302",
-          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Rabia Parveen (13:20 - 14:20)"
+          "Muhammad Najeeb (13:20 - 14:40)"
         ]
       }
     ],
     "Department of Computer Science MAB CR- 165": [
-      {
-        "combined_class": null,
-        "course_title": "Database Systems",
-        "course_code": "CMPC-5203",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 3,
-        "teacher_name": "Aqsa Fahim",
-        "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
-        "practical": false,
-        "raw_lines": [
-          "Database Systems #CMPC-5203",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
-          "Aqsa Fahim (08:00 - 09:00)"
-        ]
-      },
       {
         "combined_class": null,
         "course_title": "Mathematics-II",
@@ -2868,59 +2895,36 @@
         "semester": 2,
         "teacher_name": "safia Batool",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
-          "safia Batool (09:00 - 10:00)"
+          "safia Batool (08:00 - 09:00)"
         ]
       },
       {
         "combined_class": null,
-        "course_title": "Internet Architecture and Protocols",
-        "course_code": "CSSC-306",
+        "course_title": "Database Systems",
+        "course_code": "CMPC-5203",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
         "section": "Regular 1",
-        "session": "2024-2028",
-        "semester": 5,
-        "teacher_name": "Sana Sarfraz",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Internet Architecture and Protocols #CSSC-306",
-          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
-          "Sana Sarfraz (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Artificial Intelligence",
-        "course_code": "CMPC-5207",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Regular 1",
         "session": "2025-2029",
         "semester": 3,
-        "teacher_name": "Sabahat Sabir",
+        "teacher_name": "Aqsa Fahim",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
-          "Artificial Intelligence #CMPC-5207",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Sabahat Sabir (11:00 - 12:00)"
+          "Database Systems #CMPC-5203",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Aqsa Fahim (09:00 - 10:00)"
         ]
       },
       {
@@ -2937,13 +2941,59 @@
         "semester": 2,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Alishah Khan (12:00 - 13:00)"
+          "Alishah Khan (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Internet Architecture and Protocols",
+        "course_code": "CSSC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Sana Sarfraz",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          "Internet Architecture and Protocols #CSSC-306",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Sana Sarfraz (11:00 - 12:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CMPC-5207",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 3,
+        "teacher_name": "Sabahat Sabir",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "Artificial Intelligence #CMPC-5207",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+          "Sabahat Sabir (12:00 - 13:00)"
         ]
       },
       {
@@ -2985,13 +3035,13 @@
         "semester": 2,
         "teacher_name": "Ms. Muzzamil Rani",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2…",
-          "Ms. Muzzamil Rani (10:00 - 11:00)"
+          "Ms. Muzzamil Rani (09:00 - 10:00)"
         ]
       }
     ],
@@ -3126,29 +3176,6 @@
         "course_title": "Mathematics I",
         "course_code": "URCM-5107",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 2",
-        "session": "2026-2030",
-        "semester": 1,
-        "teacher_name": "Tooba Shafique",
-        "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
-        "practical": false,
-        "raw_lines": [
-          "Mathematics I #URCM-5107",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Tooba Shafique (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Mathematics I",
-        "course_code": "URCM-5107",
-        "course_truncated": false,
         "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
         "degree": "BS",
@@ -3158,13 +3185,36 @@
         "semester": 1,
         "teacher_name": "Tooba Shafique",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Mathematics I #URCM-5107",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Tooba Shafique (12:00 - 13:00)"
+          "Tooba Shafique (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Mathematics I",
+        "course_code": "URCM-5107",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 2",
+        "session": "2026-2030",
+        "semester": 1,
+        "teacher_name": "Tooba Shafique",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Mathematics I #URCM-5107",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
+          "Tooba Shafique (08:00 - 09:00)"
         ]
       },
       {
@@ -3181,13 +3231,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Muhammad Fahad (14:00 - 15:00)"
+          "Muhammad Fahad (11:00 - 12:00)"
         ]
       }
     ],
@@ -3229,13 +3279,13 @@
         "semester": 2,
         "teacher_name": "Rameen Iqbal",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Rameen Iqbal (09:00 - 10:00)"
+          "Rameen Iqbal (11:00 - 12:00)"
         ]
       },
       {
@@ -3252,13 +3302,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:40",
+        "start_time": "12:00",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Najeeb (13:20 - 14:40)"
+          "Muhammad Najeeb (12:00 - 13:20)"
         ]
       }
     ],
@@ -3277,13 +3327,36 @@
         "semester": 6,
         "teacher_name": "Aqsa Fahim",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Computer Architecture #CSSC-305",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Aqsa Fahim (09:00 - 10:00)"
+          "Aqsa Fahim (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Maryam Bashir",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+          "Maryam Bashir (10:00 - 11:00)"
         ]
       },
       {
@@ -3300,13 +3373,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Khadija Ilyas (10:00 - 11:00)"
+          "Khadija Ilyas (12:00 - 13:00)"
         ]
       }
     ],
@@ -3325,13 +3398,13 @@
         "semester": 3,
         "teacher_name": "Rabia Parveen",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Rabia Parveen (09:00 - 10:00)"
+          "Rabia Parveen (08:00 - 09:00)"
         ]
       },
       {
@@ -3348,13 +3421,13 @@
         "semester": 1,
         "teacher_name": "Tooba Shafique",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Tooba Shafique (10:00 - 11:00)"
+          "Tooba Shafique (09:00 - 10:00)"
         ]
       },
       {
@@ -3465,13 +3538,13 @@
         "semester": 6,
         "teacher_name": "Arooba Sultan Tiwana",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6 …",
-          "Arooba Sultan Tiwana (09:00 - 10:00)"
+          "Arooba Sultan Tiwana (10:00 - 11:00)"
         ]
       }
     ],
@@ -3490,13 +3563,13 @@
         "semester": 1,
         "teacher_name": "Mamoona Islam",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Understading of Holy Quran (1) URCG-5129 #URCG-5129",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Mamoona Islam (10:00 - 11:00)"
+          "Mamoona Islam (09:00 - 10:00)"
         ]
       }
     ],
@@ -3515,13 +3588,13 @@
         "semester": 6,
         "teacher_name": "Sabahat Sabir",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Semantic Web Techniques #CSEC-403",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-          "Sabahat Sabir (10:00 - 11:00)"
+          "Sabahat Sabir (09:00 - 10:00)"
         ]
       }
     ],
@@ -3565,13 +3638,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:20",
+        "start_time": "09:00",
+        "end_time": "10:20",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Hadiqa Afzal (10:00 - 11:20)"
+          "Hadiqa Afzal (09:00 - 10:20)"
         ]
       }
     ],
@@ -3601,6 +3674,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Multivariable Calculus",
+        "course_code": "MATH-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 4,
+        "teacher_name": "Muhammad Zain Yousaf",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Multivariable Calculus #MATH-5101",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+          "Muhammad Zain Yousaf (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
@@ -3613,13 +3709,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:20",
+        "end_time": "11:20",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (09:00 - 10:00)"
+          "Hadiqa Afzal (10:20 - 11:20)"
         ]
       },
       {
@@ -3636,13 +3732,13 @@
         "semester": 6,
         "teacher_name": "Samreen Razzaq",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Theory of Automata #CSCC-301",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Samreen Razzaq (10:00 - 11:00)"
+          "Samreen Razzaq (11:20 - 12:20)"
         ]
       },
       {
@@ -3659,37 +3755,14 @@
         "semester": 2,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "Practical",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Ayesha Kausar (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Multivariable Calculus",
-        "course_code": "MATH-5101",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2024-2028",
-        "semester": 4,
-        "teacher_name": "Muhammad Zain Yousaf",
-        "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Multivariable Calculus #MATH-5101",
-          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Zain Yousaf (12:00 - 13:00)"
+          "Ayesha Kausar (12:20 - 13:20)"
         ]
       },
       {
@@ -3706,13 +3779,13 @@
         "semester": 2,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:20",
+        "start_time": "13:20",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Ayesha Kausar (13:00 - 14:20)"
+          "Ayesha Kausar (13:20 - 14:40)"
         ]
       }
     ],
@@ -3825,13 +3898,13 @@
         "semester": 2,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2 …",
-          "Ayesha Kausar (10:00 - 11:00)"
+          "Ayesha Kausar (09:00 - 10:00)"
         ]
       },
       {
@@ -3848,13 +3921,13 @@
         "semester": 3,
         "teacher_name": "Sana Sarfraz",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Sana Sarfraz (12:00 - 13:00)"
+          "Sana Sarfraz (10:00 - 11:00)"
         ]
       },
       {
@@ -3871,13 +3944,13 @@
         "semester": 2,
         "teacher_name": "Hadia Khalid Mehmood",
         "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Hadia Khalid Mehmood (14:00 - 15:00)"
+          "Hadia Khalid Mehmood (11:00 - 12:00)"
         ]
       }
     ],
@@ -3919,13 +3992,13 @@
         "semester": 1,
         "teacher_name": "Ayesha Mahmood",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Ayesha Mahmood (09:00 - 10:00)"
+          "Ayesha Mahmood (10:00 - 11:00)"
         ]
       },
       {
@@ -3942,13 +4015,13 @@
         "semester": 2,
         "teacher_name": "Dr. Hafiz Muhammad Faisal Shehzad",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "12:00",
+        "start_time": "11:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Digital Image Processing #CSEC-718",
           "MS Computer Science Self Support 1 ( 2025-2027 ) Semester#2",
-          "Dr. Hafiz Muhammad Faisal Shehzad (10:00 - 12:00)"
+          "Dr. Hafiz Muhammad Faisal Shehzad (11:00 - 13:00)"
         ]
       }
     ],
@@ -3990,13 +4063,13 @@
         "semester": 1,
         "teacher_name": "Farooq Javed",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "14:00",
+        "start_time": "10:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Research Methodology #AIEC-7402",
           "MS Artificial Intelligence Self Support 1 ( 2026-2029 ) Semester#1",
-          "Farooq Javed (12:00 - 14:00)"
+          "Farooq Javed (10:00 - 12:00)"
         ]
       }
     ],
@@ -4033,29 +4106,6 @@
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Hadiqa Afzal",
-        "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:20",
-        "practical": false,
-        "raw_lines": [
-          "Digital Logic Design #CMPC-5204",
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Hadiqa Afzal (08:00 - 09:20)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Digital Logic Design",
-        "course_code": "CMPC-5204",
-        "course_truncated": false,
         "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
         "program_truncated": true,
         "degree": "BS",
@@ -4065,13 +4115,36 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "09:20",
-        "end_time": "10:20",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (09:20 - 10:20)"
+          "Hadiqa Afzal (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Logic Design",
+        "course_code": "CMPC-5204",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Hadiqa Afzal",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:20",
+        "practical": false,
+        "raw_lines": [
+          "Digital Logic Design #CMPC-5204",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
+          "Hadiqa Afzal (10:00 - 11:20)"
         ]
       }
     ],
@@ -4090,13 +4163,13 @@
         "semester": 2,
         "teacher_name": "Ms. Muzzamil Rani",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2…",
-          "Ms. Muzzamil Rani (12:00 - 13:00)"
+          "Ms. Muzzamil Rani (10:00 - 11:00)"
         ]
       }
     ],
@@ -4115,13 +4188,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Khadija Ilyas (09:00 - 10:00)"
+          "Khadija Ilyas (10:00 - 11:00)"
         ]
       }
     ],
@@ -4165,13 +4238,13 @@
         "semester": 2,
         "teacher_name": "Aqsa Saleem",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Aqsa Saleem (08:00 - 09:00)"
+          "Aqsa Saleem (09:00 - 10:00)"
         ]
       },
       {
@@ -4188,13 +4261,13 @@
         "semester": 4,
         "teacher_name": "Sidra Mustafa",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Probability & Statistics #MATH-5103",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Sidra Mustafa (09:00 - 10:00)"
+          "Sidra Mustafa (10:00 - 11:00)"
         ]
       }
     ],
@@ -4294,29 +4367,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Object Oriented Programming",
-        "course_code": "CMPC-5202",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Umair Majeed",
-        "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:20",
-        "practical": false,
-        "raw_lines": [
-          "Object Oriented Programming #CMPC-5202",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Umair Majeed (12:20 - 13:20)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Programming Fundamentals",
         "course_code": "CMPC-5201",
         "course_truncated": false,
@@ -4329,13 +4379,36 @@
         "semester": 1,
         "teacher_name": "Umair Majeed",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
-          "Umair Majeed (13:20 - 14:20)"
+          "Umair Majeed (12:00 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Object Oriented Programming",
+        "course_code": "CMPC-5202",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Umair Majeed",
+        "teacher_truncated": false,
+        "start_time": "13:50",
+        "end_time": "14:50",
+        "practical": false,
+        "raw_lines": [
+          "Object Oriented Programming #CMPC-5202",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+          "Umair Majeed (13:50 - 14:50)"
         ]
       }
     ],
@@ -4365,29 +4438,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Digital Logic Design",
-        "course_code": "CMPC-5204",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Ayesha Kausar",
-        "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:20",
-        "practical": false,
-        "raw_lines": [
-          "Digital Logic Design #CMPC-5204",
-          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Ayesha Kausar (09:00 - 10:20)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Calculus & Analytical Geometry",
         "course_code": "URCQ-5102",
         "course_truncated": false,
@@ -4400,13 +4450,13 @@
         "semester": 2,
         "teacher_name": "Hooria Riaz",
         "teacher_truncated": false,
-        "start_time": "10:20",
-        "end_time": "11:20",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Hooria Riaz (10:20 - 11:20)"
+          "Hooria Riaz (09:00 - 10:00)"
         ]
       },
       {
@@ -4423,13 +4473,36 @@
         "semester": 2,
         "teacher_name": "Tahira Nawaz",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Tahira Nawaz (11:20 - 12:20)"
+          "Tahira Nawaz (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Logic Design",
+        "course_code": "CMPC-5204",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Ayesha Kausar",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:20",
+        "practical": false,
+        "raw_lines": [
+          "Digital Logic Design #CMPC-5204",
+          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
+          "Ayesha Kausar (11:00 - 12:20)"
         ]
       },
       {
@@ -4528,6 +4601,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Probability & Statistics",
+        "course_code": "MATH-5103",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 4,
+        "teacher_name": "Muhammad Habib",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Probability & Statistics #MATH-5103",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+          "Muhammad Habib (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Object Oriented Programming",
         "course_code": "CMPC-5202",
         "course_truncated": false,
@@ -4540,13 +4636,13 @@
         "semester": 2,
         "teacher_name": "Ms. Muzzamil Rani",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#2",
-          "Ms. Muzzamil Rani (10:00 - 11:00)"
+          "Ms. Muzzamil Rani (11:00 - 12:00)"
         ]
       },
       {
@@ -4563,36 +4659,13 @@
         "semester": 2,
         "teacher_name": "Rameen Iqbal",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Rameen Iqbal (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Probability & Statistics",
-        "course_code": "MATH-5103",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2024-2028",
-        "semester": 4,
-        "teacher_name": "Muhammad Habib",
-        "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
-        "practical": false,
-        "raw_lines": [
-          "Probability & Statistics #MATH-5103",
-          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Habib (13:00 - 14:00)"
+          "Rameen Iqbal (12:00 - 13:00)"
         ]
       }
     ],
@@ -4843,13 +4916,13 @@
         "semester": 6,
         "teacher_name": "Farooq Javed",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Information Security #CMPC-302",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-          "Farooq Javed (13:00 - 14:00)"
+          "Farooq Javed (12:20 - 13:20)"
         ]
       }
     ],
@@ -4891,13 +4964,13 @@
         "semester": 3,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:20",
+        "end_time": "11:20",
         "practical": false,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
-          "Aamir Zia (09:00 - 10:00)"
+          "Aamir Zia (10:20 - 11:20)"
         ]
       },
       {
@@ -4914,13 +4987,13 @@
         "semester": 5,
         "teacher_name": "Mahnoor Safdar",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Object-Oriented Analysis and Design #CSSC-307",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
-          "Mahnoor Safdar (10:00 - 11:00)"
+          "Mahnoor Safdar (11:20 - 12:20)"
         ]
       },
       {
@@ -4937,13 +5010,13 @@
         "semester": 6,
         "teacher_name": "Rabia Parveen",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Rabia Parveen (11:00 - 12:00)"
+          "Rabia Parveen (12:20 - 13:20)"
         ]
       },
       {
@@ -4960,13 +5033,13 @@
         "semester": 6,
         "teacher_name": "Memoona Ashraf",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "13:20",
+        "end_time": "14:20",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6",
-          "Memoona Ashraf (12:00 - 13:00)"
+          "Memoona Ashraf (13:20 - 14:20)"
         ]
       }
     ],
@@ -5010,14 +5083,14 @@
         "semester": 1,
         "teacher_name": "Faizan Ahmad",
         "teacher_truncated": false,
-        "start_time": "09:30",
-        "end_time": "11:00",
+        "start_time": "09:20",
+        "end_time": "10:50",
         "practical": false,
         "raw_lines": [
           "Combined (601)",
           "Functional English #URCG-5118",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Faizan Ahmad (09:30 - 11:00)"
+          "Faizan Ahmad (09:20 - 10:50)"
         ]
       }
     ],
@@ -5036,21 +5109,21 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "10:20",
-        "end_time": "11:20",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Khadija Ilyas (10:20 - 11:20)"
+          "Khadija Ilyas (09:00 - 10:00)"
         ]
       }
     ],
     "Department of Physics IAH CR- 181": [
       {
         "combined_class": null,
-        "course_title": "Functional English",
-        "course_code": "URCG-5118",
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
         "course_truncated": false,
         "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
@@ -5059,15 +5132,15 @@
         "section": "Self Support 2",
         "session": "2026-2030",
         "semester": 1,
-        "teacher_name": "Arooge javed",
+        "teacher_name": "Muhammad Abbas",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
-          "Functional English #URCG-5118",
+          "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Arooge javed (09:00 - 10:00)"
+          "Muhammad Abbas (08:00 - 09:00)"
         ]
       }
     ],
@@ -5134,13 +5207,13 @@
         "semester": 2,
         "teacher_name": "Maham Nageen",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Maham Nageen (09:00 - 10:00)"
+          "Maham Nageen (08:00 - 09:00)"
         ]
       },
       {
@@ -5157,13 +5230,13 @@
         "semester": 1,
         "teacher_name": "Anum Saleem",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "10:50",
+        "end_time": "11:50",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Anum Saleem (10:00 - 11:00)"
+          "Anum Saleem (10:50 - 11:50)"
         ]
       }
     ],
@@ -5228,40 +5301,17 @@
         "semester": 2,
         "teacher_name": "Ali haider",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
+        "start_time": "12:50",
+        "end_time": "13:50",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-          "Ali haider (13:20 - 14:20)"
+          "Ali haider (12:50 - 13:50)"
         ]
       }
     ],
     "Department of Physics IAH CR- 186": [
-      {
-        "combined_class": null,
-        "course_title": "Artificial Intelligence",
-        "course_code": "CMPC-5207",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 3,
-        "teacher_name": "Sabahat Sabir",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:20",
-        "practical": false,
-        "raw_lines": [
-          "Artificial Intelligence #CMPC-5207",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
-          "Sabahat Sabir (10:00 - 11:20)"
-        ]
-      },
       {
         "combined_class": null,
         "course_title": "Probability & Statistics",
@@ -5276,40 +5326,40 @@
         "semester": 4,
         "teacher_name": "Sidra Mustafa",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
-        "practical": false,
-        "raw_lines": [
-          "Probability & Statistics #MATH-5103",
-          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
-          "Sidra Mustafa (11:20 - 12:20)"
-        ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
-      {
-        "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 2",
-        "session": "2026-2030",
-        "semester": 1,
-        "teacher_name": "Muhammad Abbas",
-        "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:00",
         "practical": false,
         "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Muhammad Abbas (08:00 - 09:00)"
+          "Probability & Statistics #MATH-5103",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
+          "Sidra Mustafa (08:00 - 09:00)"
         ]
       },
+      {
+        "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CMPC-5207",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 3,
+        "teacher_name": "Sabahat Sabir",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:20",
+        "practical": false,
+        "raw_lines": [
+          "Artificial Intelligence #CMPC-5207",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+          "Sabahat Sabir (09:00 - 10:20)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "Applied Physics",
@@ -5324,13 +5374,36 @@
         "semester": 4,
         "teacher_name": "Sultan Mahmood Zangi",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Applied Physics #URCW-5201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Sultan Mahmood Zangi (10:00 - 11:00)"
+          "Sultan Mahmood Zangi (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Functional English",
+        "course_code": "URCG-5118",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 2",
+        "session": "2026-2030",
+        "semester": 1,
+        "teacher_name": "Tarim Masood",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Functional English #URCG-5118",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
+          "Tarim Masood (09:00 - 10:00)"
         ]
       }
     ],
@@ -5372,13 +5445,13 @@
         "semester": 2,
         "teacher_name": "Ali haider",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:20",
+        "start_time": "10:00",
+        "end_time": "11:20",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Ali haider (11:00 - 12:20)"
+          "Ali haider (10:00 - 11:20)"
         ]
       },
       {
@@ -5395,13 +5468,13 @@
         "semester": 1,
         "teacher_name": "Rao Naveed Iqbal",
         "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:20",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Introduction to Marketing #BUSB-6101",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Rao Naveed Iqbal (12:20 - 13:20)"
+          "Rao Naveed Iqbal (11:20 - 12:20)"
         ]
       }
     ],
@@ -5468,13 +5541,13 @@
         "semester": 2,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
-        "start_time": "10:20",
-        "end_time": "11:20",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2 …",
-          "Ayesha Kausar (10:20 - 11:20)"
+          "Ayesha Kausar (10:00 - 11:00)"
         ]
       }
     ],
@@ -5506,6 +5579,29 @@
     "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
+        "course_title": "Citizenship Education and Community Engagement",
+        "course_code": "URCC-5110",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Touqeer Abbas",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Citizenship Education and Community Engagement #URCC-5110",
+          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+          "Touqeer Abbas (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
@@ -5529,29 +5625,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Citizenship Education and Community Engagement",
-        "course_code": "URCC-5110",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Touqeer Abbas",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Citizenship Education and Community Engagement #URCC-5110",
-          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-          "Touqeer Abbas (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Programming Fundamentals",
         "course_code": "CMPC-5201",
         "course_truncated": false,
@@ -5564,13 +5637,13 @@
         "semester": 1,
         "teacher_name": "Ali haider",
         "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:20",
+        "start_time": "11:50",
+        "end_time": "12:50",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1 …",
-          "Ali haider (12:20 - 13:20)"
+          "Ali haider (11:50 - 12:50)"
         ]
       }
     ],
@@ -5688,13 +5761,13 @@
         "semester": 2,
         "teacher_name": "Shoaib Mehmood",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Shoaib Mehmood (09:00 - 10:00)"
+          "Shoaib Mehmood (08:00 - 09:00)"
         ]
       }
     ],
@@ -5727,6 +5800,29 @@
         "course_title": "Mathematics-II",
         "course_code": "URCM-5108",
         "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "MUHAMMAD RIZWAN ARIF",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Mathematics-II #URCM-5108",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+          "MUHAMMAD RIZWAN ARIF (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Mathematics-II",
+        "course_code": "URCM-5108",
+        "course_truncated": false,
         "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
@@ -5743,29 +5839,6 @@
           "Mathematics-II #URCM-5108",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
           "MUHAMMAD RIZWAN ARIF (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Mathematics-II",
-        "course_code": "URCM-5108",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "MUHAMMAD RIZWAN ARIF",
-        "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
-        "practical": false,
-        "raw_lines": [
-          "Mathematics-II #URCM-5108",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "MUHAMMAD RIZWAN ARIF (11:00 - 12:00)"
         ]
       }
     ],
@@ -5784,13 +5857,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (08:00 - 09:00)"
+          "Hadiqa Afzal (09:00 - 10:00)"
         ]
       }
     ],
@@ -6029,25 +6102,25 @@
       },
       {
         "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
+        "course_title": "Professional Practice",
+        "course_code": "CSSC-402",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
+        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
         "program_truncated": false,
         "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Maryam Bashir",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Muddassar Ali Zaidi",
         "teacher_truncated": false,
         "start_time": "12:00",
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
-          "Maryam Bashir (12:00 - 13:00)"
+          "Professional Practice #CSSC-402",
+          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
+          "Muddassar Ali Zaidi (12:00 - 13:00)"
         ]
       },
       {
@@ -6158,13 +6231,13 @@
         "semester": 2,
         "teacher_name": "Iqra Waheed",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "12:30",
+        "end_time": "13:30",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Iqra Waheed (12:00 - 13:00)"
+          "Iqra Waheed (12:30 - 13:30)"
         ]
       },
       {
@@ -6181,13 +6254,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "13:30",
+        "end_time": "14:30",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Khadija Ilyas (13:00 - 14:00)"
+          "Khadija Ilyas (13:30 - 14:30)"
         ]
       }
     ],
@@ -6217,6 +6290,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Object Oriented Programming",
+        "course_code": "CMPC-5202",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Khadija Ilyas",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Object Oriented Programming #CMPC-5202",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+          "Khadija Ilyas (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Artificial Intelligence",
         "course_code": "CSCC-302",
         "course_truncated": false,
@@ -6229,13 +6325,13 @@
         "semester": 6,
         "teacher_name": "Dr Muhammad Saad Razzaq",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Dr Muhammad Saad Razzaq (09:00 - 10:00)"
+          "Dr Muhammad Saad Razzaq (10:00 - 11:00)"
         ]
       },
       {
@@ -6252,13 +6348,13 @@
         "semester": 2,
         "teacher_name": "Dr. Hafiz Muhammad Faisal Shehzad",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Dr. Hafiz Muhammad Faisal Shehzad (10:00 - 11:00)"
+          "Dr. Hafiz Muhammad Faisal Shehzad (11:00 - 12:00)"
         ]
       },
       {
@@ -6275,36 +6371,13 @@
         "semester": 6,
         "teacher_name": "Arooba Sultan Tiwana",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
-        "practical": false,
-        "raw_lines": [
-          "Artificial Intelligence #CSCC-302",
-          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6 …",
-          "Arooba Sultan Tiwana (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Object Oriented Programming",
-        "course_code": "CMPC-5202",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Khadija Ilyas",
-        "teacher_truncated": false,
         "start_time": "12:00",
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          "Object Oriented Programming #CMPC-5202",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Khadija Ilyas (12:00 - 13:00)"
+          "Artificial Intelligence #CSCC-302",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6 …",
+          "Arooba Sultan Tiwana (12:00 - 13:00)"
         ]
       },
       {
@@ -6321,13 +6394,13 @@
         "semester": 1,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "13:40",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Alishah Khan (13:00 - 14:00)"
+          "Alishah Khan (13:40 - 14:40)"
         ]
       }
     ],
@@ -6346,13 +6419,13 @@
         "semester": 6,
         "teacher_name": "Sabahat Sabir",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Semantic Web Techniques #CSEC-403",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Sabahat Sabir (08:00 - 09:00)"
+          "Sabahat Sabir (09:00 - 10:00)"
         ]
       },
       {
@@ -6369,13 +6442,13 @@
         "semester": 4,
         "teacher_name": "Arooba Sultan Tiwana",
         "teacher_truncated": false,
-        "start_time": "09:20",
-        "end_time": "10:20",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4 …",
-          "Arooba Sultan Tiwana (09:20 - 10:20)"
+          "Arooba Sultan Tiwana (10:00 - 11:00)"
         ]
       },
       {
@@ -6392,13 +6465,13 @@
         "semester": 3,
         "teacher_name": "Memoona Ashraf",
         "teacher_truncated": false,
-        "start_time": "10:20",
-        "end_time": "11:20",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Memoona Ashraf (10:20 - 11:20)"
+          "Memoona Ashraf (11:00 - 12:00)"
         ]
       },
       {
@@ -6415,13 +6488,13 @@
         "semester": 4,
         "teacher_name": "Shazia Jabeen",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:00",
+        "start_time": "12:00",
+        "end_time": "12:40",
         "practical": false,
         "raw_lines": [
           "Al Quran-III #URCQ-5111",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
-          "Shazia Jabeen (11:20 - 12:00)"
+          "Shazia Jabeen (12:00 - 12:40)"
         ]
       },
       {
@@ -6438,13 +6511,13 @@
         "semester": 1,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "12:40",
+        "end_time": "13:40",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Alishah Khan (12:00 - 13:00)"
+          "Alishah Khan (12:40 - 13:40)"
         ]
       },
       {
@@ -6461,13 +6534,13 @@
         "semester": 2,
         "teacher_name": "Umair Majeed",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "13:40",
+        "end_time": "14:40",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-          "Umair Majeed (13:00 - 14:00)"
+          "Umair Majeed (13:40 - 14:40)"
         ]
       }
     ],
@@ -6520,29 +6593,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Data Mining",
-        "course_code": "CSEC-407",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Dr Muhammad Saad Razzaq",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Data Mining #CSEC-407",
-          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-          "Dr Muhammad Saad Razzaq (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Professional Practice",
         "course_code": "CSSC-402",
         "course_truncated": false,
@@ -6555,13 +6605,36 @@
         "semester": 8,
         "teacher_name": "Muddassar Ali Zaidi",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Professional Practice #CSSC-402",
           "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
-          "Muddassar Ali Zaidi (11:00 - 12:00)"
+          "Muddassar Ali Zaidi (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Data Mining",
+        "course_code": "CSEC-407",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2022-2026",
+        "semester": 8,
+        "teacher_name": "Dr Muhammad Saad Razzaq",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          "Data Mining #CSEC-407",
+          "BS in Computer Science Regular 1 ( 2022-2026 ) Semester#8",
+          "Dr Muhammad Saad Razzaq (11:00 - 12:00)"
         ]
       },
       {
@@ -6603,13 +6676,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2…",
-          "Hadiqa Afzal (09:00 - 10:00)"
+          "Hadiqa Afzal (08:00 - 09:00)"
         ]
       }
     ],
@@ -6676,13 +6749,13 @@
         "semester": 4,
         "teacher_name": "Tehreem Mumtaz",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Computer Architecture #CSDC-6202",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4 …",
-          "Tehreem Mumtaz (09:00 - 10:00)"
+          "Tehreem Mumtaz (08:00 - 09:00)"
         ]
       },
       {
@@ -6724,36 +6797,13 @@
         "semester": 6,
         "teacher_name": "Samreen Razzaq",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Theory of Automata #CSCC-301",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Samreen Razzaq (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Computer Networks",
-        "course_code": "CMPC-5208",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 3,
-        "teacher_name": "Sana Sarfraz",
-        "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Computer Networks #CMPC-5208",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
-          "Sana Sarfraz (12:00 - 13:00)"
+          "Samreen Razzaq (08:00 - 09:00)"
         ]
       },
       {
@@ -6770,13 +6820,36 @@
         "semester": 1,
         "teacher_name": "Muhammad Ahmed",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Introduction to Marketing #BUSB-6101",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Muhammad Ahmed (13:00 - 14:00)"
+          "Muhammad Ahmed (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Computer Networks",
+        "course_code": "CMPC-5208",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 3,
+        "teacher_name": "Sana Sarfraz",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          "Computer Networks #CMPC-5208",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+          "Sana Sarfraz (11:00 - 12:00)"
         ]
       },
       {
@@ -6793,13 +6866,13 @@
         "semester": 1,
         "teacher_name": "Anum Saleem",
         "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Anum Saleem (14:00 - 15:00)"
+          "Anum Saleem (12:00 - 13:00)"
         ]
       }
     ],
@@ -6818,13 +6891,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2…",
-          "Muhammad Fahad (09:00 - 10:00)"
+          "Muhammad Fahad (08:00 - 09:00)"
         ]
       },
       {
@@ -6841,13 +6914,13 @@
         "semester": 2,
         "teacher_name": "Iqra Waheed",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "10:30",
+        "end_time": "11:30",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Iqra Waheed (11:00 - 12:00)"
+          "Iqra Waheed (10:30 - 11:30)"
         ]
       }
     ],
@@ -6889,13 +6962,13 @@
         "semester": 2,
         "teacher_name": "Muhammad Fahad",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
-          "Muhammad Fahad (10:00 - 11:00)"
+          "Muhammad Fahad (09:00 - 10:00)"
         ]
       },
       {
@@ -6912,63 +6985,17 @@
         "semester": 2,
         "teacher_name": "Dr Fahad Maqbool",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Special topics in Grammar Engineering #CSEC-802",
           "PhD Computer Science Self Support 1 ( 2025-2028 ) Semester#2",
-          "Dr Fahad Maqbool (11:00 - 13:00)"
+          "Dr Fahad Maqbool (10:00 - 12:00)"
         ]
       }
     ],
     "Department of Physics IAH CR- 187": [
-      {
-        "combined_class": null,
-        "course_title": "Database Systems",
-        "course_code": "CMPC-5203",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Iqra Waheed",
-        "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
-        "practical": false,
-        "raw_lines": [
-          "Database Systems #CMPC-5203",
-          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Iqra Waheed (09:00 - 10:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Professional Practice",
-        "course_code": "CSSC-402",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Muddassar Ali Zaidi",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Professional Practice #CSSC-402",
-          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-          "Muddassar Ali Zaidi (10:00 - 11:00)"
-        ]
-      },
       {
         "combined_class": null,
         "course_title": "Professional Practice",
@@ -6983,13 +7010,59 @@
         "semester": 8,
         "teacher_name": "Muddassar Ali Zaidi",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Professional Practice #CSSC-402",
           "BS in Computer Science Self Support 1 ( 2022-2026 ) Semester#8",
-          "Muddassar Ali Zaidi (13:00 - 14:00)"
+          "Muddassar Ali Zaidi (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Database Systems",
+        "course_code": "CMPC-5203",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Iqra Waheed",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "10:30",
+        "practical": false,
+        "raw_lines": [
+          "Database Systems #CMPC-5203",
+          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#2",
+          "Iqra Waheed (09:30 - 10:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Maryam Bashir",
+        "teacher_truncated": false,
+        "start_time": "10:30",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#2",
+          "Maryam Bashir (10:30 - 11:30)"
         ]
       }
     ],
@@ -7022,6 +7095,29 @@
         "course_title": "Mathematics-II",
         "course_code": "URCM-5108",
         "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Hadia Khalid Mehmood",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          "Mathematics-II #URCM-5108",
+          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
+          "Hadia Khalid Mehmood (11:30 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Mathematics-II",
+        "course_code": "URCM-5108",
+        "course_truncated": false,
         "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
@@ -7031,13 +7127,13 @@
         "semester": 2,
         "teacher_name": "Hadia Khalid Mehmood",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:30",
+        "end_time": "12:30",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Hadia Khalid Mehmood (12:00 - 13:00)"
+          "Hadia Khalid Mehmood (11:30 - 12:30)"
         ]
       },
       {
@@ -7054,36 +7150,13 @@
         "semester": 2,
         "teacher_name": "Rameen Iqbal",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "12:30",
+        "end_time": "13:30",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Rameen Iqbal (13:00 - 14:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Mathematics-II",
-        "course_code": "URCM-5108",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Hadia Khalid Mehmood",
-        "teacher_truncated": false,
-        "start_time": "13:40",
-        "end_time": "14:40",
-        "practical": false,
-        "raw_lines": [
-          "Mathematics-II #URCM-5108",
-          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Hadia Khalid Mehmood (13:40 - 14:40)"
+          "Rameen Iqbal (12:30 - 13:30)"
         ]
       }
     ],
@@ -7150,13 +7223,13 @@
         "semester": 2,
         "teacher_name": "Maham Nageen",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Maham Nageen (13:00 - 14:00)"
+          "Maham Nageen (09:00 - 10:00)"
         ]
       }
     ],
@@ -7175,13 +7248,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Zain Yousaf",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Multivariable Calculus #MATH-5101",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4",
-          "Muhammad Zain Yousaf (09:00 - 10:00)"
+          "Muhammad Zain Yousaf (08:00 - 09:00)"
         ]
       }
     ],
@@ -7353,29 +7426,6 @@
     "Department of Physics IAH L- 04 (Computer Practical Lab)": [
       {
         "combined_class": null,
-        "course_title": "Probability & Statistics",
-        "course_code": "MATH-5103",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2024-2028",
-        "semester": 4,
-        "teacher_name": "Muhammad Habib",
-        "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
-        "practical": false,
-        "raw_lines": [
-          "Probability & Statistics #MATH-5103",
-          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Habib (08:00 - 09:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Computer Architecture",
         "course_code": "CSDC-6202",
         "course_truncated": false,
@@ -7388,13 +7438,36 @@
         "semester": 4,
         "teacher_name": "Tehreem Mumtaz",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Computer Architecture #CSDC-6202",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4 …",
-          "Tehreem Mumtaz (10:00 - 11:00)"
+          "Tehreem Mumtaz (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Probability & Statistics",
+        "course_code": "MATH-5103",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 4,
+        "teacher_name": "Muhammad Habib",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Probability & Statistics #MATH-5103",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+          "Muhammad Habib (10:00 - 11:00)"
         ]
       }
     ],
@@ -7436,13 +7509,13 @@
         "semester": 4,
         "teacher_name": "Sultan Mahmood Zangi",
         "teacher_truncated": false,
-        "start_time": "10:20",
-        "end_time": "11:20",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Applied Physics #URCW-5201",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#4",
-          "Sultan Mahmood Zangi (10:20 - 11:20)"
+          "Sultan Mahmood Zangi (11:00 - 12:00)"
         ]
       },
       {
@@ -7459,17 +7532,40 @@
         "semester": 3,
         "teacher_name": "Ayesha Mahmood",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Calculus and Analytic Geometry #URCQ-5102",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
-          "Ayesha Mahmood (11:20 - 12:20)"
+          "Ayesha Mahmood (12:00 - 13:00)"
         ]
       }
     ],
     "Department of Computer Science MAB - Committee Room": [
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 1",
+        "session": "2026-2030",
+        "semester": 1,
+        "teacher_name": "Tooba Shafique",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
+          "Tooba Shafique (08:00 - 09:00)"
+        ]
+      },
       {
         "combined_class": null,
         "course_title": "Entrepreneurship",
@@ -7498,29 +7594,6 @@
         "course_title": "Calculus & Analytical Geometry",
         "course_code": "URCQ-5102",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 1",
-        "session": "2026-2030",
-        "semester": 1,
-        "teacher_name": "Tooba Shafique",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Tooba Shafique (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
         "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
@@ -7530,13 +7603,13 @@
         "semester": 2,
         "teacher_name": "Maham Nageen",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Maham Nageen (11:00 - 12:00)"
+          "Maham Nageen (10:00 - 11:00)"
         ]
       },
       {
@@ -7553,13 +7626,13 @@
         "semester": 8,
         "teacher_name": "Bushra Syed Rasool",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Citizenship Education and Community Engagement #URCC-5110",
           "BS in Computer Science Self Support 1 ( 2022-2026 ) Semester#8",
-          "Bushra Syed Rasool (12:00 - 13:00)"
+          "Bushra Syed Rasool (11:00 - 12:00)"
         ]
       }
     ],
@@ -7626,13 +7699,13 @@
         "semester": 2,
         "teacher_name": "Dr. Hafiz Muhammad Faisal Shehzad",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "13:00",
+        "start_time": "09:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Natural Language Processing #AIEC-7427",
           "MS Artificial Intelligence Self Support 1 ( 2025-2027 ) Semester#2",
-          "Dr. Hafiz Muhammad Faisal Shehzad (11:00 - 13:00)"
+          "Dr. Hafiz Muhammad Faisal Shehzad (09:00 - 11:00)"
         ]
       }
     ],
@@ -7699,14 +7772,14 @@
         "semester": 1,
         "teacher_name": "Asif ur Rehman",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:30",
+        "start_time": "12:20",
+        "end_time": "13:50",
         "practical": false,
         "raw_lines": [
           "Combined (500)",
           "Understading of Holy Quran (1) URCG-5129 #URCG-5129",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Asif ur Rehman (11:00 - 12:30)"
+          "Asif ur Rehman (12:20 - 13:50)"
         ]
       },
       {
@@ -7723,14 +7796,14 @@
         "semester": 1,
         "teacher_name": "Asif ur Rehman",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:30",
+        "start_time": "12:20",
+        "end_time": "13:50",
         "practical": false,
         "raw_lines": [
           "Combined (500)",
           "Understading of Holy Quran (1) URCG-5129 #URCG-5129",
           "MS Artificial Intelligence Self Support 1 ( 2026-2029 ) Semester#1",
-          "Asif ur Rehman (11:00 - 12:30)"
+          "Asif ur Rehman (12:20 - 13:50)"
         ]
       }
     ],
@@ -7749,40 +7822,17 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4 …",
-          "Muhammad Najeeb (10:00 - 11:00)"
+          "Muhammad Najeeb (09:00 - 10:00)"
         ]
       }
     ],
     "Department of Political Science Maryam Hall CR-4": [
-      {
-        "combined_class": null,
-        "course_title": "Expository Writing",
-        "course_code": "URCG-5119",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Farzeen Zainab",
-        "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
-        "practical": false,
-        "raw_lines": [
-          "Expository Writing #URCG-5119",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Farzeen Zainab (08:00 - 09:00)"
-        ]
-      },
       {
         "combined_class": null,
         "course_title": "Expository Writing",
@@ -7797,12 +7847,35 @@
         "semester": 2,
         "teacher_name": "Farzeen Zainab",
         "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Expository Writing #URCG-5119",
+          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
+          "Farzeen Zainab (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Expository Writing",
+        "course_code": "URCG-5119",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Farzeen Zainab",
+        "teacher_truncated": false,
         "start_time": "09:00",
         "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Expository Writing #URCG-5119",
-          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
           "Farzeen Zainab (09:00 - 10:00)"
         ]
       }
@@ -7860,29 +7933,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Database Systems",
-        "course_code": "CMPC-5203",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Dr. Hafiz Muhammad Faisal Shehzad",
-        "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
-        "practical": false,
-        "raw_lines": [
-          "Database Systems #CMPC-5203",
-          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Dr. Hafiz Muhammad Faisal Shehzad (09:00 - 10:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Programming Fundamentals",
         "course_code": "CMPC-5201",
         "course_truncated": false,
@@ -7895,13 +7945,36 @@
         "semester": 1,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "09:30",
+        "end_time": "10:30",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1",
-          "Aamir Zia (10:00 - 11:00)"
+          "Aamir Zia (09:30 - 10:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Database Systems",
+        "course_code": "CMPC-5203",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Dr. Hafiz Muhammad Faisal Shehzad",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          "Database Systems #CMPC-5203",
+          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
+          "Dr. Hafiz Muhammad Faisal Shehzad (11:00 - 12:00)"
         ]
       },
       {
@@ -7918,13 +7991,13 @@
         "semester": 1,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#1 …",
-          "Aamir Zia (11:00 - 12:00)"
+          "Aamir Zia (12:00 - 13:00)"
         ]
       },
       {
@@ -7941,13 +8014,13 @@
         "semester": 2,
         "teacher_name": "Rabia Parveen",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "14:00",
+        "start_time": "13:00",
+        "end_time": "15:00",
         "practical": false,
         "raw_lines": [
           "Advanced Computer Architecture #CSCC-704",
           "MS Computer Science Self Support 1 ( 2025-2027 ) Semester#2",
-          "Rabia Parveen (12:00 - 14:00)"
+          "Rabia Parveen (13:00 - 15:00)"
         ]
       }
     ],
@@ -8035,13 +8108,13 @@
         "semester": 1,
         "teacher_name": "Muhammad Abbas",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "11:20",
+        "end_time": "12:20",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1",
-          "Muhammad Abbas (12:00 - 13:00)"
+          "Muhammad Abbas (11:20 - 12:20)"
         ]
       },
       {
@@ -8058,13 +8131,13 @@
         "semester": 4,
         "teacher_name": "Muhammad Najeeb",
         "teacher_truncated": false,
-        "start_time": "13:40",
-        "end_time": "14:40",
+        "start_time": "12:20",
+        "end_time": "13:20",
         "practical": false,
         "raw_lines": [
           "Operating Systems #CMPC-6201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#4 …",
-          "Muhammad Najeeb (13:40 - 14:40)"
+          "Muhammad Najeeb (12:20 - 13:20)"
         ]
       }
     ],
@@ -8094,6 +8167,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Information Security #CMPC-302",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
+          "Farooq Javed (10:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Mathematics-II",
         "course_code": "URCM-5108",
         "course_truncated": false,
@@ -8106,13 +8202,13 @@
         "semester": 2,
         "teacher_name": "Hadia Khalid Mehmood",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "11:30",
+        "end_time": "12:30",
         "practical": false,
         "raw_lines": [
           "Mathematics-II #URCM-5108",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Hadia Khalid Mehmood (09:00 - 10:00)"
+          "Hadia Khalid Mehmood (11:30 - 12:30)"
         ]
       },
       {
@@ -8129,36 +8225,13 @@
         "semester": 1,
         "teacher_name": "Khansa Saleem",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:30",
+        "end_time": "13:30",
         "practical": false,
         "raw_lines": [
           "Application of Information & Communication Technologies #URCG-…",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
-          "Khansa Saleem (11:00 - 12:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Information Security",
-        "course_code": "CMPC-302",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Farooq Javed",
-        "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Information Security #CMPC-302",
-          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Farooq Javed (12:00 - 13:00)"
+          "Khansa Saleem (12:30 - 13:30)"
         ]
       }
     ],
@@ -8257,29 +8330,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Theory of Automata",
-        "course_code": "CSDC-5101",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2024-2028",
-        "semester": 4,
-        "teacher_name": "Muhammad Najeeb",
-        "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Theory of Automata #CSDC-5101",
-          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
-          "Muhammad Najeeb (12:00 - 13:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Artificial Intelligence",
         "course_code": "CSCC-302",
         "course_truncated": false,
@@ -8292,13 +8342,36 @@
         "semester": 6,
         "teacher_name": "Arooba Sultan Tiwana",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#6 …",
-          "Arooba Sultan Tiwana (13:00 - 14:00)"
+          "Arooba Sultan Tiwana (12:00 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSDC-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 4,
+        "teacher_name": "Muhammad Najeeb",
+        "teacher_truncated": false,
+        "start_time": "13:20",
+        "end_time": "14:20",
+        "practical": false,
+        "raw_lines": [
+          "Theory of Automata #CSDC-5101",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#4",
+          "Muhammad Najeeb (13:20 - 14:20)"
         ]
       }
     ],
@@ -8386,13 +8459,13 @@
         "semester": 1,
         "teacher_name": "Nadeem Arif",
         "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
+        "start_time": "11:30",
+        "end_time": "12:30",
         "practical": false,
         "raw_lines": [
           "Application of Information & Communication Technologies #URCG-…",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1…",
-          "Nadeem Arif (11:20 - 12:20)"
+          "Nadeem Arif (11:30 - 12:30)"
         ]
       },
       {
@@ -8409,13 +8482,13 @@
         "semester": 1,
         "teacher_name": "Nadeem Arif",
         "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:20",
+        "start_time": "12:30",
+        "end_time": "13:30",
         "practical": false,
         "raw_lines": [
           "Application of Information & Communication Technologies #URCG-…",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Nadeem Arif (12:20 - 13:20)"
+          "Nadeem Arif (12:30 - 13:30)"
         ]
       }
     ],
@@ -8468,29 +8541,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Information Security",
-        "course_code": "CMPC-302",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2023-2027",
-        "semester": 6,
-        "teacher_name": "Farooq Javed",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Information Security #CMPC-302",
-          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
-          "Farooq Javed (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Theory of Automata",
         "course_code": "CSCC-301",
         "course_truncated": false,
@@ -8514,6 +8564,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 6,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "Information Security #CMPC-302",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6",
+          "Farooq Javed (12:00 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Database Systems",
         "course_code": "CMPC-5203",
         "course_truncated": false,
@@ -8526,36 +8599,13 @@
         "semester": 2,
         "teacher_name": "Rameen Iqbal",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
-        "practical": false,
-        "raw_lines": [
-          "Database Systems #CMPC-5203",
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Rameen Iqbal (12:00 - 13:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Professional Practice",
-        "course_code": "CSSC-402",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Self Support 2",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Muddassar Ali Zaidi",
-        "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:00",
         "practical": false,
         "raw_lines": [
-          "Professional Practice #CSSC-402",
-          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-          "Muddassar Ali Zaidi (13:00 - 14:00)"
+          "Database Systems #CMPC-5203",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
+          "Rameen Iqbal (13:00 - 14:00)"
         ]
       }
     ],
@@ -8697,13 +8747,13 @@
         "semester": 2,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Alishah Khan (09:00 - 10:00)"
+          "Alishah Khan (11:00 - 12:00)"
         ]
       }
     ],
@@ -8747,13 +8797,13 @@
         "semester": 1,
         "teacher_name": "Ali haider",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Ali haider (11:00 - 12:00)"
+          "Ali haider (08:00 - 09:00)"
         ]
       },
       {
@@ -8770,17 +8820,40 @@
         "semester": 1,
         "teacher_name": "Anum Saleem",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "11:00",
+        "end_time": "12:00",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Anum Saleem (13:00 - 14:00)"
+          "Anum Saleem (11:00 - 12:00)"
         ]
       }
     ],
     "Department of Physics IAH CR- 184": [
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Hooria Riaz",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
+          "Hooria Riaz (08:00 - 09:00)"
+        ]
+      },
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -8818,63 +8891,17 @@
         "semester": 6,
         "teacher_name": "Arooba Sultan Tiwana",
         "teacher_truncated": false,
-        "start_time": "12:00",
-        "end_time": "13:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#6 …",
-          "Arooba Sultan Tiwana (12:00 - 13:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Hooria Riaz",
-        "teacher_truncated": false,
-        "start_time": "14:00",
-        "end_time": "15:00",
-        "practical": false,
-        "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Hooria Riaz (14:00 - 15:00)"
+          "Arooba Sultan Tiwana (10:00 - 11:00)"
         ]
       }
     ],
     "Department of Physics IAH CR- 185": [
-      {
-        "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Computer Science",
-        "section": "Regular 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Maham Nageen",
-        "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
-        "practical": false,
-        "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
-          "Maham Nageen (08:00 - 09:00)"
-        ]
-      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -8889,13 +8916,36 @@
         "semester": 2,
         "teacher_name": "Alishah Khan",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "08:00",
+        "end_time": "09:00",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Alishah Khan (10:00 - 11:00)"
+          "Alishah Khan (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Maham Nageen",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "10:30",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2",
+          "Maham Nageen (09:30 - 10:30)"
         ]
       },
       {
@@ -8912,13 +8962,13 @@
         "semester": 1,
         "teacher_name": "Hijab Aqsa Akhtar",
         "teacher_truncated": false,
-        "start_time": "13:20",
-        "end_time": "14:20",
+        "start_time": "10:30",
+        "end_time": "11:30",
         "practical": false,
         "raw_lines": [
           "Discrete Structures #URCQ-5101",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#1",
-          "Hijab Aqsa Akhtar (13:20 - 14:20)"
+          "Hijab Aqsa Akhtar (10:30 - 11:30)"
         ]
       }
     ],
@@ -8937,13 +8987,13 @@
         "semester": 1,
         "teacher_name": "Muhammad Imran",
         "teacher_truncated": false,
-        "start_time": "08:00",
-        "end_time": "09:00",
+        "start_time": "09:00",
+        "end_time": "10:00",
         "practical": false,
         "raw_lines": [
           "Introduction to Marketing #BUSB-6101",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#1",
-          "Muhammad Imran (08:00 - 09:00)"
+          "Muhammad Imran (09:00 - 10:00)"
         ]
       },
       {
@@ -8960,13 +9010,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "10:00",
+        "end_time": "11:00",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2 …",
-          "Hadiqa Afzal (09:00 - 10:00)"
+          "Hadiqa Afzal (10:00 - 11:00)"
         ]
       }
     ],
@@ -9077,13 +9127,13 @@
         "semester": 6,
         "teacher_name": "Mahnoor Safdar",
         "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "E Commerce Application Development #CSEC-312",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#6",
-          "Mahnoor Safdar (13:00 - 14:00)"
+          "Mahnoor Safdar (12:00 - 13:00)"
         ]
       }
     ],
@@ -9113,6 +9163,29 @@
       },
       {
         "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Data Science",
+        "section": "Self Support 1",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Hooria Riaz",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
+          "Hooria Riaz (09:00 - 10:00)"
+        ]
+      },
+      {
+        "combined_class": null,
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
@@ -9136,29 +9209,6 @@
       },
       {
         "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 1",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Hooria Riaz",
-        "teacher_truncated": false,
-        "start_time": "11:20",
-        "end_time": "12:20",
-        "practical": false,
-        "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Hooria Riaz (11:20 - 12:20)"
-        ]
-      },
-      {
-        "combined_class": null,
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
@@ -9171,13 +9221,13 @@
         "semester": 2,
         "teacher_name": "Hadiqa Afzal",
         "teacher_truncated": false,
-        "start_time": "12:20",
-        "end_time": "13:40",
+        "start_time": "11:20",
+        "end_time": "12:40",
         "practical": false,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#2",
-          "Hadiqa Afzal (12:20 - 13:40)"
+          "Hadiqa Afzal (11:20 - 12:40)"
         ]
       }
     ],
@@ -9196,13 +9246,13 @@
         "semester": 2,
         "teacher_name": "Iqra Waheed",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
+        "start_time": "10:30",
+        "end_time": "11:30",
         "practical": false,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#2 …",
-          "Iqra Waheed (10:00 - 11:00)"
+          "Iqra Waheed (10:30 - 11:30)"
         ]
       }
     ],
@@ -9256,32 +9306,30 @@
         ]
       }
     ],
-    "Institute of Arts and Design JBN CR-210": [
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
-        "course_title": "Citizenship Education and Community Engagement",
-        "course_code": "URCC-5110",
+        "course_title": "Programming Fundamentals",
+        "course_code": "CMPC-5201",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-        "program_truncated": false,
+        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
+        "program_truncated": true,
         "degree": "BS",
-        "program": "Computer Science",
+        "program": "Data Science",
         "section": "Self Support 2",
-        "session": "2022-2026",
-        "semester": 8,
-        "teacher_name": "Intizar Raza",
+        "session": "2026-2030",
+        "semester": 1,
+        "teacher_name": "Umair Majeed",
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:00",
         "practical": false,
         "raw_lines": [
-          "Citizenship Education and Community Engagement #URCC-5110",
-          "BS in Computer Science Self Support 2 ( 2022-2026 ) Semester#8",
-          "Intizar Raza (08:00 - 09:00)"
+          "Programming Fundamentals #CMPC-5201",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
+          "Umair Majeed (08:00 - 09:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Digital Logic Design",
@@ -9374,32 +9422,32 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#2",
           "Dr. Hafiz Muhammad Faisal Shehzad (12:00 - 13:00)"
         ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Programming Fundamentals",
-        "course_code": "CMPC-5201",
-        "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Data Science",
-        "section": "Self Support 2",
-        "session": "2026-2030",
-        "semester": 1,
-        "teacher_name": "Umair Majeed",
-        "teacher_truncated": false,
-        "start_time": "13:00",
-        "end_time": "14:00",
-        "practical": false,
-        "raw_lines": [
-          "Programming Fundamentals #CMPC-5201",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#1 …",
-          "Umair Majeed (13:00 - 14:00)"
-        ]
       }
     ],
     "Department of Physics IAH L- 04 (Computer Practical Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Calculus & Analytical Geometry",
+        "course_code": "URCQ-5102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "section": "Self Support 2",
+        "session": "2025-2029",
+        "semester": 2,
+        "teacher_name": "Maryam Bashir",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Calculus & Analytical Geometry #URCQ-5102",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
+          "Maryam Bashir (08:00 - 09:00)"
+        ]
+      },
       {
         "combined_class": null,
         "course_title": "Database Systems",
@@ -9428,29 +9476,6 @@
         "course_title": "Calculus & Analytical Geometry",
         "course_code": "URCQ-5102",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-        "program_truncated": false,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "section": "Self Support 2",
-        "session": "2025-2029",
-        "semester": 2,
-        "teacher_name": "Maryam Bashir",
-        "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "11:00",
-        "practical": false,
-        "raw_lines": [
-          "Calculus & Analytical Geometry #URCQ-5102",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#2",
-          "Maryam Bashir (10:00 - 11:00)"
-        ]
-      },
-      {
-        "combined_class": null,
-        "course_title": "Calculus & Analytical Geometry",
-        "course_code": "URCQ-5102",
-        "course_truncated": false,
         "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
@@ -9460,13 +9485,13 @@
         "semester": 2,
         "teacher_name": "Maham Nageen",
         "teacher_truncated": false,
-        "start_time": "11:00",
-        "end_time": "12:00",
+        "start_time": "12:00",
+        "end_time": "13:00",
         "practical": false,
         "raw_lines": [
           "Calculus & Analytical Geometry #URCQ-5102",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#2",
-          "Maham Nageen (11:00 - 12:00)"
+          "Maham Nageen (12:00 - 13:00)"
         ]
       }
     ],
@@ -9602,13 +9627,13 @@
         "semester": 2,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
-        "start_time": "09:00",
-        "end_time": "10:00",
+        "start_time": "09:30",
+        "end_time": "10:30",
         "practical": false,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#2 …",
-          "Khadija Ilyas (09:00 - 10:00)"
+          "Khadija Ilyas (09:30 - 10:30)"
         ]
       },
       {
@@ -9625,13 +9650,13 @@
         "semester": 2,
         "teacher_name": "Dr Muhammad Saad Razzaq",
         "teacher_truncated": false,
-        "start_time": "10:00",
-        "end_time": "12:00",
+        "start_time": "10:30",
+        "end_time": "12:30",
         "practical": false,
         "raw_lines": [
           "Advanced Machine Learning #AICC-7404",
           "MS Artificial Intelligence Self Support 1 ( 2025-2027 ) Semester#2",
-          "Dr Muhammad Saad Razzaq (10:00 - 12:00)"
+          "Dr Muhammad Saad Razzaq (10:30 - 12:30)"
         ]
       }
     ],
