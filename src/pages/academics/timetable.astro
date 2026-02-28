@@ -964,7 +964,10 @@ END:VCALENDAR`;
   const exportImageButton = document.getElementById('export-image');
 
   // helper to render table data into a canvas and return blob
-  async function generateTablePNG(records: FlatRecord[]): Promise<Blob> {
+  async function generateTablePNG(
+    records: FlatRecord[],
+    footerText = ''
+  ): Promise<Blob> {
     // sort by day order then start time
     records.sort((a, b) => {
       const dayA = DAY_ORDER.indexOf(a.day);
@@ -1045,7 +1048,8 @@ END:VCALENDAR`;
     });
 
     const totalWidth = colWidths.reduce((a, b) => a + b, 0);
-    const totalHeight = headerHeight + data.length * rowHeight;
+    const footerHeight = footerText ? 24 : 0;
+    const totalHeight = headerHeight + data.length * rowHeight + footerHeight;
     canvas.width = totalWidth;
     canvas.height = totalHeight;
 
@@ -1077,6 +1081,18 @@ END:VCALENDAR`;
       });
     });
 
+    // footer text at bottom left (below rows)
+    if (footerText) {
+      ctx.fillStyle = 'rgba(243,244,246,0.6)'; // lighter opacity
+      ctx.font = '12px system-ui';
+      ctx.textAlign = 'left';
+      ctx.fillText(
+        footerText,
+        padding,
+        headerHeight + data.length * rowHeight + (footerHeight - 8)
+      );
+    }
+
     return new Promise((resolve, reject) => {
       canvas.toBlob((blob) => {
         if (blob) resolve(blob);
@@ -1097,7 +1113,20 @@ END:VCALENDAR`;
     }
 
     try {
-      const blob = await generateTablePNG(filteredList);
+      // build footer with current domain and optional dataset timestamp
+      let footer = `Generated from ${location.hostname}`;
+      const sel = document.getElementById(
+        'dataset'
+      ) as HTMLSelectElement | null;
+      if (sel) {
+        const opt = sel.options[sel.selectedIndex];
+        const ts = opt?.getAttribute('data-updated') || '';
+        if (ts) {
+          const d = new Date(ts);
+          footer += ` • Last updated at ${d.toLocaleString()}`;
+        }
+      }
+      const blob = await generateTablePNG(filteredList, footer);
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
