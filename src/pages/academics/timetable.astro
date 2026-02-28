@@ -26,15 +26,15 @@ function relativeTime(iso: string): string {
   return 'just now';
 }
 try {
-  datasetFiles = fs
-    .readdirSync(parsedDir)
-    .filter((f) => f.endsWith('.json'));
+  datasetFiles = fs.readdirSync(parsedDir).filter((f) => f.endsWith('.json'));
 
   // compute modification times first so we can sort by them
   datasetInfos = {};
   datasetFiles.forEach((f) => {
     try {
-      const stats = fs.statSync(new URL(`../../../public/parsed/${f}`, import.meta.url));
+      const stats = fs.statSync(
+        new URL(`../../../public/parsed/${f}`, import.meta.url)
+      );
       datasetInfos[f] = stats.mtime.toISOString();
     } catch (e) {
       datasetInfos[f] = '';
@@ -86,15 +86,15 @@ try {
         <p
           id="last-updated"
           class="text-xs text-gray-400 mt-1"
-          title={
+          title={defaultDataset && datasetInfos[defaultDataset]
+            ? new Date(datasetInfos[defaultDataset]).toLocaleString()
+            : ''}
+        >
+          {
             defaultDataset && datasetInfos[defaultDataset]
-              ? new Date(datasetInfos[defaultDataset]).toLocaleString()
+              ? `Last updated: ${relativeTime(datasetInfos[defaultDataset])}`
               : ''
           }
-        >
-          {defaultDataset && datasetInfos[defaultDataset]
-            ? `Last updated: ${relativeTime(datasetInfos[defaultDataset])}`
-            : ''}
         </p>
       </div>
 
@@ -128,6 +128,16 @@ try {
           ></path>
         </svg>
         <span>Export to Calendar</span>
+      </button>
+      <button
+        id="export-image"
+        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
+        title="Download an image of filtered classes"
+      >
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M5 7h14v10H5V7zm7 8a3 3 0 100-6 3 3 0 000 6z"></path>
+        </svg>
+        <span>Export to Image</span>
       </button>
     </div>
 
@@ -170,6 +180,7 @@ try {
     </div>
 
     <div
+      id="export-area"
       class="bg-gray-900/60 backdrop-blur rounded-xl border border-gray-800 shadow-xl overflow-hidden"
     >
       <div class="max-h-[60vh] overflow-auto" id="results-wrapper">
@@ -674,15 +685,12 @@ try {
   }
 
   if (datasetSelect)
-    datasetSelect.addEventListener(
-      'change',
-      () => {
-        if (datasetSelect) {
-          loadDataset(datasetSelect.value);
-          updateLastModified(datasetSelect.value);
-        }
+    datasetSelect.addEventListener('change', () => {
+      if (datasetSelect) {
+        loadDataset(datasetSelect.value);
+        updateLastModified(datasetSelect.value);
       }
-    );
+    });
   if (searchInput)
     searchInput.addEventListener('input', () => {
       if (debounceTimer) window.clearTimeout(debounceTimer);
@@ -941,5 +949,162 @@ END:VCALENDAR`;
     alert(
       `Exported ${uniqueClasses.size} class${uniqueClasses.size === 1 ? '' : 'es'} to ${filename}. You can import this file into Google Calendar, Apple Calendar, Outlook, or any other calendar application.`
     );
+  });
+
+  // image export handler
+  const exportImageButton = document.getElementById('export-image');
+
+  // helper to render table data into a canvas and return blob
+  async function generateTablePNG(records: FlatRecord[]): Promise<Blob> {
+    // sort by day order then start time
+    records.sort((a, b) => {
+      const dayA = DAY_ORDER.indexOf(a.day);
+      const dayB = DAY_ORDER.indexOf(b.day);
+      if (dayA !== dayB) return dayA - dayB;
+      const tA = a.start_time
+        ? parseInt(a.start_time.slice(0, 2)) * 60 +
+          parseInt(a.start_time.slice(3, 5))
+        : 0;
+      const tB = b.start_time
+        ? parseInt(b.start_time.slice(0, 2)) * 60 +
+          parseInt(b.start_time.slice(3, 5))
+        : 0;
+      return tA - tB;
+    });
+
+    // build headers; include flags column only if needed
+    const headers = [
+      'Day',
+      'Time',
+      'Course',
+      'Teacher',
+      'Room',
+      'Program / Semester',
+      'Flags',
+    ];
+
+    // convert records into rows, leaving day blank for repeats
+    const data: string[][] = [];
+    let lastDay = '';
+    let anyFlags = false;
+    for (const r of records) {
+      const timeStr = `${to12(r.start_time)}${
+        r.end_time ? ` - ${to12(r.end_time)}` : ''
+      }`;
+      const classBase = buildClassShort(r);
+      const semSuffix = r.semester != null ? ` (Sem #${r.semester})` : '';
+      const classLine = classBase + semSuffix;
+      const flagsArr: string[] = [];
+      if (r.combined_class) flagsArr.push('Combined');
+      if (r.practical) flagsArr.push('Practical');
+      const flagsStr = flagsArr.join(', ');
+      if (flagsStr) anyFlags = true;
+      const dayDisplay = r.day === lastDay ? '' : r.day;
+      lastDay = r.day;
+      data.push([
+        dayDisplay,
+        timeStr,
+        r.course_title || 'TBA',
+        r.teacher_name || '',
+        r.room,
+        classLine,
+        flagsStr,
+      ]);
+    }
+
+    // if no flags present in any row, drop the last column and header
+    if (!anyFlags) {
+      headers.pop();
+      data.forEach((row) => row.pop());
+    }
+
+    const padding = 8;
+    const rowHeight = 24;
+    const headerHeight = 32;
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+    if (!ctx) throw new Error('Unable to create canvas context');
+    ctx.font = '14px system-ui';
+
+    // compute widths
+    const colWidths = headers.map((h, i) => {
+      let w = ctx.measureText(h).width;
+      data.forEach((row) => {
+        w = Math.max(w, ctx.measureText(String(row[i])).width);
+      });
+      return w + padding * 2;
+    });
+
+    const totalWidth = colWidths.reduce((a, b) => a + b, 0);
+    const totalHeight = headerHeight + data.length * rowHeight;
+    canvas.width = totalWidth;
+    canvas.height = totalHeight;
+
+    ctx.fillStyle = '#1f1f1f';
+    ctx.fillRect(0, 0, totalWidth, totalHeight);
+
+    // header
+    ctx.fillStyle = '#374151';
+    ctx.fillRect(0, 0, totalWidth, headerHeight);
+    ctx.fillStyle = '#f3f4f6';
+    ctx.font = 'bold 14px system-ui';
+    let x = 0;
+    headers.forEach((h, i) => {
+      ctx.fillText(h, x + padding, headerHeight - 8);
+      x += colWidths[i];
+    });
+
+    // rows
+    ctx.font = '14px system-ui';
+    data.forEach((row, ridx) => {
+      const y = headerHeight + ridx * rowHeight;
+      ctx.fillStyle = ridx % 2 === 0 ? '#1f1f1f' : '#111827';
+      ctx.fillRect(0, y, totalWidth, rowHeight);
+      ctx.fillStyle = '#f9fafb';
+      let xx = 0;
+      row.forEach((cell, i) => {
+        ctx.fillText(cell, xx + padding, y + rowHeight - 8);
+        xx += colWidths[i];
+      });
+    });
+
+    return new Promise((resolve, reject) => {
+      canvas.toBlob((blob) => {
+        if (blob) resolve(blob);
+        else reject(new Error('Canvas toBlob returned null'));
+      });
+    });
+  }
+
+  exportImageButton?.addEventListener('click', async () => {
+    const q = (searchInput?.value || '').trim().toLowerCase();
+    const filteredList = applyFilters(flat).filter((r: FlatRecord) =>
+      recordMatches(r, q)
+    );
+
+    if (filteredList.length === 0) {
+      alert('No timetable entries to export. Please adjust your filters.');
+      return;
+    }
+
+    try {
+      const blob = await generateTablePNG(filteredList);
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `timetable-${new Date().toISOString().split('T')[0]}.png`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      alert(
+        `Downloaded image containing ${filteredList.length} row${
+          filteredList.length === 1 ? '' : 's'
+        }.`
+      );
+    } catch (err) {
+      console.error('image export error', err);
+      alert('Failed to generate timetable image.');
+    }
   });
 </script>
