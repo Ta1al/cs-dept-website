@@ -221,6 +221,24 @@
     transform: rotate(180deg);
   }
 }
+
+/* success animation for export buttons */
+#export-image.success,
+#export-google-calendar.success {
+  background-color: #10b981 !important; /* green-500 */
+  transition: background-color 0.3s ease;
+}
+#export-image.success svg,
+#export-google-calendar.success svg {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+/* error flash state */
+#export-image.error,
+#export-google-calendar.error {
+  background-color: #dc2626 !important; /* red-600 */
+  transition: background-color 0.3s ease;
+}
 @media (min-width: 821px) {
   #mobile-results {
     display: none;

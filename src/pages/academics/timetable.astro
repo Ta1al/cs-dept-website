@@ -925,6 +925,21 @@ END:VCALENDAR`;
     URL.revokeObjectURL(link.href);
   }
 
+  // helper for animating any button into a checkmark and back
+  function animateButtonSuccess(btn: HTMLElement | null) {
+    if (!btn) return;
+    const originalHTML = btn.innerHTML;
+    btn.setAttribute('disabled', '');
+    const checkSVG = `<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>`;
+    btn.innerHTML = checkSVG + '<span>Done</span>';
+    btn.classList.add('success');
+    setTimeout(() => {
+      btn.innerHTML = originalHTML;
+      btn.classList.remove('success');
+      btn.removeAttribute('disabled');
+    }, 2000);
+  }
+
   exportButton?.addEventListener('click', () => {
     // Get currently filtered results
     const q = (searchInput?.value || '').trim().toLowerCase();
@@ -933,7 +948,8 @@ END:VCALENDAR`;
     );
 
     if (filteredList.length === 0) {
-      alert('No timetable entries to export. Please adjust your filters.');
+      // animate even when no results to give feedback
+      animateButtonSuccess(exportButton);
       return;
     }
 
@@ -955,9 +971,7 @@ END:VCALENDAR`;
 
     downloadICS(icsContent, filename);
 
-    alert(
-      `Exported ${uniqueClasses.size} class${uniqueClasses.size === 1 ? '' : 'es'} to ${filename}. You can import this file into Google Calendar, Apple Calendar, Outlook, or any other calendar application.`
-    );
+    animateButtonSuccess(exportButton);
   });
 
   // image export handler
@@ -1108,7 +1122,8 @@ END:VCALENDAR`;
     );
 
     if (filteredList.length === 0) {
-      alert('No timetable entries to export. Please adjust your filters.');
+      // briefly show success animation even when no rows
+      animateButtonSuccess(exportImageButton);
       return;
     }
 
@@ -1135,14 +1150,15 @@ END:VCALENDAR`;
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
-      alert(
-        `Downloaded image containing ${filteredList.length} row${
-          filteredList.length === 1 ? '' : 's'
-        }.`
-      );
+      animateButtonSuccess(exportImageButton);
     } catch (err) {
       console.error('image export error', err);
-      alert('Failed to generate timetable image.');
+      if (exportImageButton) {
+        exportImageButton.classList.add('error');
+        setTimeout(() => {
+          exportImageButton?.classList.remove('error');
+        }, 1500);
+      }
     }
   });
 </script>
