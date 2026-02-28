@@ -28,27 +28,36 @@ function relativeTime(iso: string): string {
 try {
   datasetFiles = fs.readdirSync(parsedDir).filter((f) => f.endsWith('.json'));
 
-  // compute modification times first so we can sort by them
+  // read timestamp field from each JSON file; leave blank if missing
   datasetInfos = {};
   datasetFiles.forEach((f) => {
     try {
-      const stats = fs.statSync(
-        new URL(`../../../public/parsed/${f}`, import.meta.url)
+      const content = fs.readFileSync(
+        new URL(`../../../public/parsed/${f}`, import.meta.url),
+        'utf-8'
       );
-      datasetInfos[f] = stats.mtime.toISOString();
+      const obj = JSON.parse(content);
+      if (obj && typeof obj.timestamp === 'string' && obj.timestamp) {
+        datasetInfos[f] = obj.timestamp;
+      } else {
+        datasetInfos[f] = '';
+      }
     } catch (e) {
       datasetInfos[f] = '';
     }
   });
 
-  // sort files most-recently-modified first
+  // sort by timestamp (descending). files without timestamp fall back to name
   datasetFiles.sort((a, b) => {
-    const ta = datasetInfos[a] ? Date.parse(datasetInfos[a]) : 0;
-    const tb = datasetInfos[b] ? Date.parse(datasetInfos[b]) : 0;
-    return tb - ta;
+    const ta = datasetInfos[a];
+    const tb = datasetInfos[b];
+    if (ta && tb) return Date.parse(tb) - Date.parse(ta);
+    if (ta) return -1; // a has timestamp, b doesn't
+    if (tb) return 1; // b has timestamp
+    return a.localeCompare(b);
   });
 
-  // choose default as the newest-modified file if available
+  // choose default as the first file in sorted order
   if (!defaultDataset && datasetFiles.length) {
     defaultDataset = datasetFiles[0];
   }
