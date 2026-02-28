@@ -10,26 +10,48 @@ import fs from 'node:fs';
 const parsedDir = new URL('../../../public/parsed/', import.meta.url);
 let datasetFiles: string[] = [];
 let defaultDataset: string | null = null;
+let datasetInfos: Record<string, string> = {};
+
+// helper to format a timestamp relative to now (server-side)
+function relativeTime(iso: string): string {
+  if (!iso) return '';
+  const delta = Date.now() - Date.parse(iso);
+  const sec = Math.floor(delta / 1000);
+  const min = Math.floor(sec / 60);
+  const hr = Math.floor(min / 60);
+  const day = Math.floor(hr / 24);
+  if (day >= 1) return day === 1 ? '1 day ago' : `${day} days ago`;
+  if (hr >= 1) return hr === 1 ? '1 hour ago' : `${hr} hours ago`;
+  if (min >= 1) return min === 1 ? '1 minute ago' : `${min} minutes ago`;
+  return 'just now';
+}
 try {
   datasetFiles = fs
     .readdirSync(parsedDir)
-    .filter((f) => f.endsWith('.json'))
-    .sort();
-  // Determine latest week by parsing filenames like week3.json (highest numeric week wins)
-  const weekPattern = /^week(\d+)\.json$/i;
-  const weekEntries = datasetFiles
-    .map((f) => {
-      const m = f.match(weekPattern);
-      return m ? { file: f, week: parseInt(m[1], 10) } : null;
-    })
-    .filter(Boolean) as { file: string; week: number }[];
-  if (weekEntries.length) {
-    weekEntries.sort((a, b) => a.week - b.week);
-    defaultDataset = weekEntries[weekEntries.length - 1].file;
+    .filter((f) => f.endsWith('.json'));
+
+  // compute modification times first so we can sort by them
+  datasetInfos = {};
+  datasetFiles.forEach((f) => {
+    try {
+      const stats = fs.statSync(new URL(`../../../public/parsed/${f}`, import.meta.url));
+      datasetInfos[f] = stats.mtime.toISOString();
+    } catch (e) {
+      datasetInfos[f] = '';
+    }
+  });
+
+  // sort files most-recently-modified first
+  datasetFiles.sort((a, b) => {
+    const ta = datasetInfos[a] ? Date.parse(datasetInfos[a]) : 0;
+    const tb = datasetInfos[b] ? Date.parse(datasetInfos[b]) : 0;
+    return tb - ta;
+  });
+
+  // choose default as the newest-modified file if available
+  if (!defaultDataset && datasetFiles.length) {
+    defaultDataset = datasetFiles[0];
   }
-  // Fallback: if no week pattern, choose last alphabetically
-  if (!defaultDataset && datasetFiles.length)
-    defaultDataset = datasetFiles[datasetFiles.length - 1];
 } catch (err) {
   console.error('Error discovering timetable datasets:', err);
 }
@@ -41,21 +63,40 @@ try {
     <h1 class="text-2xl font-bold mb-4">Department Timetable</h1>
 
     <div class="flex flex-wrap gap-3 items-center mb-4">
-      <label class="text-sm text-gray-300">
-        Dataset
-        <select
-          id="dataset"
-          class="ml-2 bg-gray-800 border border-gray-700 rounded px-2 py-1"
-        >
-          {
-            datasetFiles.map((f) => (
-              <option value={f} selected={f === defaultDataset}>
-                {f}
-              </option>
-            ))
+      <div class="flex flex-col text-sm text-gray-300">
+        <label>
+          Dataset
+          <select
+            id="dataset"
+            class="ml-2 bg-gray-800 border border-gray-700 rounded px-2 py-1"
+          >
+            {
+              datasetFiles.map((f) => (
+                <option
+                  value={f}
+                  selected={f === defaultDataset}
+                  data-updated={datasetInfos[f] || ''}
+                >
+                  {f}
+                </option>
+              ))
+            }
+          </select>
+        </label>
+        <p
+          id="last-updated"
+          class="text-xs text-gray-400 mt-1"
+          title={
+            defaultDataset && datasetInfos[defaultDataset]
+              ? new Date(datasetInfos[defaultDataset]).toLocaleString()
+              : ''
           }
-        </select>
-      </label>
+        >
+          {defaultDataset && datasetInfos[defaultDataset]
+            ? `Last updated: ${relativeTime(datasetInfos[defaultDataset])}`
+            : ''}
+        </p>
+      </div>
 
       <div class="relative">
         <input
@@ -176,6 +217,8 @@ try {
 <script>
   // Re-bind imported utilities (Astro frontmatter imports are server-side; re-import for client script)
   import { DAY_ORDER, to12, buildClassShort } from '../../utils/timetableUtils';
+
+  // (timestamps stored on option elements via data-updated)
   // --- Type Definitions ---
   interface RawEntry {
     combined_class: boolean | null;
@@ -633,7 +676,12 @@ try {
   if (datasetSelect)
     datasetSelect.addEventListener(
       'change',
-      () => datasetSelect && loadDataset(datasetSelect.value)
+      () => {
+        if (datasetSelect) {
+          loadDataset(datasetSelect.value);
+          updateLastModified(datasetSelect.value);
+        }
+      }
     );
   if (searchInput)
     searchInput.addEventListener('input', () => {
@@ -649,6 +697,7 @@ try {
   if (datasetSelect instanceof HTMLSelectElement) {
     loadDataset(datasetSelect.value).then(() => {
       attachHeaderSorting();
+      updateLastModified(datasetSelect.value);
     });
   }
 
@@ -696,6 +745,39 @@ try {
   window.addEventListener('resize', () => {
     autoExpandFiltersForTablet();
   });
+
+  // helper to compute relative time (client-side)
+  function relativeTimeClient(iso: string): string {
+    const delta = Date.now() - Date.parse(iso);
+    const sec = Math.floor(delta / 1000);
+    const min = Math.floor(sec / 60);
+    const hr = Math.floor(min / 60);
+    const day = Math.floor(hr / 24);
+    if (day >= 1) return day === 1 ? '1 day ago' : `${day} days ago`;
+    if (hr >= 1) return hr === 1 ? '1 hour ago' : `${hr} hours ago`;
+    if (min >= 1) return min === 1 ? '1 minute ago' : `${min} minutes ago`;
+    return 'just now';
+  }
+
+  // helper to update the "last updated" UI
+  function updateLastModified(filename: string) {
+    const el = document.getElementById('last-updated');
+    if (!el) return;
+    let ts = '';
+    const sel = datasetSelect as HTMLSelectElement | null;
+    if (sel) {
+      const opt = sel.querySelector(`option[value="${filename}"]`);
+      if (opt) ts = opt.getAttribute('data-updated') || '';
+    }
+    if (ts) {
+      const d = new Date(ts);
+      el.textContent = 'Last updated: ' + relativeTimeClient(ts);
+      el.title = d.toLocaleString();
+    } else {
+      el.textContent = '';
+      el.title = '';
+    }
+  }
 
   simplifiedToggle?.addEventListener('click', () => {
     document.documentElement.classList.toggle('simplified');
