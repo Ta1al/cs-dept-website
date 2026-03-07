@@ -208,17 +208,46 @@ try {
       </button>
     </div>
 
-    <div
-      id="filters"
-      class="collapsed space-y-2 flex flex-col items-stretch max-w-4xl mx-auto md:mt-0 mt-2"
-    >
-      <div id="day-filters" class="filter-row"></div>
-      <div id="degree-filters" class="filter-row"></div>
-      <div id="program-filters" class="filter-row"></div>
-      <div id="semester-filters" class="filter-row"></div>
-      <div id="section-filters" class="filter-row"></div>
-      <div class="pt-2 flex justify-center">
-        <button id="clear-filters" class="clear-btn">Clear Filters</button>
+    <div id="filters" class="collapsed max-w-4xl mx-auto mt-2 md:mt-0">
+      <div class="filter-card">
+        <div class="filter-card-header">
+          <span class="filter-card-title">
+            <svg
+              class="inline-block mr-1.5 opacity-60"
+              style="width:10px;height:10px;vertical-align:-1px"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              ><path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M3 4h18M7 12h10M11 20h2"></path></svg
+            >
+            Filters
+          </span>
+          <button id="clear-filters" class="clear-btn">Clear All</button>
+        </div>
+        <div class="filter-group" id="day-filter-group">
+          <span class="filter-label filter-label-day">Day</span>
+          <div id="day-filters" class="filter-row"></div>
+        </div>
+        <div class="filter-group" id="degree-filter-group">
+          <span class="filter-label filter-label-degree">Degree</span>
+          <div id="degree-filters" class="filter-row"></div>
+        </div>
+        <div class="filter-group" id="program-filter-group">
+          <span class="filter-label filter-label-program">Program</span>
+          <div id="program-filters" class="filter-row"></div>
+        </div>
+        <div class="filter-group" id="semester-filter-group">
+          <span class="filter-label filter-label-semester">Semester</span>
+          <div id="semester-filters" class="filter-row"></div>
+        </div>
+        <div class="filter-group filter-group-hidden" id="section-filter-group">
+          <span class="filter-label filter-label-section">Section</span>
+          <div id="section-filters" class="filter-row"></div>
+        </div>
       </div>
     </div>
 
@@ -496,10 +525,14 @@ try {
     const sections = [
       ...new Set(flat.map((r) => r.section).filter(Boolean)),
     ].sort();
+    const sectionGroup = document.getElementById('section-filter-group');
     if (sections.length > 1) {
+      sectionGroup?.classList.remove('filter-group-hidden');
       sections.forEach((sec) =>
         makeButton(sec, sectionFiltersEl, activeSections)
       );
+    } else {
+      sectionGroup?.classList.add('filter-group-hidden');
     }
   }
 
@@ -1188,10 +1221,10 @@ END:VCALENDAR`;
         'rgba(241, 245, 249, 0.5)',
       ],
       cellTextColors: ['#f1f5f9', '#f8fafc', '#e2e8f0', '#cbd5e1'],
-    }
+    },
   ];
 
-  let currentPalette: ColorPalette =
+  const currentPalette: ColorPalette =
     palettes.find((p) => p.id === 'classroom') ?? palettes[0];
   // ─────────────────────────────────────────────────────────────────────────
 

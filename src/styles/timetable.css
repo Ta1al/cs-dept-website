@@ -2,12 +2,73 @@
 #results-wrapper table {
   font-variant-numeric: tabular-nums;
 }
+.filter-card {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(51, 65, 85, 0.55);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+.filter-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.45);
+  background: rgba(30, 41, 59, 0.55);
+}
+.filter-card-title {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+.filter-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.22);
+}
+.filter-group:last-child {
+  border-bottom: none;
+}
+.filter-group-hidden {
+  display: none !important;
+}
+.filter-label {
+  flex-shrink: 0;
+  width: 4.25rem;
+  padding-top: 0.38rem;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+.filter-label-day {
+  color: #58b8ff;
+}
+.filter-label-degree {
+  color: #25dfff;
+}
+.filter-label-program {
+  color: #a38bff;
+}
+.filter-label-semester {
+  color: #27f5b6;
+}
+.filter-label-section {
+  color: #ffc766;
+}
 .filter-row {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  padding: 2px 4px;
+  gap: 0.45rem;
+  justify-content: flex-start;
+  padding: 2px 0;
 }
 .chip {
   position: relative;
@@ -89,18 +150,18 @@
   --chip-bg-active-hover: rgba(255, 199, 102, 0.6);
 }
 .clear-btn {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   letter-spacing: 0.05em;
-  background: #1f2933;
-  color: #cbd5e1;
+  background: transparent;
+  color: #94a3b8;
   border: 1px solid #334155;
-  padding: 0.5rem 1rem;
-  border-radius: 0.55rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.45rem;
   transition: 0.18s;
 }
 .clear-btn:hover {
-  background: #dc2626;
-  color: #fff;
+  background: rgba(220, 38, 38, 0.15);
+  color: #fca5a5;
   border-color: #ef4444;
 }
 #filters {
@@ -207,8 +268,16 @@
   #simplified-toggle-row {
     display: none;
   }
+  .filter-group {
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.5rem 0.75rem;
+  }
+  .filter-label {
+    width: auto;
+    padding-top: 0;
+  }
   .filter-row {
-    justify-content: center;
     gap: 0.4rem;
   }
   #filters {
