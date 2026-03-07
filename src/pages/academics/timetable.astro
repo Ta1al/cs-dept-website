@@ -924,7 +924,7 @@ try {
     const maxPerDay = Math.max(...Object.values(classesByDay));
     if (maxPerDay > 6) {
       const ok = window.confirm(
-        `Some days have too many classes (up to ${maxPerDay} on a single day).\n\nThe image may be very tall or hard to read.\nConsider narrowing your filters first.\n\nContinue anyway?`
+        `Some days have too many lectures (up to ${maxPerDay} on a single day).\n\nThe image may be very tall or hard to read.\nConsider narrowing your filters first.\n\nContinue anyway?`
       );
       if (!ok) return;
     }
