@@ -644,7 +644,10 @@ try {
   function loadFromURL() {
     const params = new URLSearchParams(location.search);
     const ds = params.get('ds');
-    if (ds && datasetSelect) datasetSelect.value = ds;
+    if (ds && datasetSelect) {
+      const exists = Array.from(datasetSelect.options).some((o) => o.value === ds);
+      datasetSelect.value = exists ? ds : datasetSelect.options[0]?.value ?? '';
+    }
     const q = params.get('q');
     if (q && searchInput) searchInput.value = q;
     const days = params.get('days');
