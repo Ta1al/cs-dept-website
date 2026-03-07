@@ -807,14 +807,7 @@ try {
   document.getElementById('clear-filters')?.addEventListener('click', clearAll);
   loadFromURL();
 
-  if (datasetSelect instanceof HTMLSelectElement) {
-    loadDataset(datasetSelect.value).then(() => {
-      attachHeaderSorting();
-      updateLastModified(datasetSelect.value);
-    });
-  }
-
-  // Mobile filter toggle
+  // Mobile filter toggle — declared before loadDataset so render() → updateActiveCountBadge() works
   const mobileToggle = document.getElementById('mobile-filter-toggle');
   const filtersContainer = document.getElementById('filters');
   const mobileCount = document.getElementById('mobile-filter-count');
@@ -835,6 +828,13 @@ try {
     mobileCount.style.display = c ? 'inline-flex' : 'none';
   }
   updateActiveCountBadge();
+
+  if (datasetSelect instanceof HTMLSelectElement) {
+    loadDataset(datasetSelect.value).then(() => {
+      attachHeaderSorting();
+      updateLastModified(datasetSelect.value);
+    });
+  }
 
   mobileToggle?.addEventListener('click', () => {
     if (!filtersContainer) return;
@@ -1331,9 +1331,16 @@ END:VCALENDAR`;
       const secs = new Set(records.map((r) => r.section).filter(Boolean));
       if (secs.size === 1) titleParts.push('(' + [...secs][0] + ')');
     }
+    // Course title and teacher — separated with | from the class info
+    const extraParts: string[] = [];
+    const uniqueCourses = new Set(records.map((r) => r.course_title).filter(Boolean));
+    if (uniqueCourses.size === 1) extraParts.push([...uniqueCourses][0] as string);
+    const uniqueTeachers = new Set(records.map((r) => r.teacher_name).filter(Boolean));
+    if (uniqueTeachers.size === 1) extraParts.push([...uniqueTeachers][0] as string);
     const dsName =
-      datasetSelect?.value?.replace('.json', '').replace(/_/g, ' ') || '';
-    const classInfo = titleParts.length > 0 ? titleParts.join(' ') : '';
+      datasetSelect?.value?.replace('.json', '').replace('week', 'Week ').replace(/_/g, ' ') || '';
+    const classBase = titleParts.join(' ');
+    const classInfo = [classBase, ...extraParts].filter(Boolean).join(' | ');
     const title = classInfo || 'Weekly Timetable';
 
     // Detect multiple classes — a "class" = degree+program+semester+section
@@ -1555,11 +1562,12 @@ END:VCALENDAR`;
 
     // Title with subtle glow
     const titleMidY = cardsStartY / 2;
+    const titleFontSize = title.length < 30 ? 24 : title.length < 50 ? 20 : title.length < 70 ? 17 : 14;
     ctx.save();
     ctx.shadowColor = 'rgba(96, 165, 250, 0.4)';
     ctx.shadowBlur = 24;
     ctx.fillStyle = '#f1f5f9';
-    ctx.font = 'bold 24px system-ui, sans-serif';
+    ctx.font = `bold ${titleFontSize}px system-ui, sans-serif`;
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(title, finalW / 2, titleMidY);
