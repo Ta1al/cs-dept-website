@@ -977,12 +977,12 @@ END:VCALENDAR`;
   // image export handler
   const exportImageButton = document.getElementById('export-image');
 
-  // helper to render table data into a canvas and return blob
-  async function generateTablePNG(
+  // helper to render weekly-view style image and return blob (exact 16:9)
+  async function generateWeeklyPNG(
     records: FlatRecord[],
     footerText = ''
   ): Promise<Blob> {
-    // sort by day order then start time
+    // Sort by day order then start time
     records.sort((a, b) => {
       const dayA = DAY_ORDER.indexOf(a.day);
       const dayB = DAY_ORDER.indexOf(b.day);
@@ -998,113 +998,446 @@ END:VCALENDAR`;
       return tA - tB;
     });
 
-    // build headers; include flags column only if needed
-    const headers = [
-      'Day',
-      'Time',
-      'Course',
-      'Teacher',
-      'Room',
-      'Program / Semester',
-      'Flags',
-    ];
-
-    // convert records into rows, leaving day blank for repeats
-    const data: string[][] = [];
-    let lastDay = '';
-    let anyFlags = false;
+    // Group by day
+    const byDay: Record<string, FlatRecord[]> = {};
     for (const r of records) {
-      const timeStr = `${to12(r.start_time)}${
-        r.end_time ? ` - ${to12(r.end_time)}` : ''
-      }`;
-      const classBase = buildClassShort(r);
-      const semSuffix = r.semester != null ? ` (Sem #${r.semester})` : '';
-      const classLine = classBase + semSuffix;
-      const flagsArr: string[] = [];
-      if (r.combined_class) flagsArr.push('Combined');
-      if (r.practical) flagsArr.push('Practical');
-      const flagsStr = flagsArr.join(', ');
-      if (flagsStr) anyFlags = true;
-      const dayDisplay = r.day === lastDay ? '' : r.day;
-      lastDay = r.day;
-      data.push([
-        dayDisplay,
-        timeStr,
-        r.course_title || 'TBA',
-        r.teacher_name || '',
-        r.room,
-        classLine,
-        flagsStr,
-      ]);
+      if (!byDay[r.day]) byDay[r.day] = [];
+      byDay[r.day].push(r);
+    }
+    const daysInData = new Set(records.map((r) => r.day));
+    const daysToShow = DAY_ORDER.filter((d) => daysInData.has(d));
+
+    // Also add days from the full dataset that have 0 filtered results
+    const allDaysInFlat = new Set(flat.map((r: FlatRecord) => r.day));
+    for (const d of DAY_ORDER) {
+      if (allDaysInFlat.has(d) && !daysToShow.includes(d)) {
+        daysToShow.push(d);
+      }
+    }
+    daysToShow.sort((a, b) => DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b));
+
+    // Build title from active filters, falling back to records data
+    const titleParts: string[] = [];
+    // Degree: use filter if exactly 1, else infer from records
+    if (activeDegrees.size === 1) {
+      titleParts.push([...activeDegrees][0]);
+    } else {
+      const degs = new Set(records.map((r) => r.degree).filter(Boolean));
+      if (degs.size === 1) titleParts.push([...degs][0]);
+    }
+    // Program: use filter if exactly 1, else infer from records
+    if (activePrograms.size === 1) {
+      titleParts.push([...activePrograms][0]);
+    } else {
+      const progs = new Set(records.map((r) => r.program).filter(Boolean));
+      if (progs.size === 1) titleParts.push([...progs][0]);
+    }
+    // Semester
+    if (activeSemesters.size === 1) {
+      titleParts.push('Semester ' + [...activeSemesters][0]);
+    } else {
+      const sems = new Set(
+        records.map((r) => r.semester).filter((s) => s != null)
+      );
+      if (sems.size === 1) titleParts.push('Semester ' + [...sems][0]);
+    }
+    // Section
+    if (activeSections.size === 1) {
+      titleParts.push('(' + [...activeSections][0] + ')');
+    } else {
+      const secs = new Set(records.map((r) => r.section).filter(Boolean));
+      if (secs.size === 1) titleParts.push('(' + [...secs][0] + ')');
+    }
+    const dsName =
+      datasetSelect?.value?.replace('.json', '').replace(/_/g, ' ') || '';
+    const classInfo = titleParts.length > 0 ? titleParts.join(' ') : '';
+    const title =
+      [dsName, classInfo].filter(Boolean).join(', ') || 'Weekly Timetable';
+
+    // Detect multiple classes — a "class" = degree+program+semester+section
+    const classSet = new Set<string>();
+    for (const r of records) {
+      const cid =
+        buildClassShort(r) +
+        (r.semester != null ? ` (Sem #${r.semester})` : '');
+      classSet.add(cid);
+    }
+    const showClassRow = classSet.size > 1;
+    const rowCount = showClassRow ? 4 : 3;
+
+    // Colors
+    const bgColor = '#4a4a4a';
+    const dayBg = '#111111';
+    const labelBgs = ['#1a8f1a', '#d4880f', '#0077cc', '#7c3aed'];
+    const cellBgs = ['#a4d65e', '#f5e642', '#42c6ff', '#ddd6fe'];
+    const noClassesBg = '#a4d65e';
+
+    // Text measurement canvas
+    const measureCanvas = document.createElement('canvas');
+    const mCtx = measureCanvas.getContext('2d');
+    if (!mCtx) throw new Error('Unable to create canvas context');
+
+    const cellFont = '13px system-ui, sans-serif';
+    const cellFontBold = 'bold 13px system-ui, sans-serif';
+    const lineHeight = 17;
+    const cellPadV = 8;
+    const minRowH = 32;
+
+    function wrapText(text: string, maxWidth: number, font: string): string[] {
+      mCtx!.font = font;
+      if (maxWidth <= 0) return [text];
+      const words = text.split(' ');
+      const lines: string[] = [];
+      let current = '';
+      for (const word of words) {
+        const test = current ? current + ' ' + word : word;
+        if (mCtx!.measureText(test).width <= maxWidth) {
+          current = test;
+        } else {
+          if (current) lines.push(current);
+          current = word;
+        }
+      }
+      if (current) lines.push(current);
+      return lines.length ? lines : [text];
     }
 
-    // if no flags present in any row, drop the last column and header
-    if (!anyFlags) {
-      headers.pop();
-      data.forEach((row) => row.pop());
+    function txtH(lc: number): number {
+      return lc * lineHeight + cellPadV;
     }
 
-    const padding = 8;
-    const rowHeight = 24;
-    const headerHeight = 32;
+    // Layout constants
+    const scale = 2;
+    const dayLabelW = 160;
+    const rowLabelW = 90;
+    const cellMinW = 130;
+    const dayGap = 10;
+    const titleH = 50;
+    const footerH = footerText ? 30 : 0;
+    const sidePad = 20;
+    const maxLogicalW = 3200; // cap to avoid browser canvas limits
+
+    // Max columns per day
+    let maxCols = 0;
+    for (const d of daysToShow) {
+      maxCols = Math.max(maxCols, (byDay[d] || []).length);
+    }
+    if (maxCols === 0) maxCols = 1;
+
+    // Helper: get class identifier for a record
+    function classId(e: FlatRecord): string {
+      return (
+        buildClassShort(e) + (e.semester != null ? ` (Sem #${e.semester})` : '')
+      );
+    }
+
+    // Helper: compute day layouts for a given logical width
+    interface DayLayout {
+      timeH: number;
+      courseH: number;
+      roomH: number;
+      classH: number;
+      blockH: number;
+    }
+    function computeLayouts(logicalW: number): {
+      layouts: DayLayout[];
+      natH: number;
+      dataW: number;
+    } {
+      const dw = logicalW - sidePad * 2 - dayLabelW - rowLabelW;
+      const layouts: DayLayout[] = [];
+      for (const day of daysToShow) {
+        const entries = byDay[day] || [];
+        if (entries.length === 0) {
+          const bh = minRowH * rowCount;
+          layouts.push({
+            timeH: minRowH,
+            courseH: minRowH,
+            roomH: minRowH,
+            classH: showClassRow ? minRowH : 0,
+            blockH: bh,
+          });
+        } else {
+          const n = entries.length;
+          const cw = dw / n;
+          const tw = cw - 16;
+          let mxT = 1;
+          let mxC = 1;
+          let mxR = 1;
+          let mxCl = 1;
+          for (const e of entries) {
+            const ts = to12(e.start_time) + ' \u2013 ' + to12(e.end_time);
+            mxT = Math.max(mxT, wrapText(ts, tw, cellFontBold).length);
+            mxC = Math.max(
+              mxC,
+              wrapText(e.course_title || 'TBA', tw, cellFont).length
+            );
+            mxR = Math.max(mxR, wrapText(e.room, tw, cellFont).length);
+            if (showClassRow) {
+              mxCl = Math.max(mxCl, wrapText(classId(e), tw, cellFont).length);
+            }
+          }
+          const tH = Math.max(minRowH, txtH(mxT));
+          const cH = Math.max(minRowH, txtH(mxC));
+          const rH = Math.max(minRowH, txtH(mxR));
+          const clH = showClassRow ? Math.max(minRowH, txtH(mxCl)) : 0;
+          layouts.push({
+            timeH: tH,
+            courseH: cH,
+            roomH: rH,
+            classH: clH,
+            blockH: tH + cH + rH + clH,
+          });
+        }
+      }
+      const natH =
+        titleH +
+        layouts.reduce((s, l) => s + l.blockH + dayGap, 0) +
+        footerH +
+        30;
+      return { layouts, natH, dataW: dw };
+    }
+
+    // Step 1: natural width from content (capped)
+    const natW = Math.min(
+      Math.max(
+        1280,
+        dayLabelW + rowLabelW + Math.max(cellMinW * maxCols, 400) + sidePad * 2
+      ),
+      maxLogicalW
+    );
+
+    // Step 2: compute layouts + natural height
+    let result = computeLayouts(natW);
+    let dayLayouts = result.layouts;
+    const natH = result.natH;
+    let dataW = result.dataW;
+
+    // Step 3: enforce exact 16:9
+    // Find the smallest 16:9 rect that contains natW x natH
+    let finalW = Math.max(natW, Math.ceil(natH * (16 / 9)));
+    finalW = Math.min(finalW, maxLogicalW);
+    let finalH = Math.round(finalW * (9 / 16));
+
+    // If content is taller than 16:9 allows at max width, accept it
+    if (finalH < natH) finalH = natH;
+
+    // If width changed, recompute layouts (wider cells = less wrapping)
+    if (finalW !== natW) {
+      result = computeLayouts(finalW);
+      dayLayouts = result.layouts;
+      dataW = result.dataW;
+    }
+
+    // Distribute extra vertical space across day rows
+    const contentH =
+      titleH +
+      dayLayouts.reduce((s, l) => s + l.blockH + dayGap, 0) +
+      footerH +
+      30;
+    if (finalH > contentH && daysToShow.length > 0) {
+      const extra = (finalH - contentH) / daysToShow.length;
+      for (const dl of dayLayouts) {
+        const perRow = extra / rowCount;
+        dl.timeH += perRow;
+        dl.courseH += perRow;
+        dl.roomH += perRow;
+        if (showClassRow) dl.classH += perRow;
+        dl.blockH += extra;
+      }
+    }
+
+    // Create canvas
     const canvas = document.createElement('canvas');
+    canvas.width = Math.round(finalW * scale);
+    canvas.height = Math.round(finalH * scale);
     const ctx = canvas.getContext('2d');
     if (!ctx) throw new Error('Unable to create canvas context');
-    ctx.font = '14px system-ui';
+    ctx.scale(scale, scale);
 
-    // compute widths
-    const colWidths = headers.map((h, i) => {
-      let w = ctx.measureText(h).width;
-      data.forEach((row) => {
-        w = Math.max(w, ctx.measureText(String(row[i])).width);
+    // Background
+    ctx.fillStyle = bgColor;
+    ctx.fillRect(0, 0, finalW, finalH);
+
+    // Title
+    ctx.fillStyle = '#00d4ff';
+    ctx.font = 'bold 22px system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'alphabetic';
+    ctx.fillText(title, finalW / 2, titleH - 12);
+
+    // Helper: draw wrapped text centered in a rect
+    function drawWrapped(
+      text: string,
+      rx: number,
+      ry: number,
+      rw: number,
+      rh: number,
+      font: string
+    ) {
+      const lines = wrapText(text, rw - 16, font);
+      ctx!.font = font;
+      ctx!.fillStyle = '#000000';
+      ctx!.textAlign = 'center';
+      ctx!.textBaseline = 'middle';
+      const totH = lines.length * lineHeight;
+      const sy = ry + (rh - totH) / 2 + lineHeight / 2;
+      lines.forEach((ln, li) => {
+        ctx!.fillText(ln, rx + rw / 2, sy + li * lineHeight);
       });
-      return w + padding * 2;
-    });
+    }
 
-    const totalWidth = colWidths.reduce((a, b) => a + b, 0);
-    const footerHeight = footerText ? 24 : 0;
-    const totalHeight = headerHeight + data.length * rowHeight + footerHeight;
-    canvas.width = totalWidth;
-    canvas.height = totalHeight;
+    const rowLabels = ['Time', 'Course', 'Room'];
+    if (showClassRow) rowLabels.push('Class');
 
-    ctx.fillStyle = '#1f1f1f';
-    ctx.fillRect(0, 0, totalWidth, totalHeight);
+    let curY = titleH;
 
-    // header
-    ctx.fillStyle = '#374151';
-    ctx.fillRect(0, 0, totalWidth, headerHeight);
-    ctx.fillStyle = '#f3f4f6';
-    ctx.font = 'bold 14px system-ui';
-    let x = 0;
-    headers.forEach((h, i) => {
-      ctx.fillText(h, x + padding, headerHeight - 8);
-      x += colWidths[i];
-    });
+    for (let di = 0; di < daysToShow.length; di++) {
+      const day = daysToShow[di];
+      const entries = byDay[day] || [];
+      const layout = dayLayouts[di];
+      const dx = sidePad;
 
-    // rows
-    ctx.font = '14px system-ui';
-    data.forEach((row, ridx) => {
-      const y = headerHeight + ridx * rowHeight;
-      ctx.fillStyle = ridx % 2 === 0 ? '#1f1f1f' : '#111827';
-      ctx.fillRect(0, y, totalWidth, rowHeight);
-      ctx.fillStyle = '#f9fafb';
-      let xx = 0;
-      row.forEach((cell, i) => {
-        ctx.fillText(cell, xx + padding, y + rowHeight - 8);
-        xx += colWidths[i];
-      });
-    });
+      // Day label (black, spans all rows)
+      ctx.fillStyle = dayBg;
+      ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 14px system-ui, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
 
-    // footer text at bottom left (below rows)
+      const labelX = dx + dayLabelW;
+      const dataX = labelX + rowLabelW;
+      const heights = [layout.timeH, layout.courseH, layout.roomH];
+      if (showClassRow) heights.push(layout.classH);
+
+      // Row labels
+      let ly = curY;
+      for (let ri = 0; ri < rowLabels.length; ri++) {
+        ctx.fillStyle = labelBgs[ri];
+        ctx.fillRect(labelX, ly, rowLabelW, heights[ri]);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 13px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(
+          rowLabels[ri],
+          labelX + rowLabelW / 2,
+          ly + heights[ri] / 2
+        );
+        ly += heights[ri];
+      }
+
+      if (entries.length === 0) {
+        // "No Classes" spanning all rows
+        ctx.fillStyle = noClassesBg;
+        ctx.fillRect(dataX, curY, dataW, layout.blockH);
+        ctx.fillStyle = '#333333';
+        ctx.font = '16px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('No Classes', dataX + dataW / 2, curY + layout.blockH / 2);
+      } else {
+        const n = entries.length;
+        const cellW = dataW / n;
+        const rooms = entries.map((e) => e.room);
+        const allSameRoom =
+          rooms.length > 1 && rooms.every((r) => r === rooms[0]);
+
+        // Helper for drawing one data row with optional merge
+        function drawRow(
+          y: number,
+          h: number,
+          bgIdx: number,
+          // eslint-disable-next-line no-unused-vars
+          getText: (_e: FlatRecord) => string,
+          font: string,
+          merge: boolean,
+          mergedText: string
+        ) {
+          if (merge) {
+            ctx!.fillStyle = cellBgs[bgIdx];
+            ctx!.fillRect(dataX, y, dataW, h);
+            drawWrapped(mergedText, dataX, y, dataW, h, font);
+          } else {
+            entries.forEach((e, i) => {
+              const cx = dataX + i * cellW;
+              ctx!.fillStyle = cellBgs[bgIdx];
+              ctx!.fillRect(cx, y, cellW, h);
+              if (i > 0) {
+                ctx!.fillStyle = 'rgba(0,0,0,0.08)';
+                ctx!.fillRect(cx, y, 1, h);
+              }
+              drawWrapped(getText(e), cx, y, cellW, h, font);
+            });
+          }
+        }
+
+        // Time row
+        let rowY = curY;
+        drawRow(
+          rowY,
+          layout.timeH,
+          0,
+          (e) => to12(e.start_time) + ' \u2013 ' + to12(e.end_time),
+          cellFontBold,
+          false,
+          ''
+        );
+
+        // Course row
+        rowY += layout.timeH;
+        drawRow(
+          rowY,
+          layout.courseH,
+          1,
+          (e) => e.course_title || 'TBA',
+          cellFont,
+          false,
+          ''
+        );
+
+        // Room row
+        rowY += layout.courseH;
+        drawRow(
+          rowY,
+          layout.roomH,
+          2,
+          (e) => e.room,
+          cellFont,
+          allSameRoom,
+          rooms[0]
+        );
+
+        // Class row (only when multiple classes present)
+        if (showClassRow) {
+          rowY += layout.roomH;
+          const classIds = entries.map((e) => classId(e));
+          const allSameClass =
+            classIds.length > 1 && classIds.every((c) => c === classIds[0]);
+          drawRow(
+            rowY,
+            layout.classH,
+            3,
+            (e) => classId(e),
+            cellFont,
+            allSameClass,
+            classIds[0]
+          );
+        }
+      }
+
+      curY += layout.blockH + dayGap;
+    }
+
+    // Footer
     if (footerText) {
-      ctx.fillStyle = 'rgba(243,244,246,0.6)'; // lighter opacity
-      ctx.font = '12px system-ui';
+      ctx.fillStyle = '#cccccc';
+      ctx.font = '12px system-ui, sans-serif';
       ctx.textAlign = 'left';
-      ctx.fillText(
-        footerText,
-        padding,
-        headerHeight + data.length * rowHeight + (footerHeight - 8)
-      );
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(footerText, sidePad + 4, finalH - 8);
     }
 
     return new Promise((resolve, reject) => {
@@ -1122,8 +1455,7 @@ END:VCALENDAR`;
     );
 
     if (filteredList.length === 0) {
-      // briefly show success animation even when no rows
-      animateButtonSuccess(exportImageButton);
+      alert('No records to export. Try adjusting your filters.');
       return;
     }
 
@@ -1138,10 +1470,16 @@ END:VCALENDAR`;
         const ts = opt?.getAttribute('data-updated') || '';
         if (ts) {
           const d = new Date(ts);
-          footer += ` • Last updated at ${d.toLocaleString()}`;
+          const hh = d.getHours() % 12 || 12;
+          const mm = String(d.getMinutes()).padStart(2, '0');
+          const ampm = d.getHours() >= 12 ? 'PM' : 'AM';
+          const day = String(d.getDate()).padStart(2, '0');
+          const month = d.toLocaleString('en-US', { month: 'long' });
+          const year = d.getFullYear();
+          footer += ` \u2022 Last updated at ${hh}:${mm} ${ampm}, ${day} ${month} ${year}`;
         }
       }
-      const blob = await generateTablePNG(filteredList, footer);
+      const blob = await generateWeeklyPNG(filteredList, footer);
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -1153,12 +1491,9 @@ END:VCALENDAR`;
       animateButtonSuccess(exportImageButton);
     } catch (err) {
       console.error('image export error', err);
-      if (exportImageButton) {
-        exportImageButton.classList.add('error');
-        setTimeout(() => {
-          exportImageButton?.classList.remove('error');
-        }, 1500);
-      }
+      alert(
+        'Failed to generate image. Try narrowing your filters to reduce the number of entries.'
+      );
     }
   });
 </script>
