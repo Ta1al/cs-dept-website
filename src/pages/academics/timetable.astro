@@ -940,6 +940,33 @@ END:VCALENDAR`;
     }, 2000);
   }
 
+  // Show a spinning loader on a button; returns a function to restore it
+  function setButtonLoading(
+    btn: HTMLElement | null,
+    label = 'Generating...'
+  ): () => void {
+    if (!btn) return () => {};
+    const originalHTML = btn.innerHTML;
+    btn.setAttribute('disabled', '');
+    const spinnerSVG = `<svg class="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path></svg>`;
+    btn.innerHTML = spinnerSVG + `<span>${label}</span>`;
+    return () => {
+      btn.innerHTML = originalHTML;
+      btn.removeAttribute('disabled');
+    };
+  }
+
+  // Count distinct class groups (degree+program+semester+section) in a record list
+  function countDistinctClasses(list: FlatRecord[]): number {
+    return new Set(
+      list.map(
+        (r) =>
+          buildClassShort(r) +
+          (r.semester != null ? ` (Sem #${r.semester})` : '')
+      )
+    ).size;
+  }
+
   exportButton?.addEventListener('click', () => {
     // Get currently filtered results
     const q = (searchInput?.value || '').trim().toLowerCase();
@@ -951,6 +978,15 @@ END:VCALENDAR`;
       // animate even when no results to give feedback
       animateButtonSuccess(exportButton);
       return;
+    }
+
+    // Warn if more than 1 distinct class is selected
+    const classCount = countDistinctClasses(filteredList);
+    if (classCount > 1) {
+      const ok = window.confirm(
+        `You have ${classCount} different classes selected.\n\nThis will export all of them to your calendar.\nIf you only want your own timetable, narrow your filters first.\n\nContinue anyway?`
+      );
+      if (!ok) return;
     }
 
     // Group by similar classes to avoid duplicates
@@ -1051,8 +1087,7 @@ END:VCALENDAR`;
     const dsName =
       datasetSelect?.value?.replace('.json', '').replace(/_/g, ' ') || '';
     const classInfo = titleParts.length > 0 ? titleParts.join(' ') : '';
-    const title =
-      [dsName, classInfo].filter(Boolean).join(', ') || 'Weekly Timetable';
+    const title = classInfo || 'Weekly Timetable';
 
     // Detect multiple classes — a "class" = degree+program+semester+section
     const classSet = new Set<string>();
@@ -1065,12 +1100,22 @@ END:VCALENDAR`;
     const showClassRow = classSet.size > 1;
     const rowCount = showClassRow ? 4 : 3;
 
-    // Colors
-    const bgColor = '#4a4a4a';
-    const dayBg = '#111111';
-    const labelBgs = ['#1a8f1a', '#d4880f', '#0077cc', '#7c3aed'];
-    const cellBgs = ['#a4d65e', '#f5e642', '#42c6ff', '#ddd6fe'];
-    const noClassesBg = '#a4d65e';
+    // Modern color palette
+    const labelGradStarts = ['#065f46', '#881337', '#1e3a5f', '#4c1d95'];
+    const labelGradEnds = ['#047857', '#be123c', '#1d4ed8', '#6d28d9'];
+    const cellBgs = [
+      'rgba(16, 185, 129, 0.22)',
+      'rgba(244, 63, 94, 0.22)',
+      'rgba(59, 130, 246, 0.22)',
+      'rgba(139, 92, 246, 0.22)',
+    ];
+    const cellAccents = [
+      'rgba(52, 211, 153, 0.35)',
+      'rgba(251, 113, 133, 0.35)',
+      'rgba(96, 165, 250, 0.35)',
+      'rgba(167, 139, 250, 0.35)',
+    ];
+    const cellTextColors = ['#d1fae5', '#ffe4e6', '#dbeafe', '#ede9fe'];
 
     // Text measurement canvas
     const measureCanvas = document.createElement('canvas');
@@ -1111,11 +1156,13 @@ END:VCALENDAR`;
     const dayLabelW = 160;
     const rowLabelW = 90;
     const cellMinW = 130;
-    const dayGap = 10;
-    const titleH = 50;
-    const footerH = footerText ? 30 : 0;
-    const sidePad = 20;
-    const maxLogicalW = 3200; // cap to avoid browser canvas limits
+    const dayGap = 14;
+    const titleH = 64;
+    const footerH = footerText ? 36 : 0;
+    const sidePad = 24;
+    const cardRadius = 10;
+    // Hard canvas pixel ceiling (browser limit ~16 384 px; at 2× scale → 8 192 logical)
+    const maxLogicalW = 8000;
 
     // Max columns per day
     let maxCols = 0;
@@ -1198,12 +1245,9 @@ END:VCALENDAR`;
       return { layouts, natH, dataW: dw };
     }
 
-    // Step 1: natural width from content (capped)
+    // Step 1: natural width driven by content — each column gets at least cellMinW
     const natW = Math.min(
-      Math.max(
-        1280,
-        dayLabelW + rowLabelW + Math.max(cellMinW * maxCols, 400) + sidePad * 2
-      ),
+      Math.max(1280, dayLabelW + rowLabelW + cellMinW * maxCols + sidePad * 2),
       maxLogicalW
     );
 
@@ -1213,8 +1257,7 @@ END:VCALENDAR`;
     const natH = result.natH;
     let dataW = result.dataW;
 
-    // Step 3: enforce exact 16:9
-    // Find the smallest 16:9 rect that contains natW x natH
+    // Step 3: enforce minimum 16:9 (expand width if too tall; never shrink natW)
     let finalW = Math.max(natW, Math.ceil(natH * (16 / 9)));
     finalW = Math.min(finalW, maxLogicalW);
     let finalH = Math.round(finalW * (9 / 16));
@@ -1229,23 +1272,18 @@ END:VCALENDAR`;
       dataW = result.dataW;
     }
 
-    // Distribute extra vertical space across day rows
-    const contentH =
-      titleH +
-      dayLayouts.reduce((s, l) => s + l.blockH + dayGap, 0) +
-      footerH +
-      30;
-    if (finalH > contentH && daysToShow.length > 0) {
-      const extra = (finalH - contentH) / daysToShow.length;
-      for (const dl of dayLayouts) {
-        const perRow = extra / rowCount;
-        dl.timeH += perRow;
-        dl.courseH += perRow;
-        dl.roomH += perRow;
-        if (showClassRow) dl.classH += perRow;
-        dl.blockH += extra;
-      }
-    }
+    // Vertically center the day cards: equal margin above first card and below last card
+    // cardsH excludes the trailing dayGap after the last day
+    const cardsH =
+      dayLayouts.reduce((s, l) => s + l.blockH + dayGap, 0) -
+      (daysToShow.length > 0 ? dayGap : 0);
+    const cardsStartY = Math.max(
+      titleH,
+      Math.floor((finalH - cardsH) / 2)
+    );
+    // Position title centred in the gap above the cards
+    const topPad = cardsStartY - titleH;
+    const contentH = cardsStartY + cardsH + footerH + 10;
 
     // Create canvas
     const canvas = document.createElement('canvas');
@@ -1255,16 +1293,77 @@ END:VCALENDAR`;
     if (!ctx) throw new Error('Unable to create canvas context');
     ctx.scale(scale, scale);
 
-    // Background
-    ctx.fillStyle = bgColor;
+    // Helper: rounded rectangle path
+    function roundRectPath(
+      rx: number,
+      ry: number,
+      rw: number,
+      rh: number,
+      radius: number
+    ) {
+      const r = Math.min(radius, rw / 2, rh / 2);
+      ctx!.beginPath();
+      ctx!.moveTo(rx + r, ry);
+      ctx!.lineTo(rx + rw - r, ry);
+      ctx!.arcTo(rx + rw, ry, rx + rw, ry + r, r);
+      ctx!.lineTo(rx + rw, ry + rh - r);
+      ctx!.arcTo(rx + rw, ry + rh, rx + rw - r, ry + rh, r);
+      ctx!.lineTo(rx + r, ry + rh);
+      ctx!.arcTo(rx, ry + rh, rx, ry + rh - r, r);
+      ctx!.lineTo(rx, ry + r);
+      ctx!.arcTo(rx, ry, rx + r, ry, r);
+      ctx!.closePath();
+    }
+
+    // Background gradient (dark navy → dark indigo)
+    const bgGrad = ctx.createLinearGradient(0, 0, finalW * 0.4, finalH);
+    bgGrad.addColorStop(0, '#0f172a');
+    bgGrad.addColorStop(1, '#1e1b4b');
+    ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, finalW, finalH);
 
-    // Title
-    ctx.fillStyle = '#00d4ff';
-    ctx.font = 'bold 22px system-ui, sans-serif';
+    // Title with subtle glow
+    const titleMidY = cardsStartY / 2;
+    ctx.save();
+    ctx.shadowColor = 'rgba(96, 165, 250, 0.4)';
+    ctx.shadowBlur = 24;
+    ctx.fillStyle = '#f1f5f9';
+    ctx.font = 'bold 24px system-ui, sans-serif';
     ctx.textAlign = 'center';
-    ctx.textBaseline = 'alphabetic';
-    ctx.fillText(title, finalW / 2, titleH - 12);
+    ctx.textBaseline = 'middle';
+    ctx.fillText(title, finalW / 2, titleMidY);
+    ctx.restore();
+
+    // Dataset name — same row as title, right-aligned
+    if (dsName) {
+      ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
+      ctx.font = '13px system-ui, sans-serif';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(dsName, finalW - sidePad - 4, titleMidY);
+    }
+
+    // University name — same row as title, left-aligned
+    ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
+    ctx.font = '13px system-ui, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('University of Sargodha', sidePad + 4, titleMidY);
+
+    // Gradient accent line under title
+    const accentGrad = ctx.createLinearGradient(
+      finalW * 0.25,
+      0,
+      finalW * 0.75,
+      0
+    );
+    accentGrad.addColorStop(0, 'rgba(59, 130, 246, 0)');
+    accentGrad.addColorStop(0.3, 'rgba(59, 130, 246, 0.7)');
+    accentGrad.addColorStop(0.7, 'rgba(139, 92, 246, 0.7)');
+    accentGrad.addColorStop(1, 'rgba(139, 92, 246, 0)');
+    ctx.fillStyle = accentGrad;
+    roundRectPath(finalW * 0.2, titleMidY + 18, finalW * 0.6, 3, 1.5);
+    ctx.fill();
 
     // Helper: draw wrapped text centered in a rect
     function drawWrapped(
@@ -1273,11 +1372,12 @@ END:VCALENDAR`;
       ry: number,
       rw: number,
       rh: number,
-      font: string
+      font: string,
+      color = '#000000'
     ) {
       const lines = wrapText(text, rw - 16, font);
       ctx!.font = font;
-      ctx!.fillStyle = '#000000';
+      ctx!.fillStyle = color;
       ctx!.textAlign = 'center';
       ctx!.textBaseline = 'middle';
       const totH = lines.length * lineHeight;
@@ -1290,19 +1390,36 @@ END:VCALENDAR`;
     const rowLabels = ['Time', 'Course', 'Room'];
     if (showClassRow) rowLabels.push('Class');
 
-    let curY = titleH;
+    let curY = cardsStartY;
 
     for (let di = 0; di < daysToShow.length; di++) {
       const day = daysToShow[di];
       const entries = byDay[day] || [];
       const layout = dayLayouts[di];
       const dx = sidePad;
+      const cardW = finalW - sidePad * 2;
 
-      // Day label (black, spans all rows)
-      ctx.fillStyle = dayBg;
+      // Card background with rounded corners + clip
+      ctx.save();
+      roundRectPath(dx, curY, cardW, layout.blockH, cardRadius);
+      ctx.fillStyle = 'rgba(30, 41, 59, 0.45)';
+      ctx.fill();
+      roundRectPath(dx, curY, cardW, layout.blockH, cardRadius);
+      ctx.clip();
+
+      // Day label (gradient, spans all rows)
+      const dayGrd = ctx.createLinearGradient(
+        dx,
+        curY,
+        dx,
+        curY + layout.blockH
+      );
+      dayGrd.addColorStop(0, '#1e3a5f');
+      dayGrd.addColorStop(1, '#3b1f7e');
+      ctx.fillStyle = dayGrd;
       ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
       ctx.fillStyle = '#ffffff';
-      ctx.font = 'bold 14px system-ui, sans-serif';
+      ctx.font = 'bold 15px system-ui, sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
@@ -1312,13 +1429,23 @@ END:VCALENDAR`;
       const heights = [layout.timeH, layout.courseH, layout.roomH];
       if (showClassRow) heights.push(layout.classH);
 
-      // Row labels
+      // Row labels (gradient)
       let ly = curY;
       for (let ri = 0; ri < rowLabels.length; ri++) {
-        ctx.fillStyle = labelBgs[ri];
+        const lg = ctx.createLinearGradient(
+          labelX,
+          ly,
+          labelX + rowLabelW,
+          ly + heights[ri]
+        );
+        lg.addColorStop(0, labelGradStarts[ri]);
+        lg.addColorStop(1, labelGradEnds[ri]);
+        ctx.fillStyle = lg;
         ctx.fillRect(labelX, ly, rowLabelW, heights[ri]);
+        ctx.fillStyle = 'rgba(255,255,255,0.15)';
+        ctx.fillRect(labelX, ly, rowLabelW, 1);
         ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 13px system-ui, sans-serif';
+        ctx.font = 'bold 12px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(
@@ -1330,11 +1457,11 @@ END:VCALENDAR`;
       }
 
       if (entries.length === 0) {
-        // "No Classes" spanning all rows
-        ctx.fillStyle = noClassesBg;
+        // "No Classes" — subtle dark empty state
+        ctx.fillStyle = 'rgba(51, 65, 85, 0.4)';
         ctx.fillRect(dataX, curY, dataW, layout.blockH);
-        ctx.fillStyle = '#333333';
-        ctx.font = '16px system-ui, sans-serif';
+        ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
+        ctx.font = 'italic 15px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText('No Classes', dataX + dataW / 2, curY + layout.blockH / 2);
@@ -1356,20 +1483,25 @@ END:VCALENDAR`;
           merge: boolean,
           mergedText: string
         ) {
+          const txtColor = cellTextColors[bgIdx];
           if (merge) {
             ctx!.fillStyle = cellBgs[bgIdx];
             ctx!.fillRect(dataX, y, dataW, h);
-            drawWrapped(mergedText, dataX, y, dataW, h, font);
+            ctx!.fillStyle = cellAccents[bgIdx];
+            ctx!.fillRect(dataX, y, dataW, 1.5);
+            drawWrapped(mergedText, dataX, y, dataW, h, font, txtColor);
           } else {
             entries.forEach((e, i) => {
               const cx = dataX + i * cellW;
               ctx!.fillStyle = cellBgs[bgIdx];
               ctx!.fillRect(cx, y, cellW, h);
+              ctx!.fillStyle = cellAccents[bgIdx];
+              ctx!.fillRect(cx, y, cellW, 1.5);
               if (i > 0) {
-                ctx!.fillStyle = 'rgba(0,0,0,0.08)';
+                ctx!.fillStyle = 'rgba(255,255,255,0.05)';
                 ctx!.fillRect(cx, y, 1, h);
               }
-              drawWrapped(getText(e), cx, y, cellW, h, font);
+              drawWrapped(getText(e), cx, y, cellW, h, font, txtColor);
             });
           }
         }
@@ -1428,16 +1560,27 @@ END:VCALENDAR`;
         }
       }
 
+      ctx.restore();
+      // Card border stroke
+      ctx.strokeStyle = 'rgba(71, 85, 105, 0.4)';
+      ctx.lineWidth = 1;
+      roundRectPath(dx, curY, cardW, layout.blockH, cardRadius);
+      ctx.stroke();
+
       curY += layout.blockH + dayGap;
     }
 
-    // Footer
+    // Footer — vertically centered between bottom of last card and bottom of image
     if (footerText) {
-      ctx.fillStyle = '#cccccc';
-      ctx.font = '12px system-ui, sans-serif';
+      const footerMidY = cardsStartY + cardsH + (finalH - (cardsStartY + cardsH)) / 2;
+      ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
+      ctx.font = '11px system-ui, sans-serif';
       ctx.textAlign = 'left';
-      ctx.textBaseline = 'bottom';
-      ctx.fillText(footerText, sidePad + 4, finalH - 8);
+      ctx.textBaseline = 'middle';
+      ctx.fillText(footerText, sidePad + 8, footerMidY);
+      // Department name — same row as footer, right-aligned
+      ctx.textAlign = 'right';
+      ctx.fillText('Department of Computer Science', finalW - sidePad - 8, footerMidY);
     }
 
     return new Promise((resolve, reject) => {
@@ -1459,6 +1602,16 @@ END:VCALENDAR`;
       return;
     }
 
+    // Warn if more than 3 distinct classes are selected
+    const classCount = countDistinctClasses(filteredList);
+    if (classCount > 3) {
+      const ok = window.confirm(
+        `You have ${classCount} different classes selected.\n\nThe image may be very wide or hard to read.\nConsider narrowing your filters first.\n\nContinue anyway?`
+      );
+      if (!ok) return;
+    }
+
+    const restoreBtn = setButtonLoading(exportImageButton, 'Generating...');
     try {
       // build footer with current domain and optional dataset timestamp
       let footer = `Generated from ${location.hostname}`;
@@ -1488,8 +1641,10 @@ END:VCALENDAR`;
       a.click();
       document.body.removeChild(a);
       URL.revokeObjectURL(url);
+      restoreBtn();
       animateButtonSuccess(exportImageButton);
     } catch (err) {
+      restoreBtn();
       console.error('image export error', err);
       alert(
         'Failed to generate image. Try narrowing your filters to reduce the number of entries.'
