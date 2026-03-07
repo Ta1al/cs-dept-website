@@ -1100,7 +1100,7 @@ END:VCALENDAR`;
     const showClassRow = classSet.size > 1;
     const rowCount = showClassRow ? 4 : 3;
 
-    // color palette
+    // Modern color palette
     const labelGradStarts = ['#065f46', '#881337', '#1e3a5f', '#4c1d95'];
     const labelGradEnds = ['#047857', '#be123c', '#1d4ed8', '#6d28d9'];
     const cellBgs = [
@@ -1407,24 +1407,22 @@ END:VCALENDAR`;
       roundRectPath(dx, curY, cardW, layout.blockH, cardRadius);
       ctx.clip();
 
-      // Day label (gradient, spans all rows) — only when there are classes
-      if (entries.length > 0) {
-        const dayGrd = ctx.createLinearGradient(
-          dx,
-          curY,
-          dx,
-          curY + layout.blockH
-        );
-        dayGrd.addColorStop(0, '#1e3a5f');
-        dayGrd.addColorStop(1, '#3b1f7e');
-        ctx.fillStyle = dayGrd;
-        ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 15px system-ui, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
-      }
+      // Day label (gradient, spans all rows)
+      const dayGrd = ctx.createLinearGradient(
+        dx,
+        curY,
+        dx,
+        curY + layout.blockH
+      );
+      dayGrd.addColorStop(0, '#1e3a5f');
+      dayGrd.addColorStop(1, '#3b1f7e');
+      ctx.fillStyle = dayGrd;
+      ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
+      ctx.fillStyle = '#ffffff';
+      ctx.font = 'bold 15px system-ui, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
 
       const labelX = dx + dayLabelW;
       const dataX = labelX + rowLabelW;
@@ -1461,14 +1459,15 @@ END:VCALENDAR`;
       }
 
       if (entries.length === 0) {
-        // "No Classes" — spans entire card (no day label, no row-label column)
+        // "No Classes" — spans full width (no row-label column)
+        const noClassW = dataW + rowLabelW;
         ctx.fillStyle = 'rgba(51, 65, 85, 0.4)';
-        ctx.fillRect(dx, curY, cardW, layout.blockH);
+        ctx.fillRect(labelX, curY, noClassW, layout.blockH);
         ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
         ctx.font = 'italic 15px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(`No Classes on ${day}`, dx + cardW / 2, curY + layout.blockH / 2);
+        ctx.fillText('No Classes', labelX + noClassW / 2, curY + layout.blockH / 2);
       } else {
         const n = entries.length;
         const cellW = dataW / n;
