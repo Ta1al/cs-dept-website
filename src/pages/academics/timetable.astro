@@ -1853,11 +1853,15 @@ END:VCALENDAR`;
       return;
     }
 
-    // Warn if more than 3 distinct classes are selected
-    const classCount = countDistinctClasses(filteredList);
-    if (classCount > 3) {
+    // Warn if any single day has more than 6 classes
+    const classesByDay: Record<string, number> = {};
+    for (const r of filteredList) {
+      classesByDay[r.day] = (classesByDay[r.day] || 0) + 1;
+    }
+    const maxPerDay = Math.max(...Object.values(classesByDay));
+    if (maxPerDay > 6) {
       const ok = window.confirm(
-        `You have ${classCount} different classes selected.\n\nThe image may be very wide or hard to read.\nConsider narrowing your filters first.\n\nContinue anyway?`
+        `Some days have too many classes (up to ${maxPerDay} on a single day).\n\nThe image may be very tall or hard to read.\nConsider narrowing your filters first.\n\nContinue anyway?`
       );
       if (!ok) return;
     }
