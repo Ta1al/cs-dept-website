@@ -1118,8 +1118,13 @@ END:VCALENDAR`;
     /** RGB base string, e.g. '59, 130, 246' — used in rgba() */
     accent1: string;
     accent2: string;
+    /** Row label gradients: [time, course, room, class] */
     labelGradStarts: string[];
     labelGradEnds: string[];
+    /** Teacher row label gradient (used when includeTeacher is on) */
+    teacherLabelStart: string;
+    teacherLabelEnd: string;
+    /** Cell colors: [time, course, room, class, teacher] */
     cellBgs: string[];
     cellAccents: string[];
     cellTextColors: string[];
@@ -1137,19 +1142,23 @@ END:VCALENDAR`;
       accent2: '139, 195, 74',
       labelGradStarts: ['#1b5e20', '#bf360c', '#01579b', '#4a148c'],
       labelGradEnds: ['#388e3c', '#e64a19', '#0277bd', '#7b1fa2'],
+      teacherLabelStart: '#7b3f00',
+      teacherLabelEnd: '#e65100',
       cellBgs: [
         'rgba(139, 195, 74, 0.88)',
         'rgba(255, 214, 0, 0.88)',
         'rgba(0, 188, 212, 0.88)',
         'rgba(186, 104, 200, 0.88)',
+        'rgba(255, 152, 0, 0.88)',
       ],
       cellAccents: [
         'rgba(85, 139, 47, 0.9)',
         'rgba(200, 162, 0, 0.9)',
         'rgba(0, 139, 163, 0.9)',
         'rgba(142, 36, 170, 0.9)',
+        'rgba(200, 100, 0, 0.9)',
       ],
-      cellTextColors: ['#1a2e00', '#2d2200', '#00202a', '#1a0025'],
+      cellTextColors: ['#1a2e00', '#2d2200', '#00202a', '#1a0025', '#2d1500'],
     },
     {
       id: 'emerald-night',
@@ -1162,19 +1171,23 @@ END:VCALENDAR`;
       accent2: '139, 92, 246',
       labelGradStarts: ['#065f46', '#881337', '#1e3a5f', '#4c1d95'],
       labelGradEnds: ['#047857', '#be123c', '#1d4ed8', '#6d28d9'],
+      teacherLabelStart: '#78350f',
+      teacherLabelEnd: '#92400e',
       cellBgs: [
         'rgba(16, 185, 129, 0.38)',
         'rgba(244, 63, 94, 0.38)',
         'rgba(59, 130, 246, 0.38)',
         'rgba(139, 92, 246, 0.38)',
+        'rgba(245, 158, 11, 0.38)',
       ],
       cellAccents: [
         'rgba(52, 211, 153, 0.65)',
         'rgba(251, 113, 133, 0.65)',
         'rgba(96, 165, 250, 0.65)',
         'rgba(167, 139, 250, 0.65)',
+        'rgba(251, 191, 36, 0.65)',
       ],
-      cellTextColors: ['#ecfdf5', '#fff1f2', '#eff6ff', '#f5f3ff'],
+      cellTextColors: ['#ecfdf5', '#fff1f2', '#eff6ff', '#f5f3ff', '#fffbeb'],
     },
     // {
     //   id: 'ocean-breeze',
@@ -1237,24 +1250,29 @@ END:VCALENDAR`;
       accent2: '148, 163, 184',
       labelGradStarts: ['#1e293b', '#334155', '#1e293b', '#374151'],
       labelGradEnds: ['#334155', '#475569', '#374151', '#4b5563'],
+      teacherLabelStart: '#3f4f5c',
+      teacherLabelEnd: '#506070',
       cellBgs: [
         'rgba(148, 163, 184, 0.25)',
         'rgba(100, 116, 139, 0.25)',
         'rgba(71, 85, 105, 0.35)',
         'rgba(203, 213, 225, 0.2)',
+        'rgba(165, 180, 196, 0.30)',
       ],
       cellAccents: [
         'rgba(203, 213, 225, 0.6)',
         'rgba(148, 163, 184, 0.6)',
         'rgba(100, 116, 139, 0.6)',
         'rgba(241, 245, 249, 0.5)',
+        'rgba(165, 180, 196, 0.60)',
       ],
-      cellTextColors: ['#f1f5f9', '#f8fafc', '#e2e8f0', '#cbd5e1'],
+      cellTextColors: ['#f1f5f9', '#f8fafc', '#e2e8f0', '#cbd5e1', '#e2e8f0'],
     },
   ];
 
   const currentPalette: ColorPalette =
     palettes.find((p) => p.id === 'classroom') ?? palettes[0];
+  let includeTeacher = false;
   // ─────────────────────────────────────────────────────────────────────────
 
   const exportImageButton = document.getElementById('export-image');
@@ -1263,7 +1281,8 @@ END:VCALENDAR`;
   async function generateWeeklyPNG(
     records: FlatRecord[],
     footerText = '',
-    palette: ColorPalette = palettes[0]
+    palette: ColorPalette = palettes[0],
+    withTeacher = false
   ): Promise<Blob> {
     // Sort by day order then start time
     records.sort((a, b) => {
@@ -1352,11 +1371,9 @@ END:VCALENDAR`;
       classSet.add(cid);
     }
     const showClassRow = classSet.size > 1;
-    const rowCount = showClassRow ? 4 : 3;
+    const rowCount = showClassRow ? (withTeacher ? 5 : 4) : withTeacher ? 4 : 3;
 
     // Color palette (sourced from selected palette)
-    const labelGradStarts = palette.labelGradStarts;
-    const labelGradEnds = palette.labelGradEnds;
     const cellBgs = palette.cellBgs;
     const cellAccents = palette.cellAccents;
     const cellTextColors = palette.cellTextColors;
@@ -1426,6 +1443,7 @@ END:VCALENDAR`;
     interface DayLayout {
       timeH: number;
       courseH: number;
+      teacherH: number;
       roomH: number;
       classH: number;
       blockH: number;
@@ -1444,6 +1462,7 @@ END:VCALENDAR`;
           layouts.push({
             timeH: minRowH,
             courseH: minRowH,
+            teacherH: withTeacher ? minRowH : 0,
             roomH: minRowH,
             classH: showClassRow ? minRowH : 0,
             blockH: bh,
@@ -1454,6 +1473,7 @@ END:VCALENDAR`;
           const tw = cw - 16;
           let mxT = 1;
           let mxC = 1;
+          let mxTch = 1;
           let mxR = 1;
           let mxCl = 1;
           for (const e of entries) {
@@ -1463,6 +1483,9 @@ END:VCALENDAR`;
               mxC,
               wrapText(e.course_title || 'TBA', tw, cellFont).length
             );
+            if (withTeacher) {
+              mxTch = Math.max(mxTch, wrapText(e.teacher_name || '', tw, cellFont).length);
+            }
             mxR = Math.max(mxR, wrapText(e.room, tw, cellFont).length);
             if (showClassRow) {
               mxCl = Math.max(mxCl, wrapText(classId(e), tw, cellFont).length);
@@ -1470,14 +1493,16 @@ END:VCALENDAR`;
           }
           const tH = Math.max(minRowH, txtH(mxT));
           const cH = Math.max(minRowH, txtH(mxC));
+          const tchH = withTeacher ? Math.max(minRowH, txtH(mxTch)) : 0;
           const rH = Math.max(minRowH, txtH(mxR));
           const clH = showClassRow ? Math.max(minRowH, txtH(mxCl)) : 0;
           layouts.push({
             timeH: tH,
             courseH: cH,
+            teacherH: tchH,
             roomH: rH,
             classH: clH,
-            blockH: tH + cH + rH + clH,
+            blockH: tH + cH + tchH + rH + clH,
           });
         }
       }
@@ -1626,8 +1651,23 @@ END:VCALENDAR`;
       });
     }
 
-    const rowLabels = ['Time', 'Course', 'Room'];
+    const rowLabels = ['Time', 'Course'];
+    if (withTeacher) rowLabels.push('Teacher');
+    rowLabels.push('Room');
     if (showClassRow) rowLabels.push('Class');
+    // Build label gradient arrays matching rowLabels order
+    const rowLabelGradStarts = [palette.labelGradStarts[0], palette.labelGradStarts[1]];
+    const rowLabelGradEnds = [palette.labelGradEnds[0], palette.labelGradEnds[1]];
+    if (withTeacher) {
+      rowLabelGradStarts.push(palette.teacherLabelStart);
+      rowLabelGradEnds.push(palette.teacherLabelEnd);
+    }
+    rowLabelGradStarts.push(palette.labelGradStarts[2]);
+    rowLabelGradEnds.push(palette.labelGradEnds[2]);
+    if (showClassRow) {
+      rowLabelGradStarts.push(palette.labelGradStarts[3]);
+      rowLabelGradEnds.push(palette.labelGradEnds[3]);
+    }
 
     let curY = cardsStartY;
 
@@ -1665,7 +1705,9 @@ END:VCALENDAR`;
 
       const labelX = dx + dayLabelW;
       const dataX = labelX + rowLabelW;
-      const heights = [layout.timeH, layout.courseH, layout.roomH];
+      const heights = [layout.timeH, layout.courseH];
+      if (withTeacher) heights.push(layout.teacherH);
+      heights.push(layout.roomH);
       if (showClassRow) heights.push(layout.classH);
 
       // Row labels (gradient) — only when there are classes
@@ -1678,8 +1720,8 @@ END:VCALENDAR`;
             labelX + rowLabelW,
             ly + heights[ri]
           );
-          lg.addColorStop(0, labelGradStarts[ri]);
-          lg.addColorStop(1, labelGradEnds[ri]);
+          lg.addColorStop(0, rowLabelGradStarts[ri]);
+          lg.addColorStop(1, rowLabelGradEnds[ri]);
           ctx.fillStyle = lg;
           ctx.fillRect(labelX, ly, rowLabelW, heights[ri]);
           ctx.fillStyle = 'rgba(255,255,255,0.15)';
@@ -1776,8 +1818,24 @@ END:VCALENDAR`;
           ''
         );
 
+        // Teacher row (optional)
+        if (withTeacher) {
+          rowY += layout.courseH;
+          const teachers = entries.map((e) => e.teacher_name || '');
+          const allSameTeacher = teachers.length > 1 && teachers.every((t) => t === teachers[0]);
+          drawRow(
+            rowY,
+            layout.teacherH,
+            4,
+            (e) => e.teacher_name || '',
+            cellFont,
+            allSameTeacher,
+            teachers[0]
+          );
+        }
+
         // Room row
-        rowY += layout.courseH;
+        rowY = curY + layout.timeH + layout.courseH + (withTeacher ? layout.teacherH : 0);
         drawRow(
           rowY,
           layout.roomH,
@@ -1887,7 +1945,7 @@ END:VCALENDAR`;
           footer += ` \u2022 Last updated at ${hh}:${mm} ${ampm}, ${day} ${month} ${year}`;
         }
       }
-      const blob = await generateWeeklyPNG(filteredList, footer, palette);
+      const blob = await generateWeeklyPNG(filteredList, footer, palette, includeTeacher);
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -1922,6 +1980,38 @@ END:VCALENDAR`;
     while (paletteDropdown.children.length > 1) {
       paletteDropdown.removeChild(paletteDropdown.lastChild!);
     }
+
+    // Include Teacher toggle
+    const toggleRow = document.createElement('div');
+    toggleRow.className = 'flex items-center justify-between px-3 py-2 border-b border-gray-700';
+    const toggleLabel = document.createElement('span');
+    toggleLabel.className = 'text-xs text-gray-300';
+    toggleLabel.textContent = 'Include Teacher';
+    const toggleBtn = document.createElement('button');
+    toggleBtn.type = 'button';
+    toggleBtn.className = `relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 focus:outline-none ${includeTeacher ? 'bg-green-500' : 'bg-gray-600'}`;
+    toggleBtn.setAttribute('role', 'switch');
+    toggleBtn.setAttribute('aria-checked', String(includeTeacher));
+    const thumb = document.createElement('span');
+    thumb.className = `pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow transition duration-200 ${includeTeacher ? 'translate-x-4' : 'translate-x-0'}`;
+    toggleBtn.appendChild(thumb);
+    toggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      includeTeacher = !includeTeacher;
+      toggleBtn.className = `relative inline-flex h-5 w-9 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 focus:outline-none ${includeTeacher ? 'bg-green-500' : 'bg-gray-600'}`;
+      toggleBtn.setAttribute('aria-checked', String(includeTeacher));
+      thumb.className = `pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow transition duration-200 ${includeTeacher ? 'translate-x-4' : 'translate-x-0'}`;
+    });
+    toggleRow.appendChild(toggleLabel);
+    toggleRow.appendChild(toggleBtn);
+    paletteDropdown.appendChild(toggleRow);
+
+    // Divider label
+    const divider = document.createElement('div');
+    divider.className = 'px-3 py-1.5 text-[10px] font-semibold text-gray-500 uppercase tracking-wider';
+    divider.textContent = 'Color palette';
+    paletteDropdown.appendChild(divider);
+
     palettes.forEach((p) => {
       const btn = document.createElement('button');
       btn.type = 'button';
