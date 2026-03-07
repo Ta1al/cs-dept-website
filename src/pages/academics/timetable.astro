@@ -138,16 +138,50 @@ try {
         </svg>
         <span>Export to Calendar</span>
       </button>
-      <button
-        id="export-image"
-        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
-        title="Download an image of filtered classes"
-      >
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M5 7h14v10H5V7zm7 8a3 3 0 100-6 3 3 0 000 6z"></path>
-        </svg>
-        <span>Export to Image</span>
-      </button>
+      <div class="relative inline-flex">
+        <button
+          id="export-image"
+          class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-l-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
+          title="Download an image of filtered classes"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5 7h14v10H5V7zm7 8a3 3 0 100-6 3 3 0 000 6z"></path>
+          </svg>
+          <span>Export to Image</span>
+        </button>
+        <button
+          id="export-image-palette-toggle"
+          class="bg-green-700 hover:bg-green-800 text-white px-2 py-2 rounded-r-lg transition-all duration-200 flex items-center border-l border-green-500/40"
+          title="Choose color palette"
+          aria-expanded="false"
+          aria-haspopup="true"
+        >
+          <svg
+            id="palette-chevron"
+            class="w-3 h-3 transition-transform duration-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2.5"
+              d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+        <div
+          id="palette-dropdown"
+          class="absolute top-full mt-1 z-50 bg-gray-900 border border-gray-700 rounded-lg shadow-2xl overflow-hidden hidden"
+          style="min-width:220px; right:0"
+        >
+          <div
+            class="px-3 py-2 text-[11px] font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-700"
+          >
+            Export with color palette
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="flex justify-between items-center" id="filter-toggle-wrapper">
@@ -1011,12 +1045,163 @@ END:VCALENDAR`;
   });
 
   // image export handler
+  // ── Color palettes ────────────────────────────────────────────────────────
+  type ColorPalette = {
+    id: string;
+    name: string;
+    bgStart: string;
+    bgEnd: string;
+    dayLabelStart: string;
+    dayLabelEnd: string;
+    /** RGB base string, e.g. '59, 130, 246' — used in rgba() */
+    accent1: string;
+    accent2: string;
+    labelGradStarts: string[];
+    labelGradEnds: string[];
+    cellBgs: string[];
+    cellAccents: string[];
+    cellTextColors: string[];
+  };
+
+  const palettes: ColorPalette[] = [
+    {
+      id: 'classroom',
+      name: 'Neon Chalk',
+      bgStart: '#2b2b2b',
+      bgEnd: '#3d3d3d',
+      dayLabelStart: '#111111',
+      dayLabelEnd: '#242424',
+      accent1: '0, 188, 212',
+      accent2: '139, 195, 74',
+      labelGradStarts: ['#1b5e20', '#bf360c', '#01579b', '#4a148c'],
+      labelGradEnds: ['#388e3c', '#e64a19', '#0277bd', '#7b1fa2'],
+      cellBgs: [
+        'rgba(139, 195, 74, 0.88)',
+        'rgba(255, 214, 0, 0.88)',
+        'rgba(0, 188, 212, 0.88)',
+        'rgba(186, 104, 200, 0.88)',
+      ],
+      cellAccents: [
+        'rgba(85, 139, 47, 0.9)',
+        'rgba(200, 162, 0, 0.9)',
+        'rgba(0, 139, 163, 0.9)',
+        'rgba(142, 36, 170, 0.9)',
+      ],
+      cellTextColors: ['#1a2e00', '#2d2200', '#00202a', '#1a0025'],
+    },
+    {
+      id: 'emerald-night',
+      name: 'Emerald Night',
+      bgStart: '#0f172a',
+      bgEnd: '#1e1b4b',
+      dayLabelStart: '#1e3a5f',
+      dayLabelEnd: '#3b1f7e',
+      accent1: '59, 130, 246',
+      accent2: '139, 92, 246',
+      labelGradStarts: ['#065f46', '#881337', '#1e3a5f', '#4c1d95'],
+      labelGradEnds: ['#047857', '#be123c', '#1d4ed8', '#6d28d9'],
+      cellBgs: [
+        'rgba(16, 185, 129, 0.38)',
+        'rgba(244, 63, 94, 0.38)',
+        'rgba(59, 130, 246, 0.38)',
+        'rgba(139, 92, 246, 0.38)',
+      ],
+      cellAccents: [
+        'rgba(52, 211, 153, 0.65)',
+        'rgba(251, 113, 133, 0.65)',
+        'rgba(96, 165, 250, 0.65)',
+        'rgba(167, 139, 250, 0.65)',
+      ],
+      cellTextColors: ['#ecfdf5', '#fff1f2', '#eff6ff', '#f5f3ff'],
+    },
+    // {
+    //   id: 'ocean-breeze',
+    //   name: 'Ocean Breeze',
+    //   bgStart: '#011627',
+    //   bgEnd: '#0a3d62',
+    //   dayLabelStart: '#0c4a6e',
+    //   dayLabelEnd: '#164e63',
+    //   accent1: '6, 182, 212',
+    //   accent2: '56, 189, 248',
+    //   labelGradStarts: ['#0c4a6e', '#164e63', '#1e3a5f', '#065f46'],
+    //   labelGradEnds: ['#0284c7', '#0891b2', '#0369a1', '#059669'],
+    //   cellBgs: [
+    //     'rgba(14, 165, 233, 0.35)',
+    //     'rgba(6, 182, 212, 0.35)',
+    //     'rgba(20, 184, 166, 0.35)',
+    //     'rgba(99, 102, 241, 0.35)',
+    //   ],
+    //   cellAccents: [
+    //     'rgba(56, 189, 248, 0.65)',
+    //     'rgba(34, 211, 238, 0.65)',
+    //     'rgba(45, 212, 191, 0.65)',
+    //     'rgba(129, 140, 248, 0.65)',
+    //   ],
+    //   cellTextColors: ['#e0f2fe', '#ecfeff', '#f0fdfa', '#eef2ff'],
+    // },
+    // {
+    //   id: 'lavender-dream',
+    //   name: 'Lavender Dream',
+    //   bgStart: '#0f0320',
+    //   bgEnd: '#1a0533',
+    //   dayLabelStart: '#3b0764',
+    //   dayLabelEnd: '#581c87',
+    //   accent1: '168, 85, 247',
+    //   accent2: '217, 70, 239',
+    //   labelGradStarts: ['#3b0764', '#701a75', '#4a044e', '#581c87'],
+    //   labelGradEnds: ['#7e22ce', '#a21caf', '#86198f', '#6d28d9'],
+    //   cellBgs: [
+    //     'rgba(168, 85, 247, 0.35)',
+    //     'rgba(217, 70, 239, 0.35)',
+    //     'rgba(192, 38, 211, 0.35)',
+    //     'rgba(244, 114, 182, 0.35)',
+    //   ],
+    //   cellAccents: [
+    //     'rgba(196, 181, 253, 0.65)',
+    //     'rgba(240, 171, 252, 0.65)',
+    //     'rgba(245, 208, 253, 0.65)',
+    //     'rgba(249, 168, 212, 0.65)',
+    //   ],
+    //   cellTextColors: ['#faf5ff', '#fdf4ff', '#fdf4ff', '#fdf2f8'],
+    // },
+    {
+      id: 'monochrome',
+      name: 'Monochrome',
+      bgStart: '#0a0a0a',
+      bgEnd: '#1c1c2e',
+      dayLabelStart: '#1e293b',
+      dayLabelEnd: '#0f172a',
+      accent1: '100, 116, 139',
+      accent2: '148, 163, 184',
+      labelGradStarts: ['#1e293b', '#334155', '#1e293b', '#374151'],
+      labelGradEnds: ['#334155', '#475569', '#374151', '#4b5563'],
+      cellBgs: [
+        'rgba(148, 163, 184, 0.25)',
+        'rgba(100, 116, 139, 0.25)',
+        'rgba(71, 85, 105, 0.35)',
+        'rgba(203, 213, 225, 0.2)',
+      ],
+      cellAccents: [
+        'rgba(203, 213, 225, 0.6)',
+        'rgba(148, 163, 184, 0.6)',
+        'rgba(100, 116, 139, 0.6)',
+        'rgba(241, 245, 249, 0.5)',
+      ],
+      cellTextColors: ['#f1f5f9', '#f8fafc', '#e2e8f0', '#cbd5e1'],
+    }
+  ];
+
+  let currentPalette: ColorPalette =
+    palettes.find((p) => p.id === 'classroom') ?? palettes[0];
+  // ─────────────────────────────────────────────────────────────────────────
+
   const exportImageButton = document.getElementById('export-image');
 
   // helper to render weekly-view style image and return blob (exact 16:9)
   async function generateWeeklyPNG(
     records: FlatRecord[],
-    footerText = ''
+    footerText = '',
+    palette: ColorPalette = palettes[0]
   ): Promise<Blob> {
     // Sort by day order then start time
     records.sort((a, b) => {
@@ -1100,22 +1285,12 @@ END:VCALENDAR`;
     const showClassRow = classSet.size > 1;
     const rowCount = showClassRow ? 4 : 3;
 
-    // Modern color palette
-    const labelGradStarts = ['#065f46', '#881337', '#1e3a5f', '#4c1d95'];
-    const labelGradEnds = ['#047857', '#be123c', '#1d4ed8', '#6d28d9'];
-    const cellBgs = [
-      'rgba(16, 185, 129, 0.38)',
-      'rgba(244, 63, 94, 0.38)',
-      'rgba(59, 130, 246, 0.38)',
-      'rgba(139, 92, 246, 0.38)',
-    ];
-    const cellAccents = [
-      'rgba(52, 211, 153, 0.65)',
-      'rgba(251, 113, 133, 0.65)',
-      'rgba(96, 165, 250, 0.65)',
-      'rgba(167, 139, 250, 0.65)',
-    ];
-    const cellTextColors = ['#ecfdf5', '#fff1f2', '#eff6ff', '#f5f3ff'];
+    // Color palette (sourced from selected palette)
+    const labelGradStarts = palette.labelGradStarts;
+    const labelGradEnds = palette.labelGradEnds;
+    const cellBgs = palette.cellBgs;
+    const cellAccents = palette.cellAccents;
+    const cellTextColors = palette.cellTextColors;
 
     // Text measurement canvas
     const measureCanvas = document.createElement('canvas');
@@ -1277,13 +1452,7 @@ END:VCALENDAR`;
     const cardsH =
       dayLayouts.reduce((s, l) => s + l.blockH + dayGap, 0) -
       (daysToShow.length > 0 ? dayGap : 0);
-    const cardsStartY = Math.max(
-      titleH,
-      Math.floor((finalH - cardsH) / 2)
-    );
-    // Position title centred in the gap above the cards
-    const topPad = cardsStartY - titleH;
-    const contentH = cardsStartY + cardsH + footerH + 10;
+    const cardsStartY = Math.max(titleH, Math.floor((finalH - cardsH) / 2));
 
     // Create canvas
     const canvas = document.createElement('canvas');
@@ -1315,10 +1484,10 @@ END:VCALENDAR`;
       ctx!.closePath();
     }
 
-    // Background gradient (dark navy → dark indigo)
+    // Background gradient
     const bgGrad = ctx.createLinearGradient(0, 0, finalW * 0.4, finalH);
-    bgGrad.addColorStop(0, '#0f172a');
-    bgGrad.addColorStop(1, '#1e1b4b');
+    bgGrad.addColorStop(0, palette.bgStart);
+    bgGrad.addColorStop(1, palette.bgEnd);
     ctx.fillStyle = bgGrad;
     ctx.fillRect(0, 0, finalW, finalH);
 
@@ -1357,10 +1526,10 @@ END:VCALENDAR`;
       finalW * 0.75,
       0
     );
-    accentGrad.addColorStop(0, 'rgba(59, 130, 246, 0)');
-    accentGrad.addColorStop(0.3, 'rgba(59, 130, 246, 0.7)');
-    accentGrad.addColorStop(0.7, 'rgba(139, 92, 246, 0.7)');
-    accentGrad.addColorStop(1, 'rgba(139, 92, 246, 0)');
+    accentGrad.addColorStop(0, `rgba(${palette.accent1}, 0)`);
+    accentGrad.addColorStop(0.3, `rgba(${palette.accent1}, 0.7)`);
+    accentGrad.addColorStop(0.7, `rgba(${palette.accent2}, 0.7)`);
+    accentGrad.addColorStop(1, `rgba(${palette.accent2}, 0)`);
     ctx.fillStyle = accentGrad;
     roundRectPath(finalW * 0.2, titleMidY + 18, finalW * 0.6, 3, 1.5);
     ctx.fill();
@@ -1414,8 +1583,8 @@ END:VCALENDAR`;
         dx,
         curY + layout.blockH
       );
-      dayGrd.addColorStop(0, '#1e3a5f');
-      dayGrd.addColorStop(1, '#3b1f7e');
+      dayGrd.addColorStop(0, palette.dayLabelStart);
+      dayGrd.addColorStop(1, palette.dayLabelEnd);
       ctx.fillStyle = dayGrd;
       ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
       ctx.fillStyle = '#ffffff';
@@ -1467,7 +1636,11 @@ END:VCALENDAR`;
         ctx.font = 'italic 15px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('No Classes', labelX + noClassW / 2, curY + layout.blockH / 2);
+        ctx.fillText(
+          'No Classes',
+          labelX + noClassW / 2,
+          curY + layout.blockH / 2
+        );
       } else {
         const n = entries.length;
         const cellW = dataW / n;
@@ -1575,7 +1748,8 @@ END:VCALENDAR`;
 
     // Footer — vertically centered between bottom of last card and bottom of image
     if (footerText) {
-      const footerMidY = cardsStartY + cardsH + (finalH - (cardsStartY + cardsH)) / 2;
+      const footerMidY =
+        cardsStartY + cardsH + (finalH - (cardsStartY + cardsH)) / 2;
       ctx.fillStyle = 'rgba(148, 163, 184, 0.7)';
       ctx.font = '11px system-ui, sans-serif';
       ctx.textAlign = 'left';
@@ -1583,7 +1757,11 @@ END:VCALENDAR`;
       ctx.fillText(footerText, sidePad + 8, footerMidY);
       // Department name — same row as footer, right-aligned
       ctx.textAlign = 'right';
-      ctx.fillText('Department of Computer Science', finalW - sidePad - 8, footerMidY);
+      ctx.fillText(
+        'Department of Computer Science',
+        finalW - sidePad - 8,
+        footerMidY
+      );
     }
 
     return new Promise((resolve, reject) => {
@@ -1594,7 +1772,7 @@ END:VCALENDAR`;
     });
   }
 
-  exportImageButton?.addEventListener('click', async () => {
+  async function triggerImageExport(palette: ColorPalette): Promise<void> {
     const q = (searchInput?.value || '').trim().toLowerCase();
     const filteredList = applyFilters(flat).filter((r: FlatRecord) =>
       recordMatches(r, q)
@@ -1635,7 +1813,7 @@ END:VCALENDAR`;
           footer += ` \u2022 Last updated at ${hh}:${mm} ${ampm}, ${day} ${month} ${year}`;
         }
       }
-      const blob = await generateWeeklyPNG(filteredList, footer);
+      const blob = await generateWeeklyPNG(filteredList, footer, palette);
       const url = URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
@@ -1653,5 +1831,104 @@ END:VCALENDAR`;
         'Failed to generate image. Try narrowing your filters to reduce the number of entries.'
       );
     }
+  }
+
+  exportImageButton?.addEventListener('click', () => {
+    triggerImageExport(currentPalette);
   });
+
+  // ── Palette dropdown ─────────────────────────────────────────────────────
+  const paletteToggle = document.getElementById('export-image-palette-toggle');
+  const paletteDropdown = document.getElementById('palette-dropdown');
+  const paletteChevron = document.getElementById('palette-chevron');
+
+  function buildPaletteDropdown() {
+    if (!paletteDropdown) return;
+    // Remove all children except the header (first child)
+    while (paletteDropdown.children.length > 1) {
+      paletteDropdown.removeChild(paletteDropdown.lastChild!);
+    }
+    palettes.forEach((p) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      (btn as HTMLButtonElement & { dataset: DOMStringMap }).dataset.paletteId =
+        p.id;
+      btn.className =
+        'w-full flex items-center gap-3 px-3 py-2.5 text-sm text-left transition-colors hover:bg-gray-700/70';
+
+      // Colour swatch — 4 narrow bars
+      const swatch = document.createElement('span');
+      swatch.className = 'flex gap-0.5 shrink-0';
+      p.cellAccents.forEach((c) => {
+        const bar = document.createElement('span');
+        bar.style.cssText = `display:inline-block;width:8px;height:22px;background:${c};border-radius:2px;`;
+        swatch.appendChild(bar);
+      });
+
+      // Palette name
+      const label = document.createElement('span');
+      label.className = 'text-gray-200 font-medium flex-1';
+      label.textContent = p.name;
+
+      btn.appendChild(swatch);
+      btn.appendChild(label);
+
+      if (p.id === 'classroom') {
+        const badge = document.createElement('span');
+        badge.className =
+          'text-[10px] font-semibold text-gray-400 border border-gray-600 rounded px-1 py-0.5 shrink-0';
+        badge.textContent = 'Default';
+        btn.appendChild(badge);
+      }
+
+      btn.addEventListener('click', () => {
+        closePaletteDropdown();
+        triggerImageExport(p);
+      });
+      paletteDropdown.appendChild(btn);
+    });
+  }
+
+  function openPaletteDropdown() {
+    buildPaletteDropdown();
+    if (paletteDropdown) {
+      // Reset to default right-aligned position before measuring
+      paletteDropdown.style.right = '0';
+      paletteDropdown.style.left = 'auto';
+      paletteDropdown.classList.remove('hidden');
+      // Clamp within viewport
+      const rect = paletteDropdown.getBoundingClientRect();
+      if (rect.left < 8) {
+        paletteDropdown.style.right = 'auto';
+        paletteDropdown.style.left = '0';
+      }
+      if (rect.right > window.innerWidth - 8) {
+        paletteDropdown.style.right = '0';
+        paletteDropdown.style.left = 'auto';
+      }
+    }
+    paletteToggle?.setAttribute('aria-expanded', 'true');
+    paletteChevron?.classList.add('rotate-180');
+  }
+
+  function closePaletteDropdown() {
+    paletteDropdown?.classList.add('hidden');
+    paletteToggle?.setAttribute('aria-expanded', 'false');
+    paletteChevron?.classList.remove('rotate-180');
+  }
+
+  paletteToggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = !paletteDropdown?.classList.contains('hidden');
+    if (isOpen) closePaletteDropdown();
+    else openPaletteDropdown();
+  });
+
+  document.addEventListener('click', (e) => {
+    const wrapper = paletteToggle?.closest('.relative');
+    if (wrapper && !wrapper.contains(e.target as Node)) {
+      closePaletteDropdown();
+    }
+  });
+  // ─────────────────────────────────────────────────────────────────────────
 </script>
