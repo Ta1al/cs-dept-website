@@ -171,6 +171,10 @@
   #results-wrapper {
     display: none;
   }
+  /* hide the now-empty legacy wrapper */
+  #filter-toggle-wrapper {
+    display: none !important;
+  }
   #mobile-results .mcard {
     position: relative;
     background: #111a22;
@@ -286,9 +290,6 @@
   #filters.collapsed {
     display: none;
   }
-  #mobile-filter-toggle.active #mobile-filter-caret {
-    transform: rotate(180deg);
-  }
 }
 
 /* success animation for export buttons */
@@ -313,6 +314,9 @@
     display: none;
   }
   #filter-toggle-wrapper {
+    display: none;
+  }
+  #mobile-filter-toggle {
     display: none;
   }
 }
@@ -509,9 +513,14 @@
 #mobile-filter-toggle {
   transition:
     background 0.2s,
-    border-color 0.2s;
+    border-color 0.2s,
+    color 0.2s;
 }
 #mobile-filter-toggle.active {
-  background: #1e2936;
-  border-color: #4b5563;
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #93c5fd;
+}
+#mobile-filter-toggle.active #mobile-filter-caret {
+  transform: rotate(180deg);
 }

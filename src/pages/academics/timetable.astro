@@ -71,94 +71,74 @@ try {
   <main class="max-w-7xl mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-4">Department Timetable</h1>
 
-    <div class="flex flex-wrap gap-3 items-center mb-4">
-      <div class="flex flex-col text-sm text-gray-300">
-        <label>
-          Timetable
-          <select
-            id="dataset"
-            class="ml-2 bg-gray-800 border border-gray-700 rounded px-2 py-1"
+    <div class="mb-4 flex flex-col gap-2">
+      <!-- Row 1: dataset selector + simplified toggle -->
+      <div class="flex items-center justify-center gap-2">
+        <div class="flex flex-col text-sm text-gray-300">
+          <label class="flex items-center gap-1.5">
+            <span class="text-xs text-gray-400 hidden sm:inline">Timetable</span
+            >
+            <select
+              id="dataset"
+              class="bg-gray-800 border border-gray-700 rounded px-2 py-1.5 text-sm"
+            >
+              {
+                datasetFiles.map((f) => (
+                  <option
+                    value={f}
+                    selected={f === defaultDataset}
+                    data-updated={datasetInfos[f] || ''}
+                  >
+                    {f.replace('.json', '').replace('week', 'Week ')}
+                  </option>
+                ))
+              }
+            </select>
+          </label>
+          <p
+            id="last-updated"
+            class="text-xs text-gray-400 mt-0.5"
+            title={defaultDataset && datasetInfos[defaultDataset]
+              ? new Date(datasetInfos[defaultDataset]).toLocaleString()
+              : ''}
           >
             {
-              datasetFiles.map((f) => (
-                <option
-                  value={f}
-                  selected={f === defaultDataset}
-                  data-updated={datasetInfos[f] || ''}
-                >
-                  {f.replace('.json', '').replace('week', 'Week ')}
-                </option>
-              ))
+              defaultDataset && datasetInfos[defaultDataset]
+                ? `Last updated: ${relativeTime(datasetInfos[defaultDataset])}`
+                : ''
             }
-          </select>
-        </label>
-        <p
-          id="last-updated"
-          class="text-xs text-gray-400 mt-1"
-          title={defaultDataset && datasetInfos[defaultDataset]
-            ? new Date(datasetInfos[defaultDataset]).toLocaleString()
-            : ''}
+          </p>
+        </div>
+
+        <button
+          id="toggle-simplified"
+          aria-pressed="false"
+          class="simplified-switch group hidden lg:block"
         >
-          {
-            defaultDataset && datasetInfos[defaultDataset]
-              ? `Last updated: ${relativeTime(datasetInfos[defaultDataset])}`
-              : ''
-          }
-        </p>
+          <span class="switch-track"></span>
+          <span class="switch-thumb"></span>
+          <span class="switch-label">Simplified View</span>
+        </button>
       </div>
 
-      <div class="relative">
+      <!-- Row 2: search bar -->
+      <div class="flex justify-center">
         <input
           id="search"
           type="text"
-          placeholder="Search course, teacher, room..."
-          class="bg-gray-800 border border-gray-700 rounded pl-3 pr-3 py-1.5 w-72"
+          placeholder="Search course, teacher, room…"
+          class="bg-gray-800 border border-gray-700 rounded pl-3 pr-3 py-1.5 w-full md:max-w-2xl"
         />
       </div>
 
-      <button
-        id="toggle-simplified"
-        aria-pressed="false"
-        class="simplified-switch group ml-auto hidden lg:block"
-      >
-        <span class="switch-track"></span>
-        <span class="switch-thumb"></span>
-        <span class="switch-label">Simplified View</span>
-      </button>
-
-      <button
-        id="export-google-calendar"
-        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
-        title="Export filtered results to Google Calendar"
-      >
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
-          ></path>
-        </svg>
-        <span>Export to Calendar</span>
-      </button>
-      <div class="relative inline-flex">
+      <!-- Row 3: filter toggle (mobile) + export buttons (centered on desktop) -->
+      <div class="flex items-center justify-center gap-2">
         <button
-          id="export-image"
-          class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-l-lg transition-all duration-200 flex items-center gap-2 text-sm font-medium"
-          title="Download an image of filtered classes"
-        >
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M5 7h14v10H5V7zm7 8a3 3 0 100-6 3 3 0 000 6z"></path>
-          </svg>
-          <span>Export to Image</span>
-        </button>
-        <button
-          id="export-image-palette-toggle"
-          class="bg-green-700 hover:bg-green-800 text-white px-2 py-2 rounded-r-lg transition-all duration-200 flex items-center border-l border-green-500/40"
-          title="Choose color palette"
-          aria-expanded="false"
-          aria-haspopup="true"
+          id="mobile-filter-toggle"
+          class="flex-1 text-xs tracking-wide font-semibold flex items-center justify-center gap-2 px-3 py-2.5 rounded-lg bg-gray-800/70 border border-gray-700 hover:border-gray-500 hover:bg-gray-700/70 transition"
         >
           <svg
-            id="palette-chevron"
-            class="w-3 h-3 transition-transform duration-200"
+            class="w-4 h-4 opacity-60"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -166,47 +146,93 @@ try {
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2.5"
-              d="M19 9l-7 7-7-7"></path>
+              stroke-width="2"
+              d="M3 4h18M7 12h10M11 20h2"></path>
+          </svg>
+          <span>Filters</span>
+          <span
+            id="mobile-filter-count"
+            class="inline-flex items-center justify-center text-[10px] font-bold bg-blue-500 text-white rounded-full min-w-[1.25rem] h-5 px-1"
+          ></span>
+          <svg
+            id="mobile-filter-caret"
+            class="w-3.5 h-3.5 opacity-50 ml-auto transition-transform duration-200"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+              clip-rule="evenodd"></path>
           </svg>
         </button>
-        <div
-          id="palette-dropdown"
-          class="absolute top-full mt-1 z-50 bg-gray-900 border border-gray-700 rounded-lg shadow-2xl overflow-hidden hidden"
-          style="min-width:220px; right:0"
+
+        <button
+          id="export-google-calendar"
+          class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-2.5 rounded-lg transition-all duration-200 flex items-center gap-1.5 text-sm font-medium"
+          title="Export filtered results to Google Calendar"
         >
-          <div
-            class="px-3 py-2 text-[11px] font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-700"
+          <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"
+            ></path>
+          </svg>
+          <span class="hidden sm:inline">Export to Calendar</span>
+        </button>
+
+        <div class="relative inline-flex">
+          <button
+            id="export-image"
+            class="bg-green-600 hover:bg-green-700 text-white px-3 py-2.5 rounded-l-lg transition-all duration-200 flex items-center gap-1.5 text-sm font-medium"
+            title="Download an image of filtered classes"
           >
-            Export with color palette
+            <svg
+              class="w-4 h-4 shrink-0"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 7h14v10H5V7zm7 8a3 3 0 100-6 3 3 0 000 6z"></path>
+            </svg>
+            <span class="hidden sm:inline">Export to Image</span>
+          </button>
+          <button
+            id="export-image-palette-toggle"
+            class="bg-green-700 hover:bg-green-800 text-white px-2 py-2.5 rounded-r-lg transition-all duration-200 flex items-center border-l border-green-500/40"
+            title="Choose color palette"
+            aria-expanded="false"
+            aria-haspopup="true"
+          >
+            <svg
+              id="palette-chevron"
+              class="w-3 h-3 transition-transform duration-200"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2.5"
+                d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div
+            id="palette-dropdown"
+            class="absolute top-full mt-1 z-50 bg-gray-900 border border-gray-700 rounded-lg shadow-2xl overflow-hidden hidden"
+            style="min-width:220px; right:0"
+          >
+            <div
+              class="px-3 py-2 text-[11px] font-semibold text-gray-400 uppercase tracking-wider border-b border-gray-700"
+            >
+              Export with color palette
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="flex justify-between items-center" id="filter-toggle-wrapper">
-      <button
-        id="mobile-filter-toggle"
-        class="text-xs tracking-wide font-semibold flex items-center gap-2 px-3 py-2 rounded-md bg-gray-800/70 border border-gray-700 hover:border-gray-500 hover:bg-gray-700/70 transition"
-      >
-        <span>Filters</span>
-        <span
-          id="mobile-filter-count"
-          class="inline-flex items-center justify-center text-[10px] font-bold bg-blue-600/70 text-white rounded-full min-w-[1.25rem] h-5 px-1"
-        ></span>
-        <svg
-          id="mobile-filter-caret"
-          class="w-3.5 h-3.5 opacity-70"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.08 1.04l-4.25 4.25a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-            clip-rule="evenodd"></path>
-        </svg>
-      </button>
-    </div>
+    <!-- empty anchor kept for JS that looks up filter-toggle-wrapper -->
+    <div id="filter-toggle-wrapper" class="hidden"></div>
 
     <div id="filters" class="collapsed max-w-4xl mx-auto mt-2 md:mt-0">
       <div class="filter-card">
