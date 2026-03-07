@@ -1100,22 +1100,22 @@ END:VCALENDAR`;
     const showClassRow = classSet.size > 1;
     const rowCount = showClassRow ? 4 : 3;
 
-    // Modern color palette
+    // color palette
     const labelGradStarts = ['#065f46', '#881337', '#1e3a5f', '#4c1d95'];
     const labelGradEnds = ['#047857', '#be123c', '#1d4ed8', '#6d28d9'];
     const cellBgs = [
-      'rgba(16, 185, 129, 0.22)',
-      'rgba(244, 63, 94, 0.22)',
-      'rgba(59, 130, 246, 0.22)',
-      'rgba(139, 92, 246, 0.22)',
+      'rgba(16, 185, 129, 0.38)',
+      'rgba(244, 63, 94, 0.38)',
+      'rgba(59, 130, 246, 0.38)',
+      'rgba(139, 92, 246, 0.38)',
     ];
     const cellAccents = [
-      'rgba(52, 211, 153, 0.35)',
-      'rgba(251, 113, 133, 0.35)',
-      'rgba(96, 165, 250, 0.35)',
-      'rgba(167, 139, 250, 0.35)',
+      'rgba(52, 211, 153, 0.65)',
+      'rgba(251, 113, 133, 0.65)',
+      'rgba(96, 165, 250, 0.65)',
+      'rgba(167, 139, 250, 0.65)',
     ];
-    const cellTextColors = ['#d1fae5', '#ffe4e6', '#dbeafe', '#ede9fe'];
+    const cellTextColors = ['#ecfdf5', '#fff1f2', '#eff6ff', '#f5f3ff'];
 
     // Text measurement canvas
     const measureCanvas = document.createElement('canvas');
@@ -1407,64 +1407,68 @@ END:VCALENDAR`;
       roundRectPath(dx, curY, cardW, layout.blockH, cardRadius);
       ctx.clip();
 
-      // Day label (gradient, spans all rows)
-      const dayGrd = ctx.createLinearGradient(
-        dx,
-        curY,
-        dx,
-        curY + layout.blockH
-      );
-      dayGrd.addColorStop(0, '#1e3a5f');
-      dayGrd.addColorStop(1, '#3b1f7e');
-      ctx.fillStyle = dayGrd;
-      ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
-      ctx.fillStyle = '#ffffff';
-      ctx.font = 'bold 15px system-ui, sans-serif';
-      ctx.textAlign = 'center';
-      ctx.textBaseline = 'middle';
-      ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
+      // Day label (gradient, spans all rows) — only when there are classes
+      if (entries.length > 0) {
+        const dayGrd = ctx.createLinearGradient(
+          dx,
+          curY,
+          dx,
+          curY + layout.blockH
+        );
+        dayGrd.addColorStop(0, '#1e3a5f');
+        dayGrd.addColorStop(1, '#3b1f7e');
+        ctx.fillStyle = dayGrd;
+        ctx.fillRect(dx, curY, dayLabelW, layout.blockH);
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 15px system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(day, dx + dayLabelW / 2, curY + layout.blockH / 2);
+      }
 
       const labelX = dx + dayLabelW;
       const dataX = labelX + rowLabelW;
       const heights = [layout.timeH, layout.courseH, layout.roomH];
       if (showClassRow) heights.push(layout.classH);
 
-      // Row labels (gradient)
-      let ly = curY;
-      for (let ri = 0; ri < rowLabels.length; ri++) {
-        const lg = ctx.createLinearGradient(
-          labelX,
-          ly,
-          labelX + rowLabelW,
-          ly + heights[ri]
-        );
-        lg.addColorStop(0, labelGradStarts[ri]);
-        lg.addColorStop(1, labelGradEnds[ri]);
-        ctx.fillStyle = lg;
-        ctx.fillRect(labelX, ly, rowLabelW, heights[ri]);
-        ctx.fillStyle = 'rgba(255,255,255,0.15)';
-        ctx.fillRect(labelX, ly, rowLabelW, 1);
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 12px system-ui, sans-serif';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'middle';
-        ctx.fillText(
-          rowLabels[ri],
-          labelX + rowLabelW / 2,
-          ly + heights[ri] / 2
-        );
-        ly += heights[ri];
+      // Row labels (gradient) — only when there are classes
+      if (entries.length > 0) {
+        let ly = curY;
+        for (let ri = 0; ri < rowLabels.length; ri++) {
+          const lg = ctx.createLinearGradient(
+            labelX,
+            ly,
+            labelX + rowLabelW,
+            ly + heights[ri]
+          );
+          lg.addColorStop(0, labelGradStarts[ri]);
+          lg.addColorStop(1, labelGradEnds[ri]);
+          ctx.fillStyle = lg;
+          ctx.fillRect(labelX, ly, rowLabelW, heights[ri]);
+          ctx.fillStyle = 'rgba(255,255,255,0.15)';
+          ctx.fillRect(labelX, ly, rowLabelW, 1);
+          ctx.fillStyle = '#ffffff';
+          ctx.font = 'bold 12px system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(
+            rowLabels[ri],
+            labelX + rowLabelW / 2,
+            ly + heights[ri] / 2
+          );
+          ly += heights[ri];
+        }
       }
 
       if (entries.length === 0) {
-        // "No Classes" — subtle dark empty state
+        // "No Classes" — spans entire card (no day label, no row-label column)
         ctx.fillStyle = 'rgba(51, 65, 85, 0.4)';
-        ctx.fillRect(dataX, curY, dataW, layout.blockH);
+        ctx.fillRect(dx, curY, cardW, layout.blockH);
         ctx.fillStyle = 'rgba(148, 163, 184, 0.6)';
         ctx.font = 'italic 15px system-ui, sans-serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText('No Classes', dataX + dataW / 2, curY + layout.blockH / 2);
+        ctx.fillText(`No Classes on ${day}`, dx + cardW / 2, curY + layout.blockH / 2);
       } else {
         const n = entries.length;
         const cellW = dataW / n;
