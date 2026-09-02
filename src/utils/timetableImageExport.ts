@@ -165,16 +165,25 @@ export async function generateWeeklyPNG(
     byDay[r.day].push(r);
   }
   const daysInData = new Set(records.map((r) => r.day));
-  const daysToShow = DAY_ORDER.filter((d) => daysInData.has(d));
-
-  // Also add days from the full dataset that have 0 filtered results
   const allDaysInFlat = new Set(allFlat.map((r: FlatRecord) => r.day));
-  for (const d of DAY_ORDER) {
-    if (allDaysInFlat.has(d) && !daysToShow.includes(d)) {
-      daysToShow.push(d);
-    }
-  }
-  daysToShow.sort((a, b) => DAY_ORDER.indexOf(a) - DAY_ORDER.indexOf(b));
+
+  // Show only the inclusive range between first and last active day.
+  // This removes empty leading/trailing days while preserving empty middle days.
+  const activeDayIndices = Array.from(
+    new Set(
+      records
+        .map((r) => DAY_ORDER.indexOf(r.day))
+        .filter((idx) => idx >= 0)
+    )
+  ).sort((a, b) => a - b);
+
+  const daysToShow =
+    activeDayIndices.length > 0
+      ? DAY_ORDER.slice(
+          activeDayIndices[0],
+          activeDayIndices[activeDayIndices.length - 1] + 1
+        )
+      : DAY_ORDER.filter((d) => daysInData.has(d) || allDaysInFlat.has(d));
 
   // Build title from active filters, falling back to records data
   const titleParts: string[] = [];
