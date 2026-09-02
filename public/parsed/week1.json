@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T12:15:45.777353",
+  "timestamp": "2026-09-02T12:46:36.672467",
   "Monday": {
     "Department of Social Work IKM CR-60": [
       {
@@ -7,7 +7,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -22,8 +22,7 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
-          "Practical",
+          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Alishah Khan (13:30 - 15:00)"
         ]
       }
@@ -41,7 +40,7 @@
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
         "start_time": "08:00",
@@ -73,8 +72,8 @@
         "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
-          "Practical",
           "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
+          "Practical",
           "Ayesha Kausar (09:30 - 11:00)"
         ]
       },
@@ -83,7 +82,7 @@
         "course_title": "Programming Fundamentals",
         "course_code": "CMPC-5201",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -98,8 +97,7 @@
         "practical": true,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
-          "Practical",
-          "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
+          "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1 Practical",
           "Aamir Zia (11:30 - 13:30)"
         ]
       },
@@ -150,9 +148,7 @@
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
           "Musarat Shaheen (16:30 - 18:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -176,7 +172,9 @@
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
           "Muddassar Ali Zaidi (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Programming Fundamentals",
@@ -189,15 +187,15 @@
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:30",
         "practical": false,
         "raw_lines": [
-          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
           "Programming Fundamentals #CMPC-5201",
+          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
           "Aamir Zia (09:30 - 11:30)"
         ]
       },
@@ -230,7 +228,7 @@
         "course_title": "Machine Learning",
         "course_code": "AIDC-4102",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -245,8 +243,7 @@
         "practical": true,
         "raw_lines": [
           "Machine Learning #AIDC-4102",
-          "Practical",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 Practical",
           "Iqra Mushtaq (13:00 - 14:30)"
         ]
       },
@@ -279,7 +276,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -294,13 +291,10 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
+          "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Muhammad Najeeb (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-162": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Networks",
@@ -324,7 +318,9 @@
           "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
           "Ali haider (08:00 - 10:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Programming Fundamentals",
@@ -420,7 +416,9 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Muhammad Usama Ehsan (15:00 - 16:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -516,7 +514,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Zubair Aslam (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -534,7 +534,7 @@
         "teacher_truncated": false,
         "start_time": "10:00",
         "end_time": "12:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CSCC-302",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6 Practical",
@@ -570,7 +570,7 @@
         "course_title": "Database Systems",
         "course_code": "CMPC-5203",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
+        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -582,10 +582,11 @@
         "teacher_truncated": false,
         "start_time": "14:30",
         "end_time": "16:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
+          "Practical",
           "Muhammad Najeeb (14:30 - 16:00)"
         ]
       },
@@ -612,7 +613,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -654,7 +657,7 @@
         "teacher_truncated": false,
         "start_time": "12:30",
         "end_time": "14:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -702,7 +705,7 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -734,9 +737,7 @@
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
           "Khansa Saleem (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -760,7 +761,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Dr Hussam Ali (13:00 - 14:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -784,9 +787,7 @@
           "MS Computer Science Self Support 1 ( 2026-2028 ) Semester#1",
           "Dr Hussam Ali (14:30 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -810,7 +811,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
@@ -828,7 +831,7 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -858,9 +861,7 @@
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
           "Iqra Mushtaq (14:30 - 16:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 184": [
+      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -878,13 +879,15 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
           "Khadija Ilyas (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -908,9 +911,7 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Abdul Qadir Baig (13:00 - 14:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 185": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -934,7 +935,9 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Aroosa Aslam Awan (10:00 - 12:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 185": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -952,7 +955,7 @@
         "teacher_truncated": false,
         "start_time": "12:00",
         "end_time": "13:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -976,7 +979,7 @@
         "teacher_truncated": false,
         "start_time": "13:30",
         "end_time": "15:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Advance Programming Lab #CSDE-5204",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -1080,9 +1083,7 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Arooba Sultan Tiwana (13:30 - 15:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Networks",
@@ -1106,7 +1107,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
           "Sana Sarfraz (09:00 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "HCI & Computer Graphics",
@@ -1178,9 +1181,7 @@
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
           "Dr. Bushra Batool (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 188": [
+      },
       {
         "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
@@ -1204,7 +1205,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
           "Umme Aeman (08:00 - 10:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -1270,7 +1273,7 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -1300,9 +1303,7 @@
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Hijab Aqsa Akhtar (14:30 - 16:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -1326,7 +1327,9 @@
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
           "Khadija Ilyas (08:30 - 10:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -1344,7 +1347,7 @@
         "teacher_truncated": false,
         "start_time": "11:30",
         "end_time": "13:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -1374,7 +1377,9 @@
           "MS Artificial Intelligence Self Support 1 ( 2026-2028 ) Semester#1",
           "Farooq Javed (13:30 - 16:30)"
         ]
-      },
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Database Systems",
@@ -1446,7 +1451,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2",
           "Dr. Uzma Ahmad (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Mathematics-II",
@@ -1590,7 +1597,9 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Arooba Sultan Tiwana (12:00 - 13:30)"
         ]
-      },
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -1638,7 +1647,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Muhammad Fahad (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Computer Networks",
@@ -1812,15 +1823,13 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Dr Fahad Maqbool (15:00 - 16:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -1835,11 +1844,12 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Nida Sajid (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -1860,8 +1870,8 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Nida Sajid (09:30 - 11:00)"
         ]
       },
@@ -1870,7 +1880,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -1885,8 +1895,7 @@
         "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "Practical",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Sabahat Sabir (11:00 - 12:30)"
         ]
       },
@@ -1895,7 +1904,7 @@
         "course_title": "Advance Programming Lab",
         "course_code": "CSDE-5204",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -1910,8 +1919,7 @@
         "practical": true,
         "raw_lines": [
           "Advance Programming Lab #CSDE-5204",
-          "Practical",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Abu Bakar Ubaid (12:30 - 14:00)"
         ]
       },
@@ -1935,8 +1943,8 @@
         "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
-          "Practical",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Umme Aeman (14:00 - 15:30)"
         ]
       },
@@ -1945,7 +1953,7 @@
         "course_title": "Information Security",
         "course_code": "CMPC-5206",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -1960,13 +1968,10 @@
         "practical": true,
         "raw_lines": [
           "Information Security #CMPC-5206",
-          "Practical",
-          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5 Practical",
           "Farooq Javed (15:30 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-162": [
+      },
       {
         "combined_class": null,
         "course_title": "Programming for Artificial Intelligence",
@@ -1990,13 +1995,15 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Rawaish Talat (08:00 - 10:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -2011,8 +2018,7 @@
         "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "Practical",
-          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Iqra Mushtaq (10:00 - 11:30)"
         ]
       },
@@ -2069,7 +2075,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -2084,11 +2090,12 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Alishah Khan (15:30 - 17:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Theory of Automata",
@@ -2202,7 +2209,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -2226,7 +2233,7 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -2250,13 +2257,15 @@
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Umme Aeman (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Organizational Behavior",
@@ -2310,7 +2319,7 @@
         "course_title": "Information Security",
         "course_code": "CMPC-5206",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 Practical",
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -2322,10 +2331,11 @@
         "teacher_truncated": false,
         "start_time": "13:30",
         "end_time": "15:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Information Security #CMPC-5206",
-          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 Practical",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Practical",
           "Farooq Javed (13:30 - 15:00)"
         ]
       },
@@ -2376,7 +2386,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Qaisar Farooq (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
       {
         "combined_class": null,
         "course_title": "Theory of Automata",
@@ -2492,15 +2504,13 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Sabahat Sabir (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -2524,7 +2534,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
           "Sabahat Sabir (12:30 - 14:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Computer Networks",
@@ -2548,9 +2560,7 @@
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Ali haider (15:00 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -2574,7 +2584,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Dr Hussam Ali (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -2592,7 +2604,7 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -2622,9 +2634,7 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Muhammad Usama Ehsan (15:30 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 184": [
+      },
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -2648,7 +2658,9 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -2714,15 +2726,13 @@
         "teacher_truncated": false,
         "start_time": "16:00",
         "end_time": "17:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Muhammad Rizwan (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 185": [
+      },
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -2790,7 +2800,7 @@
         "teacher_truncated": false,
         "start_time": "12:00",
         "end_time": "13:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -2802,7 +2812,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -2814,10 +2824,11 @@
         "teacher_truncated": false,
         "start_time": "13:30",
         "end_time": "15:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
+          "Practical",
           "waqas khan (13:30 - 15:00)"
         ]
       },
@@ -2838,15 +2849,13 @@
         "teacher_truncated": false,
         "start_time": "15:00",
         "end_time": "16:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
           "Anum Saleem (15:00 - 16:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -2870,7 +2879,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
           "Maida Zahid (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -2936,15 +2947,13 @@
         "teacher_truncated": false,
         "start_time": "13:30",
         "end_time": "15:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Umair Majeed (13:30 - 15:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 188": [
+      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -2962,13 +2971,15 @@
         "teacher_truncated": false,
         "start_time": "10:00",
         "end_time": "11:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
           "Khadija Ilyas (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -3016,9 +3027,7 @@
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
           "Dr. Bushra Batool (13:30 - 15:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -3042,7 +3051,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Rabia Iqbal (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -3114,7 +3125,9 @@
           "MS Artificial Intelligence Self Support 1 ( 2025-2027 ) Semester#3",
           "To be allocated (14:30 - 17:30)"
         ]
-      },
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "HCI & Computer Graphics",
@@ -3228,7 +3241,7 @@
         "teacher_truncated": false,
         "start_time": "14:30",
         "end_time": "16:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -3258,7 +3271,9 @@
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
           "Musarat Shaheen (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -3300,7 +3315,7 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 Practical",
@@ -3378,7 +3393,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Dr. Muhammad Ilyas (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Social Work IKM - CR-52": [
       {
         "combined_class": "Combined Class (982)",
         "course_title": "Understading of Holy Quran (1) URCG-5129",
@@ -3434,14 +3451,14 @@
         "course_title": "Understading of Holy Quran (1) URCG-5129",
         "course_code": "URCG-5129",
         "course_truncated": false,
-        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) …",
+        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
         "program_truncated": true,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "To be allocated",
         "teacher_truncated": false,
         "start_time": "08:00",
@@ -3606,6 +3623,30 @@
           "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
           "Ms. Ammara Nazar (11:00 - 12:30)"
         ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Database Systems",
+        "course_code": "CMPC-5203",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 0",
+        "session": "2026-2030",
+        "semester": 1,
+        "teacher_name": "Iqra Waheed",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          "Database Systems #CMPC-5203",
+          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 …",
+          "Iqra Waheed (12:30 - 14:00)"
+        ]
       }
     ],
     "Department of Computer Science MAB CR-160": [
@@ -3614,7 +3655,7 @@
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
         "program": "Computer Science",
@@ -3710,12 +3751,12 @@
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 2",
+        "section": "Self Support 1",
         "session": "2025-2029",
         "semester": 3,
         "teacher_name": "Ali haider",
@@ -3724,24 +3765,22 @@
         "end_time": "18:00",
         "practical": false,
         "raw_lines": [
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 …",
           "Computer Networks #CMPC-5208",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 …",
           "Ali haider (16:30 - 18:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
         "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 1",
+        "section": "Regular 0",
         "session": "2026-2030",
         "semester": 1,
         "teacher_name": "Ali haider",
@@ -3750,11 +3789,13 @@
         "end_time": "09:30",
         "practical": false,
         "raw_lines": [
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 …",
           "Computer Networks #CMPC-5208",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 …",
           "Ali haider (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
@@ -3826,9 +3867,7 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Farooq Javed (15:00 - 17:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-162": [
+      },
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -3852,7 +3891,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
           "Nida Sajid (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Mathematics I",
@@ -3906,10 +3947,10 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
         "section": "Self Support 1",
         "session": "2025-2029",
@@ -3920,8 +3961,8 @@
         "end_time": "14:30",
         "practical": false,
         "raw_lines": [
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 …",
           "Comp Organization and Assembly Language #CMPC-5209",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 …",
           "Umme Aeman (13:00 - 14:30)"
         ]
       },
@@ -3954,25 +3995,27 @@
         "course_title": "Object Oriented Programming",
         "course_code": "CMPC-5202",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 1",
+        "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 2,
+        "semester": 1,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
         "start_time": "16:00",
         "end_time": "17:30",
         "practical": false,
         "raw_lines": [
-          "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 …",
           "Object Oriented Programming #CMPC-5202",
+          "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 …",
           "Khadija Ilyas (16:00 - 17:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -4002,12 +4045,12 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Regular 1",
+        "section": "Self Support 1",
         "session": "2025-2029",
         "semester": 3,
         "teacher_name": "Nida Sajid",
@@ -4062,7 +4105,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -4116,7 +4159,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -4236,7 +4281,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Qaisar Farooq (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -4254,7 +4301,7 @@
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -4314,10 +4361,10 @@
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3…",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
         "section": "Self Support 1",
         "session": "2025-2029",
@@ -4382,9 +4429,7 @@
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
           "Dr. Hafiz Muhammad Faisal Shehzad (14:30 - 16:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Vision",
@@ -4408,7 +4453,9 @@
           "MS Artificial Intelligence Self Support 1 ( 2026-2028 ) Semester#1",
           "Dr Hussam Ali (12:30 - 15:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -4432,9 +4479,7 @@
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Ayesha Zahid (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Database Systems",
@@ -4458,20 +4503,22 @@
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2",
           "Muhammad Ali Raza (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
         "course_code": "CMPC-5202",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2…",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 1",
+        "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 2,
+        "semester": 1,
         "teacher_name": "Khadija Ilyas",
         "teacher_truncated": false,
         "start_time": "11:30",
@@ -4488,7 +4535,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
         "program": "Computer Science",
@@ -4530,9 +4577,7 @@
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Rameen Iqbal (14:30 - 16:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 184": [
+      },
       {
         "combined_class": null,
         "course_title": "HCI & Computer Graphics",
@@ -4556,20 +4601,22 @@
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
           "Iqra Waheed (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
       {
         "combined_class": null,
         "course_title": "Database Systems",
         "course_code": "CMPC-5203",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 1",
+        "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 2,
+        "semester": 1,
         "teacher_name": "Muhammad Ali Raza",
         "teacher_truncated": false,
         "start_time": "11:30",
@@ -4586,10 +4633,10 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3…",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
         "section": "Self Support 1",
         "session": "2025-2029",
@@ -4610,12 +4657,12 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3…",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 2",
+        "section": "Self Support 1",
         "session": "2025-2029",
         "semester": 3,
         "teacher_name": "Muhammad Rizwan",
@@ -4628,9 +4675,7 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3…",
           "Muhammad Rizwan (15:00 - 16:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 185": [
+      },
       {
         "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
@@ -4654,7 +4699,9 @@
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
           "Maida Zahid (11:00 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 185": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -4684,14 +4731,14 @@
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 2",
+        "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 2,
+        "semester": 1,
         "teacher_name": "Anum Saleem",
         "teacher_truncated": false,
         "start_time": "16:00",
@@ -4776,9 +4823,7 @@
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Muhammad Usama Ehsan (13:00 - 14:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
+      },
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -4802,13 +4847,15 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Engr. Ayesha Riaz (08:00 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "Advance Programming Lab",
         "course_code": "CSDE-5204",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
         "program": "Computer Science",
@@ -4850,20 +4897,18 @@
           "MS Computer Science Self Support 1 ( 2026-2028 ) Semester#1",
           "To be allocated (14:00 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 188": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Artificial Intelligence",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Regular 1",
+        "section": "Self Support 1",
         "session": "2025-2029",
         "semester": 3,
         "teacher_name": "Sana Sarfraz",
@@ -4876,7 +4921,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 …",
           "Sana Sarfraz (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -4948,9 +4995,7 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Hijab Aqsa Akhtar (13:00 - 15:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -4974,7 +5019,9 @@
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
           "Aiman (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -5046,20 +5093,22 @@
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Umair Majeed (15:00 - 16:30)"
         ]
-      },
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 …",
+        "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 1",
+        "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 2,
+        "semester": 1,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
         "start_time": "13:00",
@@ -5094,7 +5143,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Farooq Javed (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Digital Logic Design",
@@ -5124,12 +5175,12 @@
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 …",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": true,
         "degree": "BS",
-        "program": "Data Science",
+        "program": "Computer Science",
         "program_code": null,
-        "section": "Self Support 2",
+        "section": "Self Support 1",
         "session": "2025-2029",
         "semester": 3,
         "teacher_name": "Ali haider",
@@ -5214,7 +5265,9 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Musarat Shaheen (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Mathematics-II",
@@ -5286,7 +5339,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Farooq Javed (11:00 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Special Topics in Big Data Analysis",
@@ -5309,32 +5364,6 @@
           "Special Topics in Big Data Analysis #CSEC-828",
           "PhD Computer Science Self Support 1 ( 2026-2029 ) Semester#1",
           "Dr. Muhammad Ilyas (14:00 - 17:00)"
-        ]
-      }
-    ],
-    "SSB Teaching Office 2": [
-      {
-        "combined_class": null,
-        "course_title": "Database Systems",
-        "course_code": "CMPC-5203",
-        "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 …",
-        "program_truncated": true,
-        "degree": "BS",
-        "program": "Artificial Intelligence",
-        "program_code": null,
-        "section": "Regular 1",
-        "session": "2026-2030",
-        "semester": 2,
-        "teacher_name": "Iqra Waheed",
-        "teacher_truncated": false,
-        "start_time": "12:30",
-        "end_time": "14:00",
-        "practical": false,
-        "raw_lines": [
-          "Database Systems #CMPC-5203",
-          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 …",
-          "Iqra Waheed (12:30 - 14:00)"
         ]
       }
     ]
@@ -5379,7 +5408,7 @@
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
         "start_time": "08:00",
@@ -5420,7 +5449,7 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -5435,8 +5464,7 @@
         "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
-          "Practical",
-          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Rameen Iqbal (12:30 - 14:00)"
         ]
       },
@@ -5445,7 +5473,7 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -5460,8 +5488,7 @@
         "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
-          "Practical",
-          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
+          "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Rameen Iqbal (14:00 - 15:30)"
         ]
       },
@@ -5488,15 +5515,13 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Muhammad Rizwan (15:30 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
         "course_code": "CMPC-5202",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2",
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -5511,11 +5536,12 @@
         "practical": true,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
-          "Practical",
-          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2",
+          "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 Practical",
           "Aamir Zia (08:00 - 10:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Programming Fundamentals",
@@ -5528,15 +5554,15 @@
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Aamir Zia",
         "teacher_truncated": false,
         "start_time": "10:00",
         "end_time": "12:00",
         "practical": false,
         "raw_lines": [
-          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
           "Programming Fundamentals #CMPC-5201",
+          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
           "Aamir Zia (10:00 - 12:00)"
         ]
       },
@@ -5545,7 +5571,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -5560,8 +5586,7 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Nida Sajid (12:00 - 13:30)"
         ]
       },
@@ -5585,8 +5610,8 @@
         "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "Practical",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Rawaish Talat (14:00 - 15:30)"
         ]
       },
@@ -5613,9 +5638,7 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Alishah Khan (15:30 - 17:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-162": [
+      },
       {
         "combined_class": null,
         "course_title": "E Commerce Application Development",
@@ -5639,13 +5662,15 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Usama Ehsan (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -5660,8 +5685,7 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Muddassar Ali Zaidi (11:00 - 12:30)"
         ]
       },
@@ -5712,7 +5736,9 @@
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
           "Muhammad Najeeb (15:30 - 17:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -5730,7 +5756,7 @@
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -5808,7 +5834,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
           "Nida Sajid (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -5850,7 +5878,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 Practical",
@@ -5862,7 +5890,7 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -5874,10 +5902,11 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Umme Aeman (14:00 - 15:30)"
         ]
       },
@@ -5898,7 +5927,7 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Information Security #CMPC-5206",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5 Practical",
@@ -5928,7 +5957,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Dr Muhammad Saad Razzaq (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
       {
         "combined_class": null,
         "course_title": "Comp Organization and Assembly Language",
@@ -5946,7 +5977,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -5982,7 +6013,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -5994,10 +6025,11 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Ali haider (15:30 - 17:00)"
         ]
       }
@@ -6020,15 +6052,13 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Hijab Aqsa Akhtar (11:00 - 12:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Database Systems",
@@ -6046,13 +6076,15 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 Practical",
           "Muhammad Ali Raza (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -6076,9 +6108,7 @@
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Umair Majeed (15:30 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -6102,7 +6132,9 @@
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
           "Ms. Ammara Nazar (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -6174,9 +6206,7 @@
           "MS Artificial Intelligence Self Support 1 ( 2026-2028 ) Semester#1",
           "Amna Riaz (14:00 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 184": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -6200,7 +6230,9 @@
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
           "Khansa Saleem (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
       {
         "combined_class": null,
         "course_title": "Advance Programming Lab",
@@ -6218,7 +6250,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Advance Programming Lab #CSDE-5204",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -6230,7 +6262,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -6242,15 +6274,14 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Iqra Mushtaq (15:30 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 185": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -6274,7 +6305,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
           "Rabia Iqbal (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 185": [
       {
         "combined_class": null,
         "course_title": "Organizational Behavior",
@@ -6316,7 +6349,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
@@ -6366,7 +6399,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Advance Programming Lab #CSDE-5204",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -6396,9 +6429,7 @@
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Aroosa Aslam Awan (15:30 - 17:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -6422,7 +6453,9 @@
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Ms. Ammara Nazar (10:30 - 12:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -6470,9 +6503,7 @@
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Ayesha Zahid (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 188": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -6496,7 +6527,9 @@
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
           "Bakhtawar (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -6544,9 +6577,7 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "Muhammad Najeeb (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Programming for Artificial Intelligence",
@@ -6564,13 +6595,15 @@
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Programming for Artificial Intelligence #AIDC-4101",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 Practical",
           "Rawaish Talat (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -6618,7 +6651,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Dr. Muhammad Ilyas (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -6660,7 +6695,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -6684,13 +6719,15 @@
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "MOAZZAMA KHAN (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -6775,7 +6812,7 @@
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Ayesha Kausar",
         "teacher_truncated": false,
         "start_time": "12:00",
@@ -6786,7 +6823,9 @@
           "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
           "Ayesha Kausar (12:00 - 13:30)"
         ]
-      },
+      }
+    ],
+    "Department of Social Work IKM - CR-52": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -6804,7 +6843,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -6820,14 +6859,14 @@
         "course_title": "Mathematics I",
         "course_code": "URCM-5107",
         "course_truncated": false,
-        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) …",
+        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
         "program_truncated": true,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Rabia Iqbal",
         "teacher_truncated": false,
         "start_time": "08:00",
@@ -6868,7 +6907,7 @@
         "course_title": "Advance Programming Lab",
         "course_code": "CSDE-5204",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -6883,8 +6922,7 @@
         "practical": true,
         "raw_lines": [
           "Advance Programming Lab #CSDE-5204",
-          "Practical",
-          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Abu Bakar Ubaid (12:30 - 14:00)"
         ]
       },
@@ -6893,7 +6931,7 @@
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -6908,8 +6946,7 @@
         "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
-          "Practical",
-          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
+          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
           "Anum Saleem (14:00 - 15:30)"
         ]
       },
@@ -6918,7 +6955,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -6933,13 +6970,10 @@
         "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "Practical",
-          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3",
+          "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Iqra Mushtaq (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Mathematics I",
@@ -6963,13 +6997,15 @@
           "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
           "Ms. Ammara Nazar (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Programming Fundamentals",
         "course_code": "CMPC-5201",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
+        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -6984,8 +7020,7 @@
         "practical": true,
         "raw_lines": [
           "Programming Fundamentals #CMPC-5201",
-          "Practical",
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 Practical",
           "Dr. Hafiz Muhammad Faisal Shehzad (09:30 - 11:30)"
         ]
       },
@@ -6994,7 +7029,7 @@
         "course_title": "Information Security",
         "course_code": "CMPC-5206",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -7009,8 +7044,7 @@
         "practical": true,
         "raw_lines": [
           "Information Security #CMPC-5206",
-          "Practical",
-          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 Practical",
           "Farooq Javed (11:30 - 13:00)"
         ]
       },
@@ -7043,7 +7077,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -7058,19 +7092,16 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Alishah Khan (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-162": [
+      },
       {
         "combined_class": null,
         "course_title": "Computer Networks",
         "course_code": "CMPC-5208",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
+        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -7085,11 +7116,12 @@
         "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
-          "Practical",
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1 Practical",
           "Ali haider (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -7134,8 +7166,8 @@
         "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
-          "Practical",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Sana Sarfraz (11:00 - 13:00)"
         ]
       },
@@ -7168,7 +7200,7 @@
         "course_title": "Data Structures",
         "course_code": "CMPC-5205",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
+        "program_line": "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -7183,8 +7215,7 @@
         "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
-          "Practical",
-          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
+          "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Alishah Khan (14:30 - 16:00)"
         ]
       },
@@ -7211,7 +7242,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (16:00 - 17:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -7277,7 +7310,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 Practical",
@@ -7373,7 +7406,7 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2 Practical",
@@ -7397,13 +7430,15 @@
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
           "Umme Aeman (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Theory of Automata",
@@ -7457,7 +7492,7 @@
         "course_title": "Artificial Intelligence",
         "course_code": "CMPC-5207",
         "course_truncated": false,
-        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -7469,10 +7504,11 @@
         "teacher_truncated": false,
         "start_time": "12:30",
         "end_time": "14:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
-          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Rawaish Talat (12:30 - 14:00)"
         ]
       },
@@ -7517,7 +7553,7 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Information Security #CMPC-5206",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5 Practical",
@@ -7547,7 +7583,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "To be allocated (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -7589,7 +7627,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -7601,7 +7639,7 @@
         "course_title": "Comp Organization and Assembly Language",
         "course_code": "CMPC-5209",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+        "program_line": "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -7613,10 +7651,11 @@
         "teacher_truncated": false,
         "start_time": "12:30",
         "end_time": "14:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
-          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
+          "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3",
+          "Practical",
           "Umme Aeman (12:30 - 14:00)"
         ]
       },
@@ -7637,7 +7676,7 @@
         "teacher_truncated": false,
         "start_time": "14:00",
         "end_time": "15:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Data Science Regular 1 ( 2025-2029 ) Semester#3 Practical",
@@ -7661,7 +7700,7 @@
         "teacher_truncated": false,
         "start_time": "16:00",
         "end_time": "17:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -7693,9 +7732,7 @@
           "BS in Computer Science Self Support 1 ( 2025-2029 ) Semester#3",
           "Muhammad Rizwan (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -7713,13 +7750,15 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Artificial Intelligence #CMPC-5207",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "MOAZZAMA KHAN (13:00 - 14:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -7767,9 +7806,7 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Abdul Qadir Baig (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -7793,7 +7830,9 @@
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Ayesha Zahid (12:30 - 14:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -7835,15 +7874,13 @@
         "teacher_truncated": false,
         "start_time": "16:00",
         "end_time": "17:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Computer Networks #CMPC-5208",
           "BS in Data Science Self Support 1 ( 2025-2029 ) Semester#3 Practical",
           "Hijab Aqsa Akhtar (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 184": [
+      },
       {
         "combined_class": null,
         "course_title": "Mathematics I",
@@ -7867,7 +7904,9 @@
           "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
           "Ms. Ammara Nazar (12:00 - 13:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -7891,9 +7930,7 @@
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3",
           "MOAZZAMA KHAN (14:30 - 16:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 185": [
+      },
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -7917,7 +7954,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Dr Hussam Ali (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 185": [
       {
         "combined_class": null,
         "course_title": "Large Language Models",
@@ -7985,7 +8024,7 @@
         "teacher_truncated": false,
         "start_time": "09:30",
         "end_time": "11:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
           "BS in Artificial Intelligence Regular 1 ( 2026-2030 ) Semester#2 Practical",
@@ -7997,7 +8036,7 @@
         "course_title": "Object Oriented Programming",
         "course_code": "CMPC-5202",
         "course_truncated": false,
-        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
+        "program_line": "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
         "program": "Data Science",
@@ -8009,10 +8048,11 @@
         "teacher_truncated": false,
         "start_time": "11:30",
         "end_time": "13:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Object Oriented Programming #CMPC-5202",
-          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
+          "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2",
+          "Practical",
           "Khadija Ilyas (11:30 - 13:00)"
         ]
       },
@@ -8033,15 +8073,13 @@
         "teacher_truncated": false,
         "start_time": "13:00",
         "end_time": "14:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Data Science Self Support 2 ( 2026-2030 ) Semester#2 Practical",
           "Muhammad Najeeb (13:00 - 14:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 187": [
+      },
       {
         "combined_class": null,
         "course_title": "Programming for Artificial Intelligence",
@@ -8059,13 +8097,15 @@
         "teacher_truncated": false,
         "start_time": "08:00",
         "end_time": "09:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Programming for Artificial Intelligence #AIDC-4101",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 Practical",
           "Rawaish Talat (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
       {
         "combined_class": null,
         "course_title": "Database Systems",
@@ -8083,7 +8123,7 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Database Systems #CMPC-5203",
           "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
@@ -8137,9 +8177,7 @@
           "BS in Data Science Self Support 2 ( 2025-2029 ) Semester#3",
           "Ayesha Zahid (14:00 - 15:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 188": [
+      },
       {
         "combined_class": null,
         "course_title": "Software Engineering",
@@ -8163,7 +8201,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#3",
           "Sabahat Sabir (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -8211,9 +8251,7 @@
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2",
           "Ayesha Kausar (13:30 - 15:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB L-02": [
+      },
       {
         "combined_class": null,
         "course_title": "Object Oriented Programming",
@@ -8237,7 +8275,9 @@
           "BS in Data Science Self Support 1 ( 2026-2030 ) Semester#2",
           "Khadija Ilyas (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
       {
         "combined_class": null,
         "course_title": "Data Structures",
@@ -8303,13 +8343,15 @@
         "teacher_truncated": false,
         "start_time": "16:00",
         "end_time": "17:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Data Structures #CMPC-5205",
           "BS in Artificial Intelligence Self Support 2 ( 2025-2029 ) Semester#3 Practical",
           "Muhammad Najeeb (16:00 - 17:30)"
         ]
-      },
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -8351,7 +8393,7 @@
         "teacher_truncated": false,
         "start_time": "11:30",
         "end_time": "13:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Artificial Intelligence Self Support 1 ( 2025-2029 ) Semester#3 Practical",
@@ -8399,7 +8441,7 @@
         "teacher_truncated": false,
         "start_time": "14:30",
         "end_time": "16:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Comp Organization and Assembly Language #CMPC-5209",
           "BS in Computer Science Self Support 2 ( 2025-2029 ) Semester#3 Practical",
@@ -8429,7 +8471,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Zubair Aslam (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -8507,14 +8551,14 @@
         "course_title": "Mathematics I",
         "course_code": "URCM-5107",
         "course_truncated": false,
-        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) …",
+        "program_line": "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2026-2030 ) Semeste…",
         "program_truncated": true,
         "degree": "BS",
         "program": "Artificial Intelligence",
         "program_code": "AI",
         "section": "Regular 0",
         "session": "2026-2030",
-        "semester": 1,
+        "semester": null,
         "teacher_name": "Rabia Iqbal",
         "teacher_truncated": false,
         "start_time": "09:30",
@@ -8543,13 +8587,15 @@
         "teacher_truncated": false,
         "start_time": "11:00",
         "end_time": "12:30",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Machine Learning #AIDC-4102",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 Practical",
           "Iqra Mushtaq (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -8579,7 +8625,7 @@
         "course_title": "Digital Logic Design",
         "course_code": "CMPC-5204",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -8591,10 +8637,11 @@
         "teacher_truncated": false,
         "start_time": "15:30",
         "end_time": "17:00",
-        "practical": false,
+        "practical": true,
         "raw_lines": [
           "Digital Logic Design #CMPC-5204",
-          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2 Practical",
+          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#2",
+          "Practical",
           "Anum Saleem (15:30 - 17:00)"
         ]
       },
@@ -8621,7 +8668,9 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (11:30 - 13:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Special Topics in Artificial Intelligence",
@@ -8649,7 +8698,7 @@
     ]
   },
   "Saturday": {
-    "Department of Computer Science MAB L-02": [
+    "Department of Social Work IKM - CR-52": [
       {
         "combined_class": "Combined Class (959)",
         "course_title": "Functional English",
@@ -8680,7 +8729,7 @@
         "course_title": "Functional English",
         "course_code": "URCG-5118",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -8696,7 +8745,7 @@
         "raw_lines": [
           "Combined Class (959)",
           "Functional English #URCG-5118",
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
           "To be allocated (08:00 - 11:00)"
         ]
       },
@@ -8721,7 +8770,7 @@
         "raw_lines": [
           "Combined Class (958)",
           "Functional English #URCG-5118",
-          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2",
+          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 20",
           "To be allocated (08:00 - 11:00)"
         ]
       },
@@ -8755,7 +8804,7 @@
         "course_title": "Understanding of Quran -II",
         "course_code": "URCG-5130",
         "course_truncated": false,
-        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester",
+        "program_line": "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#",
         "program_truncated": false,
         "degree": "BS",
         "program": "Artificial Intelligence",
@@ -8771,7 +8820,7 @@
         "raw_lines": [
           "Combined Class (975)",
           "Understanding of Quran -II #URCG-5130",
-          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester",
+          "BS in Artificial Intelligence Self Support 1 ( 2026-2030 ) Semester#",
           "To be allocated (08:00 - 11:00)"
         ]
       },
@@ -8899,11 +8948,13 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "To be allocated (08:00 - 09:00)"
         ]
-      },
+      }
+    ],
+    "OKM CR- 90 JB-CR-No-3 SSB L-01 JB-CR-No-17 JB-CR-No-19 JB-CR-No-46 Jinnah Block Hall": [
       {
         "combined_class": "Combined Class (969)",
         "course_title": "Application of Information & Communication Technologies",
-        "course_code": "URCG-",
+        "course_code": "URCG-5",
         "course_truncated": false,
         "program_line": "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
@@ -8920,7 +8971,7 @@
         "practical": false,
         "raw_lines": [
           "Combined Class (969)",
-          "Application of Information & Communication Technologies #URCG-",
+          "Application of Information & Communication Technologies #URCG-5",
           "BS in Computer Science Regular 0 ( 2026-2030 ) Semester#1",
           "To be allocated (11:00 - 14:00)"
         ]
@@ -8928,9 +8979,9 @@
       {
         "combined_class": "Combined Class (969)",
         "course_title": "Application of Information & Communication Technologies",
-        "course_code": "URCG-",
+        "course_code": "URCG-5",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -8945,15 +8996,15 @@
         "practical": false,
         "raw_lines": [
           "Combined Class (969)",
-          "Application of Information & Communication Technologies #URCG-",
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+          "Application of Information & Communication Technologies #URCG-5",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
           "To be allocated (11:00 - 14:00)"
         ]
       },
       {
         "combined_class": "Combined Class (966)",
         "course_title": "Application of Information & Communication Technologies",
-        "course_code": "URCG-",
+        "course_code": "URCG-5",
         "course_truncated": false,
         "program_line": null,
         "program_truncated": false,
@@ -8970,8 +9021,8 @@
         "practical": false,
         "raw_lines": [
           "Combined Class (966)",
-          "Application of Information & Communication Technologies #URCG-",
-          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2",
+          "Application of Information & Communication Technologies #URCG-5",
+          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 20",
           "To be allocated (11:00 - 14:00)"
         ]
       },
@@ -9055,7 +9106,7 @@
         "course_title": "Islamic Studies",
         "course_code": "URCG-5105",
         "course_truncated": false,
-        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+        "program_line": "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
         "program_truncated": false,
         "degree": "BS",
         "program": "Computer Science",
@@ -9071,7 +9122,7 @@
         "raw_lines": [
           "Combined Class (962)",
           "Islamic Studies #URCG-5105",
-          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#",
+          "BS in Computer Science Self Support 1 ( 2026-2030 ) Semester#1",
           "To be allocated (14:00 - 16:00)"
         ]
       },
@@ -9096,7 +9147,7 @@
         "raw_lines": [
           "Combined Class (963)",
           "Islamic Studies #URCG-5105",
-          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 2",
+          "BS in Computer Science - Specialization in Artificial Intelligence Regular 0 ( 20",
           "To be allocated (14:00 - 16:00)"
         ]
       }
