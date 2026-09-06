@@ -171,9 +171,7 @@ export async function generateWeeklyPNG(
   // This removes empty leading/trailing days while preserving empty middle days.
   const activeDayIndices = Array.from(
     new Set(
-      records
-        .map((r) => DAY_ORDER.indexOf(r.day))
-        .filter((idx) => idx >= 0)
+      records.map((r) => DAY_ORDER.indexOf(r.day)).filter((idx) => idx >= 0)
     )
   ).sort((a, b) => a - b);
 
