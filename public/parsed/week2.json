@@ -1,0 +1,2687 @@
+{
+  "timestamp": "2026-09-06T19:19:21.664898",
+  "Monday": {
+    "Department of Social Work IKM CR-60": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "13:30",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Qaisar Farooq (13:30 - 15:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-160": [
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Dr Hussam Ali (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
+      {
+        "combined_class": null,
+        "course_title": "Machine Learning",
+        "course_code": "AIDC-4102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Iqra Mushtaq",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Machine Learning #AIDC-4102",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+          "Iqra Mushtaq (13:00 - 14:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSCC-301",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Kashaf Hassan",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:30",
+        "practical": false,
+        "raw_lines": [
+          "",
+          "Swap",
+          "Theory of Automata #CSCC-301",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Kashaf Hassan (12:00 - 13:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
+      {
+        "combined_class": null,
+        "course_title": "Multivariable Calculus",
+        "course_code": "MATH-5101",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rabia Iqbal",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Multivariable Calculus #MATH-5101",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Rabia Iqbal (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Muhammad Waseem Haider",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Muhammad Waseem Haider (13:00 - 14:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Computer Architecture",
+        "course_code": "CSSC-305",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Muhammad Zubair Aslam",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Computer Architecture #CSSC-305",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Muhammad Zubair Aslam (08:00 - 09:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
+      {
+        "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CSCC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Arooba Sultan Tiwana",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "12:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Artificial Intelligence #CSCC-302",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6 …",
+          "Arooba Sultan Tiwana (10:00 - 12:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Hunzala Toqeer",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:30",
+        "practical": false,
+        "raw_lines": [
+          "",
+          "Swap",
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Muhammad Hunzala Toqeer (12:00 - 13:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Farooq Javed (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Dr Hussam Ali (13:00 - 14:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Abdul Qadir Baig",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Abdul Qadir Baig (13:00 - 14:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 186": [
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Saqib Nawaz",
+        "teacher_truncated": false,
+        "start_time": "12:00",
+        "end_time": "13:30",
+        "practical": false,
+        "raw_lines": [
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr. Muhammad Saqib Nawaz (12:00 - 13:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Waseem Haider",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Muhammad Waseem Haider (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Dr. Bushra Batool (14:00 - 15:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "13:30",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (13:30 - 15:00)"
+        ]
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Muhammad Fahad (09:30 - 11:00)"
+        ]
+      }
+    ]
+  },
+  "Tuesday": {
+    "Department of Social Work IKM CR-60": [
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (10:00 - 11:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-160": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Qaisar Farooq (11:30 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Applied Physics",
+        "course_code": "URCW-5201",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Yasir Zaman",
+        "teacher_truncated": false,
+        "start_time": "13:30",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Applied Physics #URCW-5201",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Yasir Zaman (13:30 - 15:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "15:30",
+        "end_time": "17:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5…",
+          "Farooq Javed (15:30 - 17:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
+      {
+        "combined_class": null,
+        "course_title": "Programming for Artificial Intelligence",
+        "course_code": "AIDC-4101",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rawaish Talat",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "10:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Programming for Artificial Intelligence #AIDC-4101",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Rawaish Talat (08:00 - 10:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
+      {
+        "combined_class": null,
+        "course_title": "Machine Learning",
+        "course_code": "AIDC-4102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Iqra Mushtaq",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Machine Learning #AIDC-4102",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Iqra Mushtaq (11:30 - 13:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSDC-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Kashaf Hassan",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          "Theory of Automata #CSDC-5101",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Kashaf Hassan (08:00 - 09:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Applied Physics",
+        "course_code": "URCW-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Yasir Zaman",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Applied Physics #URCW-5201",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Yasir Zaman (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Dr. Bushra Batool (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Muhammad Waseem Haider",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Muhammad Waseem Haider (12:30 - 14:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Saira Raheem",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Saira Raheem (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "13:30",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 …",
+          "Farooq Javed (13:30 - 15:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web Techniques",
+        "course_code": "CSEC-403",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          "Semantic Web Techniques #CSEC-403",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Qaisar Farooq (08:00 - 09:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSCC-301",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Kashaf Hassan",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Theory of Automata #CSCC-301",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Kashaf Hassan (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "E Commerce Application Development",
+        "course_code": "CSEC-312",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Muhammad Usama Ehsan",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "E Commerce Application Development #CSEC-312",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Muhammad Usama Ehsan (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CSCC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Dr Muhammad Saad Razzaq",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Artificial Intelligence #CSCC-302",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Dr Muhammad Saad Razzaq (12:30 - 14:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Translation of Holy Quran-III",
+        "course_code": "URCG-5111",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "To be allocated",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "17:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Translation of Holy Quran-III #URCG-5111",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "To be allocated (14:00 - 17:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 181": [
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 184": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Qaisar Farooq (13:00 - 14:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 185": [
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Ilyas",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          "Capstone #CMPC-401",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr. Muhammad Ilyas (10:00 - 11:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Muhammad Fahad (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "13:30",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Dr. Bushra Batool (13:30 - 15:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
+      {
+        "combined_class": null,
+        "course_title": "Multivariable Calculus",
+        "course_code": "MATH-5101",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rabia Iqbal",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Multivariable Calculus #MATH-5101",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Rabia Iqbal (10:00 - 11:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Iqra Waheed",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Iqra Waheed (10:00 - 11:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Muhammad Saad Razzaq",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          "Capstone #CMPC-401",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Dr Muhammad Saad Razzaq (08:00 - 09:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Muhammad Saad Razzaq",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Capstone #CMPC-401",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Dr Muhammad Saad Razzaq (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (12:30 - 14:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr Hussam Ali (11:30 - 13:00)"
+        ]
+      }
+    ]
+  },
+  "Wednesday": {
+    "Department of Computer Science MAB CR-161": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5 …",
+          "Farooq Javed (11:30 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "14:30",
+        "end_time": "16:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr Hussam Ali (14:30 - 16:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Applied Physics",
+        "course_code": "URCW-5201",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Yasir Zaman",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          "",
+          "Swap",
+          "Applied Physics #URCW-5201",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Yasir Zaman (13:00 - 14:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "16:00",
+        "end_time": "17:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (16:00 - 17:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
+      {
+        "combined_class": null,
+        "course_title": "Artificial Intelligence",
+        "course_code": "CSCC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Dr Muhammad Saad Razzaq",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Artificial Intelligence #CSCC-302",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Dr Muhammad Saad Razzaq (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Muhammad Fahad (14:00 - 15:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Dr. Bushra Batool (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "15:30",
+        "end_time": "17:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5…",
+          "Farooq Javed (15:30 - 17:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "14:30",
+        "end_time": "16:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Qaisar Farooq (14:30 - 16:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 182": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Abdul Qadir Baig",
+        "teacher_truncated": false,
+        "start_time": "16:00",
+        "end_time": "17:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Abdul Qadir Baig (16:00 - 17:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 186": [
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Saqib Nawaz",
+        "teacher_truncated": false,
+        "start_time": "14:30",
+        "end_time": "16:00",
+        "practical": false,
+        "raw_lines": [
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Dr. Muhammad Saqib Nawaz (14:30 - 16:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Programming for Artificial Intelligence",
+        "course_code": "AIDC-4101",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rawaish Talat",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Programming for Artificial Intelligence #AIDC-4101",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+          "Rawaish Talat (08:00 - 09:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Muhammad Fahad (10:00 - 11:30)"
+        ]
+      }
+    ],
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "14:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
+          "Qaisar Farooq (13:00 - 14:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Computer Architecture",
+        "course_code": "CSSC-305",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Muhammad Zubair Aslam",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          "Computer Architecture #CSSC-305",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Muhammad Zubair Aslam (08:00 - 09:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Saqib Nawaz",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr. Muhammad Saqib Nawaz (12:30 - 14:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Theory of Automata",
+        "course_code": "CSDC-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Kashaf Hassan",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Theory of Automata #CSDC-5101",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Kashaf Hassan (08:00 - 09:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Machine Learning",
+        "course_code": "AIDC-4102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Iqra Mushtaq",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Machine Learning #AIDC-4102",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+          "Iqra Mushtaq (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Advance Database Management Systems",
+        "course_code": "CSDC-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "",
+          "Swap",
+          "Advance Database Management Systems #CSDC-5102",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Dr Fahad Maqbool (11:30 - 13:00)"
+        ]
+      }
+    ]
+  },
+  "Thursday": {
+    "Department of Social Work IKM CR-60": [
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semest…",
+          "Dr Hussam Ali (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-160": [
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web",
+        "course_code": "CSDE-6209",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web #CSDE-6209",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+          "Qaisar Farooq (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-161": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "15:00",
+        "end_time": "17:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Se…",
+          "Farooq Javed (15:00 - 17:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
+      {
+        "combined_class": null,
+        "course_title": "Digital Image Processing",
+        "course_code": "CSEC-304",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Hussam Ali",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          "Digital Image Processing #CSEC-304",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Se…",
+          "Dr Hussam Ali (12:30 - 14:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Iqra Waheed",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+          "Iqra Waheed (08:00 - 09:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
+      {
+        "combined_class": null,
+        "course_title": "Multivariable Calculus",
+        "course_code": "MATH-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rabia Iqbal",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Multivariable Calculus #MATH-5101",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semest…",
+          "Rabia Iqbal (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
+          "Dr. Bushra Batool (14:00 - 15:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Engr. Ayesha Riaz",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semest…",
+          "Engr. Ayesha Riaz (08:00 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Engr. Ayesha Riaz",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-302",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
+          "Engr. Ayesha Riaz (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-302",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Engr. Ayesha Riaz",
+        "teacher_truncated": false,
+        "start_time": "12:30",
+        "end_time": "14:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-302",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
+          "Engr. Ayesha Riaz (12:30 - 14:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 186": [
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+          "Muhammad Fahad (11:30 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Semantic Web Techniques",
+        "course_code": "CSEC-403",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Qaisar Farooq",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Semantic Web Techniques #CSEC-403",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
+          "Qaisar Farooq (08:00 - 09:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Saqib Nawaz",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Se…",
+          "Dr. Muhammad Saqib Nawaz (14:00 - 15:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "13:00",
+        "end_time": "15:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
+          "Farooq Javed (13:00 - 15:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Sem…",
+          "Dr. Bushra Batool (11:00 - 12:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          "Information Security #CMPC-5206",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Sem…",
+          "Farooq Javed (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Organizational Behavior",
+        "course_code": "BUSB-202",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Saira Raheem",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Organizational Behavior #BUSB-202",
+          "BS in Computer Science Regular 1 ( 2023-2027 ) Semest…",
+          "Saira Raheem (09:30 - 11:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
+          "Farooq Javed (11:00 - 13:00)"
+        ]
+      }
+    ]
+  },
+  "Friday": {
+    "Department of Social Work IKM CR-60": [
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Waseem Haider",
+        "teacher_truncated": false,
+        "start_time": "10:00",
+        "end_time": "11:30",
+        "practical": false,
+        "raw_lines": [
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Muhammad Waseem Haider (10:00 - 11:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "E Commerce Application Development",
+        "course_code": "CSEC-312",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 6,
+        "teacher_name": "Muhammad Usama Ehsan",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "E Commerce Application Development #CSEC-312",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
+          "Muhammad Usama Ehsan (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
+      {
+        "combined_class": null,
+        "course_title": "HCI & Computer Graphics",
+        "course_code": "CSDC-6201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Hunzala Toqeer",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          "HCI & Computer Graphics #CSDC-6201",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Muhammad Hunzala Toqeer (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Compiler Construction",
+        "course_code": "CSCC-306",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Muddassar Ali Zaidi",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Compiler Construction #CSCC-306",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Muddassar Ali Zaidi (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB CR-165": [
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "14:00",
+        "end_time": "15:30",
+        "practical": false,
+        "raw_lines": [
+          "Linear Algebra #MATH-5102",
+          "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+          "Dr. Bushra Batool (14:00 - 15:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Linear Algebra",
+        "course_code": "MATH-5102",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Dr. Bushra Batool",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Linear Algebra #MATH-5102",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
+          "Dr. Bushra Batool (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "09:30",
+        "end_time": "11:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Capstone #CMPC-401",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Dr Fahad Maqbool (09:30 - 11:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 186": [
+      {
+        "combined_class": null,
+        "course_title": "Applied Physics",
+        "course_code": "URCW-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Yasir Zaman",
+        "teacher_truncated": false,
+        "start_time": "09:00",
+        "end_time": "10:30",
+        "practical": false,
+        "raw_lines": [
+          "Applied Physics #URCW-5201",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Yasir Zaman (09:00 - 10:30)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 187": [
+      {
+        "combined_class": null,
+        "course_title": "Web Technologies",
+        "course_code": "ITDC-5201",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Muhammad Fahad",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Web Technologies #ITDC-5201",
+          "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
+          "Muhammad Fahad (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
+      {
+        "combined_class": null,
+        "course_title": "Programming for Artificial Intelligence",
+        "course_code": "AIDC-4101",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rawaish Talat",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Programming for Artificial Intelligence #AIDC-4101",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
+          "Rawaish Talat (08:00 - 09:30)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-02": [
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 1",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr. Muhammad Ilyas",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          "",
+          "Swap",
+          "Capstone #CMPC-401",
+          "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
+          "Dr. Muhammad Ilyas (11:30 - 13:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Information Security",
+        "course_code": "CMPC-5206",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
+        "program_truncated": true,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2024-2028",
+        "semester": 5,
+        "teacher_name": "Farooq Javed",
+        "teacher_truncated": false,
+        "start_time": "11:30",
+        "end_time": "13:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Information Security #CMPC-5206",
+          "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5…",
+          "Farooq Javed (11:30 - 13:00)"
+        ]
+      }
+    ],
+    "Department of Computer Science MAB L-04 (Computer Lab)": [
+      {
+        "combined_class": null,
+        "course_title": "Multivariable Calculus",
+        "course_code": "MATH-5101",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "Rabia Iqbal",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          "Multivariable Calculus #MATH-5101",
+          "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
+          "Rabia Iqbal (11:00 - 12:30)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Capstone",
+        "course_code": "CMPC-401",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Self Support 2",
+        "session": "2023-2027",
+        "semester": 7,
+        "teacher_name": "Dr Fahad Maqbool",
+        "teacher_truncated": false,
+        "start_time": "11:00",
+        "end_time": "12:30",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Capstone #CMPC-401",
+          "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
+          "Dr Fahad Maqbool (11:00 - 12:30)"
+        ]
+      }
+    ]
+  },
+  "Saturday": {
+    "Department of Social Work IKM - CR-52": [
+      {
+        "combined_class": "Combined Class (971)",
+        "course_title": "Translation of Holy Quran-II",
+        "course_code": "URCG-5111",
+        "course_truncated": false,
+        "program_line": "BS in Computer Science Regular 1 ( 2025-2029 )",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Computer Science",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "To be allocated",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          "Combined Class (971)",
+          "Translation of Holy Quran-II #URCG-5111",
+          "BS in Computer Science Regular 1 ( 2025-2029 )",
+          "To be allocated (08:00 - 09:00)"
+        ]
+      },
+      {
+        "combined_class": null,
+        "course_title": "Translation of Holy Quran-II",
+        "course_code": "URCG-5111",
+        "course_truncated": false,
+        "program_line": "BS in Artificial Intelligence Regular 1 ( 2025-2029",
+        "program_truncated": false,
+        "degree": "BS",
+        "program": "Artificial Intelligence",
+        "program_code": null,
+        "section": "Regular 1",
+        "session": "2025-2029",
+        "semester": 4,
+        "teacher_name": "To be allocated",
+        "teacher_truncated": false,
+        "start_time": "08:00",
+        "end_time": "09:00",
+        "practical": false,
+        "raw_lines": [
+          " Swap",
+          "Combined Class (971)",
+          "Translation of Holy Quran-II #URCG-5111",
+          "BS in Artificial Intelligence Regular 1 ( 2025-2029",
+          "To be allocated (08:00 - 09:00)"
+        ]
+      }
+    ]
+  }
+}
