@@ -1,5 +1,223 @@
 {
-  "timestamp": "2026-09-07T12:31:05.665739",
+  "timestamp": "2026-09-07T12:40:25.276128",
+  "rooms": [
+    {
+      "page": 2,
+      "region": 1,
+      "room": "Department of Social Work IKM CR-60",
+      "top": 44.54731846713128
+    },
+    {
+      "page": 2,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-160",
+      "top": 155.70904354794803
+    },
+    {
+      "page": 2,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-161",
+      "top": 290.970089515884
+    },
+    {
+      "page": 2,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-162",
+      "top": 401.0556710569846
+    },
+    {
+      "page": 3,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-163",
+      "top": 122.4209787947639
+    },
+    {
+      "page": 3,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-164",
+      "top": 307.7764146598073
+    },
+    {
+      "page": 4,
+      "region": 1,
+      "room": "Department of Computer Science MAB CR-165",
+      "top": 147.62366185283895
+    },
+    {
+      "page": 4,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 181",
+      "top": 289.1819441140215
+    },
+    {
+      "page": 4,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 182",
+      "top": 356.9747598653207
+    },
+    {
+      "page": 4,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 183",
+      "top": 440.7400944045562
+    },
+    {
+      "page": 4,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 184",
+      "top": 525.316553107079
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 185",
+      "top": 44.54731846713128
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 186",
+      "top": 103.01992052423073
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 187",
+      "top": 187.18174426803
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "Department of Physics IAH CR- 188",
+      "top": 271.5690312453508
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "Department of Computer Science MAB L-02",
+      "top": 358.14095282909796
+    },
+    {
+      "page": 5,
+      "region": 1,
+      "room": "IAH L-04 Department of Physics (Computer Practical Lab)",
+      "top": 465.5443162674047
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "Department of Computer Science MAB L-04 (Computer Lab)",
+      "top": 71.08395582543801
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "Department of Computer Science MAB - Committee Room",
+      "top": 206.04763488995118
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "ARB L-10 College of Pharmacy (Computer Lab)",
+      "top": 297.26732580913057
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "Department of Computer Science Smart Lab",
+      "top": 341.05087009737156
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "Department of Social Work IKM - CR-52",
+      "top": 381.8528573887333
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "Online",
+      "top": 445.44742989822214
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "OKM CR- 90",
+      "top": 503.91095907824166
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "JB-CR-No-3",
+      "top": 520.7036749065451
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "SSB L-01",
+      "top": 536.8744382967633
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "JB-CR-No-17",
+      "top": 553.6671541250668
+    },
+    {
+      "page": 6,
+      "region": 1,
+      "room": "JB-CR-No-19",
+      "top": 570.4598699533702
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "JB-CR-No-46",
+      "top": 24.385629314464495
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Jinnah Block Hall",
+      "top": 40.55639270468271
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "MPH Seminar Hall",
+      "top": 57.34910853298618
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Physics Hall",
+      "top": 74.14182436128965
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Pharmacy Hall",
+      "top": 90.93454018959318
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Maryam Hall CR-1",
+      "top": 107.72725601789665
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Online Hall 1",
+      "top": 158.10540350280706
+    },
+    {
+      "page": 7,
+      "region": 1,
+      "room": "Online Hall 2",
+      "top": 174.89811933111054
+    }
+  ],
   "Monday": {
     "Department of Social Work IKM CR-60": [
       {
@@ -27,7 +245,7 @@
         ]
       }
     ],
-    "Department of Computer Science MAB CR-160": [
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -47,14 +265,11 @@
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Digital Image Processing #CSEC-304",
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Dr Hussam Ali (11:30 - 13:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Machine Learning",
@@ -156,7 +371,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Muhammad Waseem Haider (13:00 - 14:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Computer Architecture",
@@ -176,14 +393,11 @@
         "end_time": "09:30",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Computer Architecture #CSSC-305",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Zubair Aslam (08:00 - 09:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-164": [
+      },
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -285,7 +499,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Farooq Javed (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 181": [
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -305,7 +521,6 @@
         "end_time": "14:30",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Digital Image Processing #CSEC-304",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Dr Hussam Ali (13:00 - 14:30)"
@@ -520,7 +735,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (13:30 - 15:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -540,7 +757,6 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Web Technologies #ITDC-5201",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Muhammad Fahad (09:30 - 11:00)"
@@ -985,7 +1201,7 @@
         ]
       }
     ],
-    "Department of Physics IAH CR- 181": [
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -1005,7 +1221,6 @@
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Advance Database Management Systems #CSDC-5102",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (11:30 - 13:00)"
@@ -1063,7 +1278,9 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Dr. Muhammad Ilyas (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 186": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -1083,7 +1300,6 @@
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Web Technologies #ITDC-5201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
           "Muhammad Fahad (11:30 - 13:00)"
@@ -1431,7 +1647,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Muhammad Fahad (14:00 - 15:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -1451,14 +1669,11 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Linear Algebra #MATH-5102",
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Dr. Bushra Batool (09:30 - 11:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-164": [
+      },
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -1509,7 +1724,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 181": [
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -1529,7 +1746,6 @@
         "end_time": "16:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Semantic Web #CSDE-6209",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Qaisar Farooq (14:30 - 16:00)"
@@ -1614,7 +1830,7 @@
         ]
       }
     ],
-    "Department of Physics IAH CR- 187": [
+    "IAH L-04 Department of Physics (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -1634,14 +1850,11 @@
         "end_time": "11:30",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Web Technologies #ITDC-5201",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Muhammad Fahad (10:00 - 11:30)"
         ]
-      }
-    ],
-    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+      },
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -1769,7 +1982,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
           "Iqra Mushtaq (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -1789,8 +2004,6 @@
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          "",
-          "Swap",
           "Advance Database Management Systems #CSDC-5102",
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (11:30 - 13:00)"
@@ -1825,7 +2038,7 @@
         ]
       }
     ],
-    "Department of Computer Science MAB CR-160": [
+    "Department of Computer Science MAB CR-161": [
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -1845,14 +2058,11 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Semantic Web #CSDE-6209",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
           "Qaisar Farooq (09:30 - 11:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-161": [
+      },
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -1903,7 +2113,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Se…",
           "Dr Hussam Ali (12:30 - 14:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "HCI & Computer Graphics",
@@ -1923,14 +2135,11 @@
         "end_time": "09:30",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "HCI & Computer Graphics #CSDC-6201",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
           "Iqra Waheed (08:00 - 09:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-164": [
+      },
       {
         "combined_class": null,
         "course_title": "Multivariable Calculus",
@@ -2134,7 +2343,9 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Se…",
           "Dr. Muhammad Saqib Nawaz (14:00 - 15:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 188": [
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -2154,7 +2365,6 @@
         "end_time": "15:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Information Security #CMPC-5206",
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Se…",
           "Farooq Javed (13:00 - 15:00)"
@@ -2239,7 +2449,7 @@
         ]
       }
     ],
-    "Department of Computer Science MAB - Committee Room": [
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -2259,7 +2469,6 @@
         "end_time": "13:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Information Security #CMPC-5206",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semest…",
           "Farooq Javed (11:00 - 13:00)"
@@ -2292,7 +2501,9 @@
           "BS in Computer Science Self Support 2 ( 2024-2028 ) Semester#5",
           "Muhammad Waseem Haider (10:00 - 11:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "E Commerce Application Development",
@@ -2312,7 +2523,6 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "E Commerce Application Development #CSEC-312",
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Usama Ehsan (09:30 - 11:00)"
@@ -2343,7 +2553,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Muhammad Hunzala Toqeer (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-164": [
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -2363,7 +2575,6 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Compiler Construction #CSCC-306",
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (09:30 - 11:00)"
@@ -2394,7 +2605,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#5",
           "Dr. Bushra Batool (14:00 - 15:30)"
         ]
-      },
+      }
+    ],
+    "Department of Physics IAH CR- 183": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -2414,14 +2627,11 @@
         "end_time": "11:00",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Linear Algebra #MATH-5102",
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Dr. Bushra Batool (09:30 - 11:00)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 183": [
+      },
       {
         "combined_class": null,
         "course_title": "Capstone",
@@ -2607,7 +2817,7 @@
         ]
       }
     ],
-    "Department of Computer Science MAB - Committee Room": [
+    "Department of Computer Science Smart Lab": [
       {
         "combined_class": null,
         "course_title": "Capstone",
@@ -2627,7 +2837,6 @@
         "end_time": "12:30",
         "practical": false,
         "raw_lines": [
-          " Swap",
           "Capstone #CMPC-401",
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Dr Fahad Maqbool (11:00 - 12:30)"
