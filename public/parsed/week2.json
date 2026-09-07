@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T19:19:21.664898",
+  "timestamp": "2026-09-07T12:31:05.665739",
   "Monday": {
     "Department of Social Work IKM CR-60": [
       {
@@ -493,7 +493,9 @@
           "BS in Computer Science Self Support 1 ( 2024-2028 ) Semester#5",
           "Dr Fahad Maqbool (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -518,9 +520,7 @@
           "BS in Computer Science Self Support 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (13:30 - 15:00)"
         ]
-      }
-    ],
-    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      },
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -1195,7 +1195,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Dr Muhammad Saad Razzaq (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
         "course_title": "Capstone",
@@ -1220,9 +1222,7 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Dr Muhammad Saad Razzaq (11:00 - 12:30)"
         ]
-      }
-    ],
-    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      },
       {
         "combined_class": null,
         "course_title": "Compiler Construction",
@@ -1247,7 +1247,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (12:30 - 14:00)"
         ]
-      },
+      }
+    ],
+    "ARB L-10 College of Pharmacy (Computer Lab)": [
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -1740,7 +1742,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Kashaf Hassan (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
         "course_title": "Machine Learning",
@@ -1765,9 +1769,7 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
           "Iqra Mushtaq (11:00 - 12:30)"
         ]
-      }
-    ],
-    "ARB L-10 College of Pharmacy (Computer Lab)": [
+      },
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -2235,7 +2237,9 @@
           "BS in Computer Science Regular 1 ( 2023-2027 ) Semest…",
           "Saira Raheem (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -2601,7 +2605,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Rabia Iqbal (11:00 - 12:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB - Committee Room": [
       {
         "combined_class": null,
         "course_title": "Capstone",
@@ -2655,7 +2661,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 )",
           "To be allocated (08:00 - 09:00)"
         ]
-      },
+      }
+    ],
+    "Online": [
       {
         "combined_class": null,
         "course_title": "Translation of Holy Quran-II",
