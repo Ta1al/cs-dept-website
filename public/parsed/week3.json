@@ -1,233 +1,233 @@
 {
-  "timestamp": "2026-09-14T18:04:50.755540",
+  "timestamp": "2026-09-14T20:30:13.384593",
   "rooms": [
     {
       "page": 2,
       "region": 1,
       "room": "Department of Social Work IKM CR-60",
-      "top": 36.30988185627499
+      "top": 33.5
     },
     {
       "page": 2,
       "region": 1,
       "room": "Department of Computer Science MAB CR-160",
-      "top": 99.4087385856073
+      "top": 106.9
     },
     {
       "page": 2,
       "region": 1,
       "room": "Department of Computer Science MAB CR-161",
-      "top": 196.4333189269163
+      "top": 195.3
     },
     {
       "page": 2,
       "region": 1,
       "room": "Department of Computer Science MAB CR-162",
-      "top": 293.1469230491826
+      "top": 296.6
     },
     {
       "page": 2,
       "region": 1,
       "room": "Department of Computer Science MAB CR-163",
-      "top": 407.897147875923
+      "top": 500000174.7
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Computer Science MAB CR-164",
-      "top": 74.21966484315203
+      "top": 74.0
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Computer Science MAB CR-165",
-      "top": 223.7992262026701
+      "top": 211.1
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Physics IAH CR- 181",
-      "top": 327.1210428372256
+      "top": 317.6
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Physics IAH CR- 182",
-      "top": 396.4203435076718
+      "top": 398.0
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Physics IAH CR- 183",
-      "top": 475.7676755396157
+      "top": 470.1
     },
     {
       "page": 3,
       "region": 1,
       "room": "Department of Physics IAH CR- 184",
-      "top": 536.7190144719765
+      "top": 500000252.6
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Physics IAH CR- 185",
-      "top": 27.754602638827766
+      "top": 21.9
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Physics IAH CR- 186",
-      "top": 62.169304212881876
+      "top": 67.7
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Physics IAH CR- 187",
-      "top": 123.12064314524264
+      "top": 122.0
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Physics IAH CR- 188",
-      "top": 183.71260968249445
+      "top": 179.2
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Computer Science MAB L-02",
-      "top": 229.70777436448057
+      "top": 227.5
     },
     {
       "page": 4,
       "region": 1,
-      "room": "IAH L-04 Department of Physics (Computer Practical Lab)",
-      "top": 271.22562628845503
+      "room": "Department of Physics IAH L-04 (Computer Practical Lab)",
+      "top": 275.1
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Computer Science MAB L-04 (Computer Lab)",
-      "top": 334.8470521372257
+      "top": 340.8
     },
     {
       "page": 4,
       "region": 1,
       "room": "Department of Computer Science MAB - Committee Room",
-      "top": 431.2496800404494
+      "top": 422.5
     },
     {
       "page": 4,
       "region": 1,
-      "room": "ARB L-10 College of Pharmacy (Computer Lab)",
-      "top": 500.02382062494297
+      "room": "College of Pharmacy ARB L-10 (Computer Lab)",
+      "top": 500000232.2
     },
     {
       "page": 5,
       "region": 1,
       "room": "Department of Computer Science Smart Lab",
-      "top": 73.90868862410935
+      "top": 53.3
     },
     {
       "page": 5,
       "region": 1,
       "room": "Department of Social Work IKM - CR-52",
-      "top": 141.7792162878021
+      "top": 136.0
     },
     {
       "page": 5,
       "region": 1,
       "room": "Online",
-      "top": 189.82497784515812
+      "top": 188.2
     },
     {
       "page": 5,
       "region": 1,
       "room": "OKM CR- 90",
-      "top": 232.73969607304474
+      "top": 226.2
     },
     {
       "page": 5,
       "region": 1,
       "room": "SSB CR-106",
-      "top": 249.5324119013482
+      "top": 249.5
     },
     {
       "page": 5,
       "region": 1,
       "room": "JB-CR-No-3",
-      "top": 266.32512772965174
+      "top": 266.3
     },
     {
       "page": 5,
       "region": 1,
       "room": "SSB L-01",
-      "top": 283.1178435579552
+      "top": 284.1
     },
     {
       "page": 5,
       "region": 1,
       "room": "Committee Room (Staff Room)",
-      "top": 303.9532502338132
+      "top": 304.0
     },
     {
       "page": 5,
       "region": 1,
       "room": "JB-CR-No-17",
-      "top": 324.7886569096712
+      "top": 323.8
     },
     {
       "page": 5,
       "region": 1,
       "room": "JB-CR-No-19",
-      "top": 341.58137273797473
+      "top": 341.6
     },
     {
       "page": 5,
       "region": 1,
       "room": "JB-CR-No-46",
-      "top": 358.3740885662782
+      "top": 358.4
     },
     {
       "page": 5,
       "region": 1,
       "room": "Jinnah Block Hall",
-      "top": 375.1668043945817
+      "top": 375.0
     },
     {
       "page": 5,
       "region": 1,
       "room": "MPH Seminar Hall",
-      "top": 391.33756778479983
+      "top": 391.5
     },
     {
       "page": 5,
       "region": 1,
       "room": "Physics Hall",
-      "top": 408.1302836131033
+      "top": 408.1
     },
     {
       "page": 5,
       "region": 1,
       "room": "Pharmacy Hall",
-      "top": 424.9229994414068
+      "top": 424.9
     },
     {
       "page": 5,
       "region": 1,
       "room": "Maryam Hall CR-1",
-      "top": 441.71571526971024
+      "top": 450.1
     },
     {
       "page": 5,
       "region": 1,
       "room": "Online Hall 1",
-      "top": 492.0938627546207
+      "top": 483.7
     },
     {
       "page": 5,
       "region": 1,
       "room": "Online Hall 2",
-      "top": 508.8865785829242
+      "top": 500000250.2
     }
   ],
   "Monday": {
@@ -331,9 +331,7 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Kashaf Hassan (12:00 - 13:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-163": [
+      },
       {
         "combined_class": null,
         "course_title": "Machine Learning",
@@ -357,7 +355,9 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4 …",
           "MOAZZAMA KHAN (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -863,9 +863,7 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "MOAZZAMA KHAN (11:30 - 13:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-163": [
+      },
       {
         "combined_class": null,
         "course_title": "Theory of Automata",
@@ -889,7 +887,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Kashaf Hassan (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -1265,7 +1265,7 @@
         ]
       }
     ],
-    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+    "Department of Physics IAH L-04 (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "HCI & Computer Graphics",
@@ -1539,9 +1539,7 @@
           "BS in Computer Science Self Support 2 ( 2023-2027 ) Semester#7",
           "Muddassar Ali Zaidi (16:00 - 17:30)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-163": [
+      },
       {
         "combined_class": null,
         "course_title": "Artificial Intelligence",
@@ -1565,7 +1563,9 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Dr Muhammad Saad Razzaq (09:30 - 11:00)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -1667,7 +1667,7 @@
         ]
       }
     ],
-    "Department of Physics IAH CR- 181": [
+    "Department of Physics IAH CR- 182": [
       {
         "combined_class": null,
         "course_title": "Applied Physics",
@@ -1691,9 +1691,7 @@
           "BS in Artificial Intelligence Regular 1 ( 2025-2029 ) Semester#4",
           "Yasir Zaman (13:00 - 14:30)"
         ]
-      }
-    ],
-    "Department of Physics IAH CR- 182": [
+      },
       {
         "combined_class": null,
         "course_title": "Semantic Web",
@@ -1769,7 +1767,7 @@
         ]
       }
     ],
-    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+    "Department of Physics IAH L-04 (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Web Technologies",
@@ -2047,7 +2045,7 @@
         ]
       }
     ],
-    "Department of Computer Science MAB CR-163": [
+    "Department of Computer Science MAB CR-162": [
       {
         "combined_class": null,
         "course_title": "Digital Image Processing",
@@ -2299,7 +2297,7 @@
         ]
       }
     ],
-    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+    "Department of Physics IAH L-04 (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -2479,9 +2477,7 @@
           "BS in Computer Science Regular 1 ( 2024-2028 ) Semester#6",
           "Muhammad Usama Ehsan (09:30 - 11:00)"
         ]
-      }
-    ],
-    "Department of Computer Science MAB CR-163": [
+      },
       {
         "combined_class": null,
         "course_title": "Advance Database Management Systems",
@@ -2505,7 +2501,9 @@
           "BS in Computer Science Regular 1 ( 2025-2029 ) Semester#4",
           "Muhammad Waseem Haider (08:00 - 09:30)"
         ]
-      },
+      }
+    ],
+    "Department of Computer Science MAB CR-163": [
       {
         "combined_class": null,
         "course_title": "Linear Algebra",
@@ -2683,7 +2681,7 @@
         ]
       }
     ],
-    "IAH L-04 Department of Physics (Computer Practical Lab)": [
+    "Department of Physics IAH L-04 (Computer Practical Lab)": [
       {
         "combined_class": null,
         "course_title": "Information Security",
@@ -2812,9 +2810,7 @@
           "BS in Computer Science Regular 1 ( 2025-2029 )",
           "Bilal Ramzan (08:00 - 09:00)"
         ]
-      }
-    ],
-    "OKM CR- 90": [
+      },
       {
         "combined_class": "Combined Class (971)",
         "course_title": "Translation of Holy Quran-II",
